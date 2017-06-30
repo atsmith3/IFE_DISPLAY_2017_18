@@ -17,6 +17,11 @@ c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../l
 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-__atexit.o)
                               c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-atexit.o) (__register_exitproc)
 
+Allocating common symbols
+Common symbol       size              file
+
+display_mem         0x2ee00           display_driver.o
+
 Discarded input sections
 
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/armv6-m/crti.o
@@ -32,21 +37,37 @@ Discarded input sections
                 0x00000000       0x1b c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m/crt0.o
  .group         0x00000000        0x8 display_driver.o
  .group         0x00000000        0x8 display_driver.o
+ .group         0x00000000        0x8 display_driver.o
  .text          0x00000000        0x0 display_driver.o
  .data          0x00000000        0x0 display_driver.o
  .bss           0x00000000        0x0 display_driver.o
- .debug_info    0x00000000       0x21 display_driver.o
- .debug_abbrev  0x00000000       0x13 display_driver.o
+ .text.disp_init
+                0x00000000        0x4 display_driver.o
+ .text.disp_set_speed
+                0x00000000        0x4 display_driver.o
+ .text.disp_set_gps_status
+                0x00000000        0x4 display_driver.o
+ .text.disp_set_car_batt
+                0x00000000        0x4 display_driver.o
+ .text.disp_set_display_status
+                0x00000000        0x4 display_driver.o
+ .debug_info    0x00000000      0x164 display_driver.o
+ .debug_abbrev  0x00000000       0xbc display_driver.o
+ .debug_loc     0x00000000       0x84 display_driver.o
  .debug_aranges
-                0x00000000       0x18 display_driver.o
- .debug_macro   0x00000000       0x38 display_driver.o
+                0x00000000       0x40 display_driver.o
+ .debug_ranges  0x00000000       0x30 display_driver.o
+ .debug_macro   0x00000000       0x43 display_driver.o
  .debug_macro   0x00000000      0x832 display_driver.o
  .debug_macro   0x00000000       0x22 display_driver.o
- .debug_line    0x00000000       0x7c display_driver.o
- .debug_str     0x00000000     0x23e2 display_driver.o
+ .debug_macro   0x00000000       0x10 display_driver.o
+ .debug_line    0x00000000       0xcc display_driver.o
+ .debug_str     0x00000000     0x24d6 display_driver.o
  .comment       0x00000000       0x5c display_driver.o
+ .debug_frame   0x00000000       0x60 display_driver.o
  .ARM.attributes
                 0x00000000       0x32 display_driver.o
+ COMMON         0x00000000    0x2ee00 display_driver.o
  .text          0x00000000       0x30 palette.o
  .data          0x00000000        0x0 palette.o
  .bss           0x00000000        0x0 palette.o
@@ -346,6 +367,7 @@ Discarded input sections
  .group         0x00000000        0x8 main.o
  .group         0x00000000        0x8 main.o
  .group         0x00000000        0x8 main.o
+ .group         0x00000000        0x8 main.o
  .text          0x00000000        0x0 main.o
  .data          0x00000000        0x0 main.o
  .text.enable_interrupts
@@ -421,6 +443,7 @@ Discarded input sections
  .debug_macro   0x00000000     0x1e59 main.o
  .debug_macro   0x00000000       0x6d main.o
  .debug_macro   0x00000000       0x22 main.o
+ .debug_macro   0x00000000       0x10 main.o
  .text          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-exit.o)
  .data          0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-exit.o)
  .bss           0x00000000        0x0 c:/program files (x86)/atmel/studio/7.0/toolchain/arm/arm-gnu-toolchain/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv6-m\libc.a(lib_a-exit.o)
@@ -745,7 +768,7 @@ OUTPUT(SAMD21J18A_IFE_DISPLAY.elf elf32-littlearm)
  .debug_ranges  0x00000018       0x18 Device_Startup/system_samd21.o
  .debug_ranges  0x00000030       0x28 main.o
 
-.debug_macro    0x00000000    0x10cea
+.debug_macro    0x00000000    0x10ce9
  .debug_macro   0x00000000      0x2ea Device_Startup/startup_samd21.o
  .debug_macro   0x000002ea       0x22 Device_Startup/startup_samd21.o
  .debug_macro   0x0000030c       0x44 Device_Startup/startup_samd21.o
@@ -817,20 +840,20 @@ OUTPUT(SAMD21J18A_IFE_DISPLAY.elf elf32-littlearm)
  .debug_macro   0x0000e837     0x1e59 Device_Startup/startup_samd21.o
  .debug_macro   0x00010690       0x6d Device_Startup/startup_samd21.o
  .debug_macro   0x000106fd      0x2f0 Device_Startup/system_samd21.o
- .debug_macro   0x000109ed      0x2fd main.o
+ .debug_macro   0x000109ed      0x2fc main.o
 
 .debug_line     0x00000000     0x14bf
  .debug_line    0x00000000      0x6e0 Device_Startup/startup_samd21.o
  .debug_line    0x000006e0      0x6bf Device_Startup/system_samd21.o
  .debug_line    0x00000d9f      0x720 main.o
 
-.debug_str      0x00000000    0x6c836
+.debug_str      0x00000000    0x6c889
  .debug_str     0x00000000    0x6c31d Device_Startup/startup_samd21.o
                               0x6c714 (size before relaxing)
  .debug_str     0x0006c31d       0x6c Device_Startup/system_samd21.o
                               0x6b5cf (size before relaxing)
- .debug_str     0x0006c389      0x4ad main.o
-                              0x6bae3 (size before relaxing)
+ .debug_str     0x0006c389      0x500 main.o
+                              0x6bafc (size before relaxing)
 
 .debug_frame    0x00000000      0x1d4
  .debug_frame   0x00000000       0x3c Device_Startup/startup_samd21.o

@@ -20,6 +20,10 @@ typedef enum gps_status_t {
 } gps_status;
 
 
+/* Global Macros */
+#define DISP_IRQn				TC3_IRQn
+
+
 /* API Functions */
 int disp_init(void); 
 
