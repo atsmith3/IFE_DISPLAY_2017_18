@@ -1,5 +1,5 @@
 Flow report for IFE_Display_2017
-Thu Jul 06 20:24:48 2017
+Thu Jul 06 21:51:50 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -40,7 +40,7 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Flow Summary                                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Thu Jul 06 20:24:48 2017           ;
+; Flow Status                        ; Successful - Thu Jul 06 21:51:50 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; IFE_Display_2017                                ;
 ; Top-level Entity Name              ; top                                             ;
@@ -51,7 +51,7 @@ applicable agreement for further details.
 ;     Total combinational functions  ; 0 / 4,608 ( 0 % )                               ;
 ;     Dedicated logic registers      ; 0 / 4,608 ( 0 % )                               ;
 ; Total registers                    ; 0                                               ;
-; Total pins                         ; 38 / 89 ( 43 % )                                ;
+; Total pins                         ; 44 / 89 ( 49 % )                                ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0 / 119,808 ( 0 % )                             ;
 ; Embedded Multiplier 9-bit elements ; 0 / 26 ( 0 % )                                  ;
@@ -64,7 +64,7 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 07/06/2017 20:24:39 ;
+; Start date & time ; 07/06/2017 21:51:42 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; IFE_Display_2017    ;
 +-------------------+---------------------+
@@ -75,7 +75,7 @@ applicable agreement for further details.
 +-------------------------------------+---------------------------------+------------------+-------------+----------------+
 ; Assignment Name                     ; Value                           ; Default Value    ; Entity Name ; Section Id     ;
 +-------------------------------------+---------------------------------+------------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID               ; 189794995867165.149939067912680 ; --               ; --          ; --             ;
+; COMPILER_SIGNATURE_ID               ; 189794995867165.149939590203248 ; --               ; --          ; --             ;
 ; EDA_OUTPUT_DATA_FORMAT              ; Systemverilog Hdl               ; --               ; --          ; eda_simulation ;
 ; EDA_SIMULATION_TOOL                 ; ModelSim-Altera (SystemVerilog) ; <None>           ; --          ; --             ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                              ; --               ; --          ; --             ;
@@ -93,12 +93,12 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:02     ; 1.0                     ; 552 MB              ; 00:00:01                           ;
-; Fitter                    ; 00:00:02     ; 1.0                     ; 680 MB              ; 00:00:02                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 438 MB              ; 00:00:01                           ;
+; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 473 MB              ; 00:00:01                           ;
+; Fitter                    ; 00:00:03     ; 1.0                     ; 680 MB              ; 00:00:02                           ;
+; Assembler                 ; 00:00:00     ; 1.0                     ; 438 MB              ; 00:00:01                           ;
 ; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 421 MB              ; 00:00:01                           ;
 ; EDA Netlist Writer        ; 00:00:00     ; 1.0                     ; 387 MB              ; 00:00:00                           ;
-; Total                     ; 00:00:06     ; --                      ; --                  ; 00:00:05                           ;
+; Total                     ; 00:00:05     ; --                      ; --                  ; 00:00:05                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

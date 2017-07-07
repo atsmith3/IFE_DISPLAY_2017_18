@@ -1,0 +1,9 @@
+/*
+ * Module: display_driver
+ * 
+ * Responsible for producing the display clock signal and sending the colors to the display
+ * Calculates the area to be colored orange based on values in status registers
+ *
+ */ 
+module display_driver(	input logic 
+								output logic [7:0]red, green, blue);
