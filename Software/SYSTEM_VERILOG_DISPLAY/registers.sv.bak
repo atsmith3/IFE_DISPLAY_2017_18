@@ -1,0 +1,2 @@
+module registers(	input logic [2:0]addr, read_write, [7:0]data_in,
+						output logic [7:0]speed, ready_to_drive, [7:0]car_battery, [1:0]disp_battery, [1:0]gps_status, )

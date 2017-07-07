@@ -1,0 +1,11 @@
+module PushButton(input logic switch_in, Clk,
+						output logic LED_out);
+	
+	always_ff @ (posedge Clk)
+	begin
+		if(switch_in == 1'b1)
+			 LED_out = 1'b1;
+		else
+			 LED_out = 1'b0;
+	end
+endmodule
