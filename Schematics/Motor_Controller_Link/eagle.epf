@@ -433,8 +433,8 @@ UsedLibrary="C:/EAGLE 8.3.1/lbr/NXP/NXP_By_element14_Batch_1.lbr"
 
 [Win_1]
 Type="Control Panel"
-Loc="962 480 2433 1343"
-State=2
+Loc="-11 -11 3188 1754"
+State=1
 Number=0
 
 [Desktop]
