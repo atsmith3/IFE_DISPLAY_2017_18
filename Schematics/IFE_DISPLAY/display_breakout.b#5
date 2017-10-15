@@ -6,9 +6,9 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="no" altdistance="25" altunitdist="mil" altunit="mil"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="25" altunitdist="mil" altunit="mil"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="no" active="yes"/>
+<layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
 <layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
 <layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
@@ -23,7 +23,7 @@
 <layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
 <layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
 <layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="yes"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="17" name="Pads" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="18" name="Vias" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="yes"/>
@@ -165,11 +165,6 @@
 <wire x1="30.48" y1="0" x2="30.48" y2="43.18" width="0" layer="20"/>
 <wire x1="30.48" y1="43.18" x2="0" y2="43.18" width="0" layer="20"/>
 <wire x1="0" y1="43.18" x2="0" y2="0" width="0" layer="20"/>
-<text x="24.13" y="23.495" size="0.8128" layer="112" font="vector" rot="R90" align="center">Andrew
-Smith</text>
-<text x="26.67" y="23.495" size="0.6096" layer="112" font="vector" rot="R90" align="center">2018</text>
-<text x="20.32" y="23.495" size="1.016" layer="112" font="vector" rot="R90" align="center">Display
-Breakout</text>
 </plain>
 <libraries>
 <library name="Headers_IFE">
@@ -389,7 +384,7 @@ Breakout</text>
 <class number="0" name="default" width="0" drill="0">
 </class>
 </classes>
-<designrules name="Elecrow_2-layer_PCB_eagle_rule">
+<designrules name="default *">
 <description language="de">&lt;b&gt;EAGLE Design Rules&lt;/b&gt;
 &lt;p&gt;
 Die Standard-Design-Rules sind so gewählt, dass sie für 
@@ -404,28 +399,26 @@ a wide range of applications. Your particular design
 may have different requirements, so please make the
 necessary adjustments and save your customized
 design rules under a new name.</description>
-<description language="zh">&lt;b&gt;Elecrow PCB EAGLE Design Rules&lt;/b&gt;
-</description>
 <param name="layerSetup" value="(1*16)"/>
 <param name="mtCopper" value="0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm 0.035mm"/>
-<param name="mtIsolate" value="1.6mm 1.2mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
+<param name="mtIsolate" value="1.5mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm 0.15mm 0.2mm"/>
 <param name="mdWireWire" value="6mil"/>
 <param name="mdWirePad" value="6mil"/>
 <param name="mdWireVia" value="6mil"/>
 <param name="mdPadPad" value="6mil"/>
 <param name="mdPadVia" value="6mil"/>
-<param name="mdViaVia" value="8mil"/>
-<param name="mdSmdPad" value="0mil"/>
-<param name="mdSmdVia" value="0mil"/>
-<param name="mdSmdSmd" value="0mil"/>
+<param name="mdViaVia" value="6mil"/>
+<param name="mdSmdPad" value="6mil"/>
+<param name="mdSmdVia" value="6mil"/>
+<param name="mdSmdSmd" value="6mil"/>
 <param name="mdViaViaSameLayer" value="8mil"/>
 <param name="mnLayersViaInSmd" value="2"/>
-<param name="mdCopperDimension" value="20mil"/>
-<param name="mdDrill" value="10mil"/>
+<param name="mdCopperDimension" value="40mil"/>
+<param name="mdDrill" value="8mil"/>
 <param name="mdSmdStop" value="0mil"/>
-<param name="msWidth" value="6mil"/>
-<param name="msDrill" value="12mil"/>
-<param name="msMicroVia" value="12mil"/>
+<param name="msWidth" value="10mil"/>
+<param name="msDrill" value="24mil"/>
+<param name="msMicroVia" value="9.99mm"/>
 <param name="msBlindViaRatio" value="0.5"/>
 <param name="rvPadTop" value="0.25"/>
 <param name="rvPadInner" value="0.25"/>
@@ -434,15 +427,15 @@ design rules under a new name.</description>
 <param name="rvViaInner" value="0.25"/>
 <param name="rvMicroViaOuter" value="0.25"/>
 <param name="rvMicroViaInner" value="0.25"/>
-<param name="rlMinPadTop" value="6mil"/>
+<param name="rlMinPadTop" value="10mil"/>
 <param name="rlMaxPadTop" value="20mil"/>
-<param name="rlMinPadInner" value="6mil"/>
+<param name="rlMinPadInner" value="10mil"/>
 <param name="rlMaxPadInner" value="20mil"/>
-<param name="rlMinPadBottom" value="6mil"/>
+<param name="rlMinPadBottom" value="10mil"/>
 <param name="rlMaxPadBottom" value="20mil"/>
-<param name="rlMinViaOuter" value="6mil"/>
+<param name="rlMinViaOuter" value="8mil"/>
 <param name="rlMaxViaOuter" value="20mil"/>
-<param name="rlMinViaInner" value="6mil"/>
+<param name="rlMinViaInner" value="8mil"/>
 <param name="rlMaxViaInner" value="20mil"/>
 <param name="rlMinMicroViaOuter" value="4mil"/>
 <param name="rlMaxMicroViaOuter" value="20mil"/>
@@ -450,16 +443,16 @@ design rules under a new name.</description>
 <param name="rlMaxMicroViaInner" value="20mil"/>
 <param name="psTop" value="-1"/>
 <param name="psBottom" value="-1"/>
-<param name="psFirst" value="0"/>
+<param name="psFirst" value="-1"/>
 <param name="psElongationLong" value="100"/>
 <param name="psElongationOffset" value="100"/>
 <param name="mvStopFrame" value="1"/>
 <param name="mvCreamFrame" value="0"/>
-<param name="mlMinStopFrame" value="0mil"/>
-<param name="mlMaxStopFrame" value="0mil"/>
+<param name="mlMinStopFrame" value="4mil"/>
+<param name="mlMaxStopFrame" value="4mil"/>
 <param name="mlMinCreamFrame" value="0mil"/>
 <param name="mlMaxCreamFrame" value="0mil"/>
-<param name="mlViaStopLimit" value="100mil"/>
+<param name="mlViaStopLimit" value="0mil"/>
 <param name="srRoundness" value="0"/>
 <param name="srMinRoundness" value="0mil"/>
 <param name="srMaxRoundness" value="0mil"/>
@@ -470,7 +463,7 @@ design rules under a new name.</description>
 <param name="checkGrid" value="0"/>
 <param name="checkAngle" value="0"/>
 <param name="checkFont" value="1"/>
-<param name="checkRestrict" value="0"/>
+<param name="checkRestrict" value="1"/>
 <param name="useDiameter" value="13"/>
 <param name="maxErrors" value="50"/>
 </designrules>
@@ -584,31 +577,9 @@ design rules under a new name.</description>
 <contactref element="U$4" pad="P$36"/>
 <contactref element="U$4" pad="P$29"/>
 <contactref element="PWR" pad="4"/>
-<polygon width="0.3048" layer="16" isolate="0.254">
-<vertex x="0.635" y="42.545"/>
-<vertex x="0.635" y="0.635"/>
-<vertex x="29.845" y="0.635"/>
-<vertex x="29.845" y="42.545"/>
-</polygon>
-<via x="10.668" y="9.144" extent="1-16" drill="0.5" shape="octagon"/>
-<via x="9.398" y="10.414" extent="1-16" drill="0.5" shape="octagon"/>
-<polygon width="0.3048" layer="1" isolate="0.254">
-<vertex x="0.635" y="42.545"/>
-<vertex x="29.845" y="42.545"/>
-<vertex x="29.845" y="0.635"/>
-<vertex x="0.635" y="0.635"/>
-</polygon>
-<via x="28.575" y="41.275" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="1.905" y="41.275" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="1.905" y="1.905" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="28.575" y="1.905" extent="1-16" drill="0.6" shape="octagon"/>
-<via x="5.588" y="13.462" extent="1-16" drill="0.5" shape="octagon"/>
-<wire x1="7.6708" y1="30.5338" x2="6.4038" y2="30.5338" width="0.3048" layer="1"/>
-<wire x1="6.4038" y1="30.5338" x2="6.35" y2="30.48" width="0.3048" layer="1"/>
-<wire x1="7.6708" y1="27.0338" x2="6.7138" y2="27.0338" width="0.3048" layer="1"/>
-<wire x1="6.7138" y1="27.0338" x2="6.35" y2="26.67" width="0.3048" layer="1"/>
-<wire x1="7.6708" y1="14.0338" x2="6.1598" y2="14.0338" width="0.3048" layer="1"/>
-<wire x1="6.1598" y1="14.0338" x2="5.588" y2="13.462" width="0.3048" layer="1"/>
+<wire x1="7.6708" y1="27.0338" x2="7.6708" y2="30.5338" width="0" layer="19" extent="1-1"/>
+<wire x1="7.6708" y1="14.0338" x2="7.6708" y2="27.0338" width="0" layer="19" extent="1-1"/>
+<wire x1="14.3256" y1="6.3754" x2="7.6708" y2="14.0338" width="0" layer="19" extent="1-1"/>
 </signal>
 <signal name="+3V3">
 <contactref element="U$4" pad="P$4"/>
@@ -955,10 +926,4 @@ design rules under a new name.</description>
 </signals>
 </board>
 </drawing>
-<compatibility>
-<note version="6.3" minversion="6.2.2" severity="warning">
-Since Version 6.2.2 text objects can contain more than one line,
-which will not be processed correctly with this version.
-</note>
-</compatibility>
 </eagle>
