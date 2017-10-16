@@ -4064,9 +4064,11 @@ design rules under a new name.</description>
 <contactref element="U4" pad="8"/>
 <contactref element="U5" pad="8"/>
 <contactref element="U$4" pad="P$3"/>
-<contactref element="U$4" pad="P$1"/>
-<wire x1="-80.87" y1="-7.62" x2="-79.87" y2="-7.62" width="0" layer="19" extent="1-1"/>
-<wire x1="-59.9948" y1="8.4836" x2="-79.87" y2="-7.62" width="0" layer="19" extent="1-1"/>
+<contactref element="U$4" pad="P$36"/>
+<contactref element="U$4" pad="P$29"/>
+<wire x1="-66.87" y1="-7.62" x2="-79.87" y2="-7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="-63.37" y1="-7.62" x2="-66.87" y2="-7.62" width="0" layer="19" extent="1-1"/>
+<wire x1="-59.9948" y1="8.4836" x2="-63.37" y2="-7.62" width="0" layer="19" extent="1-1"/>
 <wire x1="-59.9948" y1="10.0838" x2="-59.9948" y2="8.4836" width="0" layer="19" extent="1-1"/>
 <wire x1="-51.7652" y1="9.2964" x2="-59.9948" y2="10.0838" width="0" layer="19" extent="1-1"/>
 <wire x1="-47.879" y1="5.08" x2="-51.7652" y2="9.2964" width="0" layer="19" extent="1-1"/>
@@ -4169,8 +4171,6 @@ design rules under a new name.</description>
 <contactref element="U4" pad="1"/>
 <contactref element="U5" pad="1"/>
 <contactref element="U$4" pad="P$4"/>
-<contactref element="U$4" pad="P$2"/>
-<wire x1="-80.37" y1="-7.62" x2="-79.37" y2="-7.62" width="0" layer="19" extent="1-1"/>
 <wire x1="-59.9948" y1="7.6962" x2="-79.37" y2="-7.62" width="0" layer="19" extent="1-1"/>
 <wire x1="-59.9948" y1="9.2964" x2="-59.9948" y2="7.6962" width="0" layer="19" extent="1-1"/>
 <wire x1="-51.7652" y1="6.8834" x2="-59.9948" y2="7.6962" width="0" layer="19" extent="1-1"/>
@@ -4711,9 +4711,6 @@ design rules under a new name.</description>
 <signal name="GREEN_3">
 <contactref element="U$4" pad="P$16"/>
 </signal>
-<signal name="N$36">
-<contactref element="U$4" pad="P$29"/>
-</signal>
 <signal name="DISP_CLK">
 <contactref element="U$4" pad="P$30"/>
 </signal>
@@ -4732,9 +4729,6 @@ design rules under a new name.</description>
 <signal name="NOT_CONNECTED">
 <contactref element="U$4" pad="P$35"/>
 </signal>
-<signal name="N$43">
-<contactref element="U$4" pad="P$36"/>
-</signal>
 <signal name="DISP_XR">
 <contactref element="U$4" pad="P$37"/>
 </signal>
@@ -4746,6 +4740,12 @@ design rules under a new name.</description>
 </signal>
 <signal name="DISP_YU">
 <contactref element="U$4" pad="P$40"/>
+</signal>
+<signal name="DISP_LEDK">
+<contactref element="U$4" pad="P$1"/>
+</signal>
+<signal name="DISP_LEDA">
+<contactref element="U$4" pad="P$2"/>
 </signal>
 </signals>
 </board>
