@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.0">
+<eagle version="8.4.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -19103,165 +19103,81 @@ DIN A3, landscape with location and doc. field</description>
 <label x="152.4" y="119.38" size="1.27" layer="95"/>
 </segment>
 </net>
-<net name="RED_0" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="IO63"/>
-<wire x1="15.24" y1="71.12" x2="12.7" y2="71.12" width="0.1524" layer="91"/>
-<label x="12.7" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="RED_1" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="IO60"/>
-<wire x1="15.24" y1="73.66" x2="12.7" y2="73.66" width="0.1524" layer="91"/>
-<label x="12.7" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="RED_2" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="IO59"/>
-<wire x1="15.24" y1="76.2" x2="12.7" y2="76.2" width="0.1524" layer="91"/>
-<label x="12.7" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="RED_3" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="IO58"/>
-<wire x1="15.24" y1="78.74" x2="12.7" y2="78.74" width="0.1524" layer="91"/>
-<label x="12.7" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="RED_4" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="IO57"/>
-<wire x1="15.24" y1="81.28" x2="12.7" y2="81.28" width="0.1524" layer="91"/>
-<label x="12.7" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="RED_5" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="IO55"/>
-<wire x1="15.24" y1="83.82" x2="12.7" y2="83.82" width="0.1524" layer="91"/>
-<label x="12.7" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="RED_6" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="IO53"/>
-<wire x1="15.24" y1="86.36" x2="12.7" y2="86.36" width="0.1524" layer="91"/>
-<label x="12.7" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="RED_7" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="IO52"/>
-<wire x1="15.24" y1="88.9" x2="12.7" y2="88.9" width="0.1524" layer="91"/>
-<label x="12.7" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="GREEN_0" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="IO51"/>
-<wire x1="15.24" y1="91.44" x2="12.7" y2="91.44" width="0.1524" layer="91"/>
-<label x="12.7" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="GREEN_1" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="IO48"/>
-<wire x1="15.24" y1="93.98" x2="12.7" y2="93.98" width="0.1524" layer="91"/>
-<label x="12.7" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="GREEN_2" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="IO47"/>
-<wire x1="15.24" y1="96.52" x2="12.7" y2="96.52" width="0.1524" layer="91"/>
-<label x="12.7" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
 <net name="FPGA_D0_3_3" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="IO142"/>
-<wire x1="149.86" y1="76.2" x2="152.4" y2="76.2" width="0.1524" layer="91"/>
-<label x="152.4" y="76.2" size="1.27" layer="95" xref="yes"/>
+<pinref part="IC2" gate="G$1" pin="IO75"/>
+<wire x1="50.8" y1="38.1" x2="50.8" y2="35.56" width="0.1524" layer="91"/>
+<label x="50.8" y="35.56" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="FPGA_D1_3_3" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="IO141"/>
-<wire x1="149.86" y1="73.66" x2="152.4" y2="73.66" width="0.1524" layer="91"/>
-<label x="152.4" y="73.66" size="1.27" layer="95" xref="yes"/>
+<pinref part="IC2" gate="G$1" pin="IO76"/>
+<wire x1="53.34" y1="38.1" x2="53.34" y2="35.56" width="0.1524" layer="91"/>
+<label x="53.34" y="35.56" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="FPGA_D2_3_3" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="IO139"/>
-<wire x1="149.86" y1="71.12" x2="152.4" y2="71.12" width="0.1524" layer="91"/>
-<label x="152.4" y="71.12" size="1.27" layer="95" xref="yes"/>
+<pinref part="IC2" gate="G$1" pin="IO79"/>
+<wire x1="55.88" y1="38.1" x2="55.88" y2="35.56" width="0.1524" layer="91"/>
+<label x="55.88" y="35.56" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="FPGA_D3_3_3" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="IO137"/>
-<wire x1="149.86" y1="68.58" x2="152.4" y2="68.58" width="0.1524" layer="91"/>
-<label x="152.4" y="68.58" size="1.27" layer="95" xref="yes"/>
+<pinref part="IC2" gate="G$1" pin="IO80"/>
+<wire x1="58.42" y1="38.1" x2="58.42" y2="35.56" width="0.1524" layer="91"/>
+<label x="58.42" y="35.56" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="FPGA_RSEL_3_3" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="IO144"/>
-<wire x1="149.86" y1="81.28" x2="152.4" y2="81.28" width="0.1524" layer="91"/>
-<label x="152.4" y="81.28" size="1.27" layer="95" xref="yes"/>
+<pinref part="IC2" gate="G$1" pin="IO73"/>
+<wire x1="45.72" y1="38.1" x2="45.72" y2="35.56" width="0.1524" layer="91"/>
+<label x="45.72" y="35.56" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="FPGA_W_3_3" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="IO143"/>
-<wire x1="149.86" y1="78.74" x2="152.4" y2="78.74" width="0.1524" layer="91"/>
-<label x="152.4" y="78.74" size="1.27" layer="95" xref="yes"/>
+<pinref part="IC2" gate="G$1" pin="IO74"/>
+<wire x1="48.26" y1="38.1" x2="48.26" y2="35.56" width="0.1524" layer="91"/>
+<label x="48.26" y="35.56" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="FPGA_R0_3_3" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="IO136"/>
-<wire x1="149.86" y1="66.04" x2="152.4" y2="66.04" width="0.1524" layer="91"/>
-<label x="152.4" y="66.04" size="1.27" layer="95" xref="yes"/>
+<pinref part="IC2" gate="G$1" pin="IO81"/>
+<wire x1="60.96" y1="38.1" x2="60.96" y2="35.56" width="0.1524" layer="91"/>
+<label x="60.96" y="35.56" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="FPGA_R1_3_3" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="IO135"/>
-<wire x1="149.86" y1="63.5" x2="152.4" y2="63.5" width="0.1524" layer="91"/>
-<label x="152.4" y="63.5" size="1.27" layer="95" xref="yes"/>
+<pinref part="IC2" gate="G$1" pin="IO86"/>
+<wire x1="63.5" y1="38.1" x2="63.5" y2="35.56" width="0.1524" layer="91"/>
+<label x="63.5" y="35.56" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="FPGA_R2_3_3" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="IO134"/>
-<wire x1="149.86" y1="60.96" x2="152.4" y2="60.96" width="0.1524" layer="91"/>
-<label x="152.4" y="60.96" size="1.27" layer="95" xref="yes"/>
+<pinref part="IC2" gate="G$1" pin="IO87"/>
+<wire x1="66.04" y1="38.1" x2="66.04" y2="35.56" width="0.1524" layer="91"/>
+<label x="66.04" y="35.56" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="FPGA_R3_3_3" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="IO133"/>
-<wire x1="127" y1="38.1" x2="127" y2="35.56" width="0.1524" layer="91"/>
-<label x="127" y="35.56" size="1.27" layer="95" rot="R270" xref="yes"/>
-</segment>
-</net>
-<net name="DISP_CLK" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="IO9"/>
-<wire x1="15.24" y1="134.62" x2="12.7" y2="134.62" width="0.1524" layer="91"/>
-<label x="12.7" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC2" gate="G$1" pin="IO92"/>
+<wire x1="68.58" y1="38.1" x2="68.58" y2="35.56" width="0.1524" layer="91"/>
+<label x="68.58" y="35.56" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
 <net name="DISP_EN" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="IO8"/>
-<wire x1="15.24" y1="137.16" x2="12.7" y2="137.16" width="0.1524" layer="91"/>
-<label x="12.7" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC2" gate="G$1" pin="IO4"/>
+<wire x1="15.24" y1="142.24" x2="12.7" y2="142.24" width="0.1524" layer="91"/>
+<label x="12.7" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="DISP_HSYNC" class="0">
@@ -19271,98 +19187,182 @@ DIN A3, landscape with location and doc. field</description>
 <label x="12.7" y="139.7" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GREEN_3" class="0">
+<net name="GREEN_4" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="IO45"/>
 <wire x1="15.24" y1="99.06" x2="12.7" y2="99.06" width="0.1524" layer="91"/>
 <label x="12.7" y="99.06" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GREEN_4" class="0">
+<net name="GREEN_5" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="IO47"/>
+<wire x1="15.24" y1="96.52" x2="12.7" y2="96.52" width="0.1524" layer="91"/>
+<label x="12.7" y="96.52" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="GREEN_6" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="IO48"/>
+<wire x1="15.24" y1="93.98" x2="12.7" y2="93.98" width="0.1524" layer="91"/>
+<label x="12.7" y="93.98" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="GREEN_7" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="IO51"/>
+<wire x1="15.24" y1="91.44" x2="12.7" y2="91.44" width="0.1524" layer="91"/>
+<label x="12.7" y="91.44" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="BLUE_0" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="IO52"/>
+<wire x1="15.24" y1="88.9" x2="12.7" y2="88.9" width="0.1524" layer="91"/>
+<label x="12.7" y="88.9" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="BLUE_1" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="IO53"/>
+<wire x1="15.24" y1="86.36" x2="12.7" y2="86.36" width="0.1524" layer="91"/>
+<label x="12.7" y="86.36" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="BLUE_2" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="IO55"/>
+<wire x1="15.24" y1="83.82" x2="12.7" y2="83.82" width="0.1524" layer="91"/>
+<label x="12.7" y="83.82" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="BLUE_3" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="IO57"/>
+<wire x1="15.24" y1="81.28" x2="12.7" y2="81.28" width="0.1524" layer="91"/>
+<label x="12.7" y="81.28" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="BLUE_4" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="IO58"/>
+<wire x1="15.24" y1="78.74" x2="12.7" y2="78.74" width="0.1524" layer="91"/>
+<label x="12.7" y="78.74" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="BLUE_5" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="IO59"/>
+<wire x1="15.24" y1="76.2" x2="12.7" y2="76.2" width="0.1524" layer="91"/>
+<label x="12.7" y="76.2" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="BLUE_6" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="IO60"/>
+<wire x1="15.24" y1="73.66" x2="12.7" y2="73.66" width="0.1524" layer="91"/>
+<label x="12.7" y="73.66" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="BLUE_7" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="IO63"/>
+<wire x1="15.24" y1="71.12" x2="12.7" y2="71.12" width="0.1524" layer="91"/>
+<label x="12.7" y="71.12" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="DISP_DEN" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="IO9"/>
+<wire x1="15.24" y1="134.62" x2="12.7" y2="134.62" width="0.1524" layer="91"/>
+<label x="12.7" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="GREEN_3" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="IO44"/>
 <wire x1="15.24" y1="101.6" x2="12.7" y2="101.6" width="0.1524" layer="91"/>
 <label x="12.7" y="101.6" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GREEN_5" class="0">
+<net name="GREEN_2" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="IO43"/>
 <wire x1="15.24" y1="104.14" x2="12.7" y2="104.14" width="0.1524" layer="91"/>
 <label x="12.7" y="104.14" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GREEN_6" class="0">
+<net name="GREEN_1" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="IO42"/>
 <wire x1="15.24" y1="106.68" x2="12.7" y2="106.68" width="0.1524" layer="91"/>
 <label x="12.7" y="106.68" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="GREEN_7" class="0">
+<net name="GREEN_0" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="IO41"/>
 <wire x1="15.24" y1="109.22" x2="12.7" y2="109.22" width="0.1524" layer="91"/>
 <label x="12.7" y="109.22" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="BLUE_0" class="0">
+<net name="RED_7" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="IO40"/>
 <wire x1="15.24" y1="111.76" x2="12.7" y2="111.76" width="0.1524" layer="91"/>
 <label x="12.7" y="111.76" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="BLUE_1" class="0">
+<net name="RED_6" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="IO32"/>
 <wire x1="15.24" y1="114.3" x2="12.7" y2="114.3" width="0.1524" layer="91"/>
 <label x="12.7" y="114.3" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="BLUE_2" class="0">
+<net name="RED_5" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="IO31"/>
 <wire x1="15.24" y1="116.84" x2="12.7" y2="116.84" width="0.1524" layer="91"/>
 <label x="12.7" y="116.84" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="BLUE_3" class="0">
+<net name="RED_4" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="IO30"/>
 <wire x1="15.24" y1="119.38" x2="12.7" y2="119.38" width="0.1524" layer="91"/>
 <label x="12.7" y="119.38" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="BLUE_4" class="0">
+<net name="RED_3" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="IO28"/>
 <wire x1="15.24" y1="121.92" x2="12.7" y2="121.92" width="0.1524" layer="91"/>
 <label x="12.7" y="121.92" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="BLUE_5" class="0">
+<net name="RED_2" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="IO27"/>
 <wire x1="15.24" y1="124.46" x2="12.7" y2="124.46" width="0.1524" layer="91"/>
 <label x="12.7" y="124.46" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="BLUE_6" class="0">
+<net name="RED_1" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="IO26"/>
 <wire x1="15.24" y1="127" x2="12.7" y2="127" width="0.1524" layer="91"/>
 <label x="12.7" y="127" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="BLUE_7" class="0">
+<net name="RED_0" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="IO25"/>
 <wire x1="15.24" y1="129.54" x2="12.7" y2="129.54" width="0.1524" layer="91"/>
 <label x="12.7" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="DISP_DEN" class="0">
+<net name="DISP_CLK" class="0">
 <segment>
 <pinref part="IC2" gate="G$1" pin="IO3"/>
 <wire x1="15.24" y1="144.78" x2="12.7" y2="144.78" width="0.1524" layer="91"/>
@@ -19371,9 +19371,9 @@ DIN A3, landscape with location and doc. field</description>
 </net>
 <net name="DISP_VSYNC" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="IO4"/>
-<wire x1="15.24" y1="142.24" x2="12.7" y2="142.24" width="0.1524" layer="91"/>
-<label x="12.7" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC2" gate="G$1" pin="IO8"/>
+<wire x1="15.24" y1="137.16" x2="12.7" y2="137.16" width="0.1524" layer="91"/>
+<label x="12.7" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>
