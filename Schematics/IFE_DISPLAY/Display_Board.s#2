@@ -17445,7 +17445,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="GND55" library="supply1" deviceset="GND" device=""/>
 <part name="R34" library="rcl" deviceset="R-US_" device="R0805" value="10k"/>
 <part name="C37" library="rcl" deviceset="C-EU" device="C0805K" value="1800pF"/>
-<part name="R35" library="rcl" deviceset="R-US_" device="R0805" value="5.9k"/>
+<part name="R35" library="rcl" deviceset="R-US_" device="R0805" value="3.2k"/>
 <part name="C38" library="rcl" deviceset="C-EU" device="C0805K" value="0.1uF"/>
 <part name="C39" library="rcl" deviceset="C-EU" device="C0805K" value="150pF"/>
 <part name="R36" library="rcl" deviceset="R-US_" device="R0805" value="549"/>
@@ -19247,16 +19247,16 @@ DIN A3, landscape with location and doc. field</description>
 </net>
 <net name="DISP_CLK" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="IO3"/>
-<wire x1="15.24" y1="144.78" x2="12.7" y2="144.78" width="0.1524" layer="91"/>
-<label x="12.7" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC2" gate="G$1" pin="IO9"/>
+<wire x1="15.24" y1="134.62" x2="12.7" y2="134.62" width="0.1524" layer="91"/>
+<label x="12.7" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="DISP_EN" class="0">
 <segment>
-<pinref part="IC2" gate="G$1" pin="IO4"/>
-<wire x1="15.24" y1="142.24" x2="12.7" y2="142.24" width="0.1524" layer="91"/>
-<label x="12.7" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="IC2" gate="G$1" pin="IO8"/>
+<wire x1="15.24" y1="137.16" x2="12.7" y2="137.16" width="0.1524" layer="91"/>
+<label x="12.7" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="DISP_HSYNC" class="0">
@@ -19264,20 +19264,6 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="IC2" gate="G$1" pin="IO7"/>
 <wire x1="15.24" y1="139.7" x2="12.7" y2="139.7" width="0.1524" layer="91"/>
 <label x="12.7" y="139.7" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="DISP_VSYNC" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="IO8"/>
-<wire x1="15.24" y1="137.16" x2="12.7" y2="137.16" width="0.1524" layer="91"/>
-<label x="12.7" y="137.16" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="DISP_DEN" class="0">
-<segment>
-<pinref part="IC2" gate="G$1" pin="IO9"/>
-<wire x1="15.24" y1="134.62" x2="12.7" y2="134.62" width="0.1524" layer="91"/>
-<label x="12.7" y="134.62" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="GREEN_3" class="0">
@@ -19369,6 +19355,20 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="IC2" gate="G$1" pin="IO25"/>
 <wire x1="15.24" y1="129.54" x2="12.7" y2="129.54" width="0.1524" layer="91"/>
 <label x="12.7" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="DISP_DEN" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="IO3"/>
+<wire x1="15.24" y1="144.78" x2="12.7" y2="144.78" width="0.1524" layer="91"/>
+<label x="12.7" y="144.78" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
+</net>
+<net name="DISP_VSYNC" class="0">
+<segment>
+<pinref part="IC2" gate="G$1" pin="IO4"/>
+<wire x1="15.24" y1="142.24" x2="12.7" y2="142.24" width="0.1524" layer="91"/>
+<label x="12.7" y="142.24" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 </nets>

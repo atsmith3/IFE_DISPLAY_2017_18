@@ -17642,6 +17642,8 @@ DIN A3, landscape with location and doc. field</description>
 <wire x1="289.56" y1="93.98" x2="289.56" y2="91.44" width="0.1524" layer="91"/>
 <pinref part="GND19" gate="1" pin="GND"/>
 <wire x1="294.64" y1="91.44" x2="294.64" y2="88.9" width="0.1524" layer="91"/>
+<junction x="294.64" y="91.44"/>
+<junction x="289.56" y="91.44"/>
 </segment>
 <segment>
 <wire x1="12.7" y1="88.9" x2="25.4" y2="88.9" width="0.1524" layer="91"/>
@@ -17878,6 +17880,7 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="167.64" y1="30.48" x2="162.56" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="167.64" y1="35.56" x2="167.64" y2="30.48" width="0.1524" layer="91"/>
+<junction x="167.64" y="30.48"/>
 </segment>
 <segment>
 <pinref part="U3" gate="A" pin="PC6"/>
@@ -18608,6 +18611,7 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="JTAG1" gate="A" pin="10"/>
 <wire x1="312.42" y1="25.4" x2="312.42" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="25.4" x2="312.42" y2="25.4" width="0.1524" layer="91"/>
+<junction x="312.42" y="25.4"/>
 </segment>
 <segment>
 <pinref part="GND40" gate="1" pin="GND"/>
@@ -18744,6 +18748,7 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="AS1" gate="A" pin="10"/>
 <wire x1="243.84" y1="25.4" x2="243.84" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="226.06" y1="25.4" x2="243.84" y2="25.4" width="0.1524" layer="91"/>
+<junction x="243.84" y="25.4"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -19809,6 +19814,25 @@ DIN A3, landscape with location and doc. field</description>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="202,1,160.02,101.6,U3,ADC6,,,,"/>
+<approved hash="202,1,160.02,99.06,U3,ADC7,,,,"/>
+<approved hash="202,1,160.02,93.98,U3,AREF,,,,"/>
+<approved hash="202,1,236.22,58.42,U$2,~TX0RTS,,,,"/>
+<approved hash="202,1,236.22,55.88,U$2,~TX1RTS,,,,"/>
+<approved hash="202,1,236.22,53.34,U$2,~TX2RTS,,,,"/>
+<approved hash="202,2,246.38,170.18,QG2,E/D,,,,"/>
+<approved hash="208,2,99.06,182.88,VCC,sup,,,,"/>
+<approved hash="208,2,104.14,182.88,VCC,sup,,,,"/>
+<approved hash="208,2,109.22,182.88,VCC,sup,,,,"/>
+<approved hash="208,2,111.76,182.88,VCC,sup,,,,"/>
+<approved hash="208,2,124.46,182.88,VCC,sup,,,,"/>
+<approved hash="208,2,162.56,149.86,VCC,sup,,,,"/>
+<approved hash="208,2,162.56,144.78,VCC,sup,,,,"/>
+<approved hash="208,2,162.56,142.24,VCC,sup,,,,"/>
+<approved hash="208,3,157.48,154.94,VCC,out,,,,"/>
+<approved hash="208,3,160.02,160.02,VCC,sup,,,,"/>
+</errors>
 </schematic>
 </drawing>
 <compatibility>
