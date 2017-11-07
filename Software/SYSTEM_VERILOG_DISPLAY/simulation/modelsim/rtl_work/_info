@@ -1,0 +1,74 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\IFE_2017\Software\SYSTEM_VERILOG_DISPLAY\simulation\modelsim
+vdisplay_controller
+Z1 DXx6 sv_std 3 std 0 22 F[19LRNL:5;XmIFh[XOPn1
+IVC>?WRJ1?gGH77HK[m8IV0
+V``0L7^JPj9R6;FZ_KH;0E2
+S1
+Z2 dE:\IFE_2017\Software\SYSTEM_VERILOG_DISPLAY\simulation\modelsim
+w1510029893
+8E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/display_controller.sv
+FE:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/display_controller.sv
+L0 1
+Z3 OV;L;10.1d;51
+r1
+31
+Z4 o-sv -work work -O0
+Z5 !s92 -sv -work work +incdir+E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY -O0
+!i10b 1
+!s100 =mcR7IXU]e9[lS`Q3lEmm0
+!s105 display_controller_sv_unit
+!s85 0
+!s108 1510030336.453000
+!s107 E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/display_controller.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY|E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/display_controller.sv|
+!s101 -O0
+vdisplay_tb
+R1
+!i10b 1
+!s100 jn^8Nf<NN0KTbMG@VOKHJ0
+I7W76JjE6doTY^Ne0V8`5Y0
+V[:X4^8567=nO6Z]aHoGG=1
+!s105 test_bench_sv_unit
+S1
+R2
+w1510030317
+8E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/test_bench.sv
+FE:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/test_bench.sv
+L0 1
+R3
+r1
+!s85 0
+31
+!s108 1510030336.554000
+!s107 E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/test_bench.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY|E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/test_bench.sv|
+!s101 -O0
+R4
+R5
+vtop
+R1
+Ihl6kW[EaT2<a04_^iHGfA3
+VYd[ffQU9FcRF?L^1@>_zK3
+S1
+R2
+w1510030039
+8E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/main.sv
+FE:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/main.sv
+L0 1
+R3
+r1
+31
+R4
+R5
+!i10b 1
+!s100 kzT;o@6=kL=Vm07]TkgmP0
+!s105 main_sv_unit
+!s85 0
+!s108 1510030336.256000
+!s107 E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/main.sv|
+!s90 -reportprogress|300|-sv|-work|work|+incdir+E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY|E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/main.sv|
+!s101 -O0

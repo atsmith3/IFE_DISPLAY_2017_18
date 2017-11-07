@@ -1,15 +1,18 @@
-module background(input logic [9:0] disp_x, disp_y,
-						output logic [3:0] color,
-						output logic draw);
-						
-	logic [3:0] bg[272][480];
-	always_ff begin
-		//bg = 
-	end
-	
-	always_comb begin
-		draw = 1;
-		color = bg[disp_y][disp_x];
-	end
-	
+module background
+(
+    input logic Clk,
+    input logic [9:0] DispX, DispY,
+    output logic [3:0] color,
+    output logic draw
+);
+logic [3:0] bg[272][480];
+
+always_ff @ (posedge Clk) begin
+    //bg = 
+end
+
+always_comb begin
+    draw = 1;
+    color = bg[DispX][DispY];
+end
 endmodule

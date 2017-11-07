@@ -1,0 +1,51 @@
+module top
+(	
+    /* Micro Input */
+    input logic [7:0]fpga_port_in, 
+    input logic fpga_rsel,
+    input logic fpga_write,
+	
+    /* General Input */
+    input logic Clk,
+    input logic Reset,
+
+    /* General Output */
+    output logic led_1,
+    output logic led_2,
+
+    /* Display Output */
+    output logic [7:0]R, G, B,
+    output logic DEN, VSYNC, HSYNC, DISP_CLK, DISP_EN
+);
+
+logic [9:0] DrawX;
+logic [9:0] DrawY;
+logic disp;
+
+assign R = 8'h00;
+assign G = 8'h00;
+assign B = 8'h80;
+
+assign DEN = disp;
+assign DISP_EN = 1'b1;
+
+assign HSYNC = 1'b0;
+assign VSYNC = 1'b0;
+
+assign led_1 = 1'b0;
+assign led_2 = 1'b0;
+
+display_controller display
+( 
+    .Clk(Clk),
+    .Reset(~Reset),
+    .hs(),
+    .vs(),
+    .pixel_clk(DISP_CLK),
+    .blank(disp),
+    .sync(),
+    .DrawX(DrawX),
+    .DrawY(DrawY)
+);
+	
+endmodule

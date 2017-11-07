@@ -1,26 +1,51 @@
-module top(	/* Micro Input */
-				input logic [7:0]port_in,
-				input logic [2:0]addr, 
-				input logic write,
-				/* General Input */
-				input logic Clk, Reset,
-				/* General Output */
-				output logic status,
-				/* Display Output */
-				output logic [7:0]RD, GD, BD,
-				output logic DEN, VSYNC, HSYNC, DISP_CLK, DISP_EN);
+module top
+(	
+    /* Micro Input */
+    input logic [7:0]fpga_port_in, 
+    input logic fpga_rsel,
+    input logic fpga_write,
 	
-	registers r(.addr(addr),
-					.write(write),
-					.data_in(port_in),
-					.clk(Clk),
-					.speed(),
-					.ready_to_drive(),
-					.car_battery(),
-					.disp_battery(),
-					.gps_status(),
-					.err_code());
-					
-	
+    /* General Input */
+    input logic Clk,
+    input logic Reset,
+
+    /* General Output */
+    output logic led_1,
+    output logic led_2,
+
+    /* Display Output */
+    output logic [7:0]R, G, B,
+    output logic DEN, VSYNC, HSYNC, DISP_CLK, DISP_EN
+);
+
+logic [9:0] DrawX;
+logic [9:0] DrawY;
+logic disp;
+
+assign R = 8'hF0;
+assign G = 8'h00;
+assign B = 8'h80;
+
+assign DEN = disp;
+assign DISP_EN = 1'b1;
+
+assign HSYNC = 1'b0;
+assign VSYNC = 1'b0;
+
+assign led_1 = 1'b0;
+assign led_2 = 1'b0;
+
+display_controller display
+( 
+    .Clk(Clk),
+    .Reset(~Reset),
+    .hs(),
+    .vs(),
+    .pixel_clk(DISP_CLK),
+    .blank(disp),
+    .sync(),
+    .DrawX(DrawX),
+    .DrawY(DrawY)
+);
 	
 endmodule

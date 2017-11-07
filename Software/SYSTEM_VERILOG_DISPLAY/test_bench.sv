@@ -1,0 +1,38 @@
+module display_tb;
+
+timeunit 1ns;
+timeprecision 1ns;
+
+    logic Clk;
+    logic Reset;
+
+    /* Micro Input */
+    logic [7:0]fpga_port_in;
+    logic fpga_rsel;
+    logic fpga_write;
+
+    /* General Output */
+    logic led_1;
+    logic led_2;
+
+    /* Display Output */
+    logic [7:0]R, G, B;
+    logic DEN, VSYNC, HSYNC, DISP_CLK, DISP_EN;
+
+always #5 Clk = ~Clk;
+
+/* Clock generator */
+initial begin Clk = 0;
+Reset = 1'b1;
+fpga_port_in = 8'hFF;
+fpga_rsel = 1;
+fpga_write = 1;
+
+#5 Reset = 1'b0;
+
+#25 Reset = 1'b1;
+end
+
+top display(.*);
+
+endmodule
