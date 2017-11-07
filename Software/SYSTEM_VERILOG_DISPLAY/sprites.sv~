@@ -1,5 +1,6 @@
 module background
 (
+    input logic Clk,
     input logic [9:0] DispX, DispY,
     output logic [3:0] color,
     output logic draw
@@ -7,7 +8,8 @@ module background
 logic [3:0] bg[272][480];
 
 always_ff begin
-    //bg = 
+    bg = '{'{ , },
+            { , }};
 end
 
 always_comb begin

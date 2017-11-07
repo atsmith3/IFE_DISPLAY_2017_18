@@ -7,8 +7,9 @@ module background
 );
 logic [3:0] bg[272][480];
 
-always_ff @ (posedge Clk) begin
-    //bg = 
+always_ff begin
+    /*bg = '{'{ , },
+            { , }};*/
 end
 
 always_comb begin

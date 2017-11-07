@@ -22,9 +22,9 @@ logic [9:0] DrawX;
 logic [9:0] DrawY;
 logic disp;
 
-assign R = 8'hF0;
+assign R = 8'h00;
 assign G = 8'h00;
-assign B = 8'h80;
+assign B = 8'h30;
 
 assign DEN = disp;
 assign DISP_EN = 1'b1;

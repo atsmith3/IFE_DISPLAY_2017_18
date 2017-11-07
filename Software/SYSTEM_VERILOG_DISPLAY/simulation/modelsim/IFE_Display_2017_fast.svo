@@ -16,7 +16,7 @@
 // PROGRAM "Quartus II 64-Bit"
 // VERSION "Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition"
 
-// DATE "11/07/2017 00:13:56"
+// DATE "11/07/2017 00:17:45"
 
 // 
 // Device: Altera EP2C5T144C8 Package TQFP144
@@ -44,21 +44,21 @@ module top (
 	HSYNC,
 	DISP_CLK,
 	DISP_EN);
-input 	[7:0] fpga_port_in;
-input 	fpga_rsel;
-input 	fpga_write;
-input 	Clk;
-input 	Reset;
-output 	led_1;
-output 	led_2;
-output 	[7:0] R;
-output 	[7:0] G;
-output 	[7:0] B;
-output 	DEN;
-output 	VSYNC;
-output 	HSYNC;
-output 	DISP_CLK;
-output 	DISP_EN;
+input 	logic [7:0] fpga_port_in ;
+input 	logic fpga_rsel ;
+input 	logic fpga_write ;
+input 	logic Clk ;
+input 	logic Reset ;
+output 	logic led_1 ;
+output 	logic led_2 ;
+output 	logic [7:0] R ;
+output 	logic [7:0] G ;
+output 	logic [7:0] B ;
+output 	logic DEN ;
+output 	logic VSYNC ;
+output 	logic HSYNC ;
+output 	logic DISP_CLK ;
+output 	logic DISP_EN ;
 
 // Design Ports Information
 // fpga_port_in[0]	=>  Location: PIN_75,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: Default
@@ -2063,7 +2063,7 @@ defparam \R[3]~I .output_sync_reset = "none";
 
 // Location: PIN_30,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \R[4]~I (
-	.datain(vcc),
+	.datain(gnd),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -2099,7 +2099,7 @@ defparam \R[4]~I .output_sync_reset = "none";
 
 // Location: PIN_31,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \R[5]~I (
-	.datain(vcc),
+	.datain(gnd),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -2135,7 +2135,7 @@ defparam \R[5]~I .output_sync_reset = "none";
 
 // Location: PIN_32,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \R[6]~I (
-	.datain(vcc),
+	.datain(gnd),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -2171,7 +2171,7 @@ defparam \R[6]~I .output_sync_reset = "none";
 
 // Location: PIN_40,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \R[7]~I (
-	.datain(vcc),
+	.datain(gnd),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -2639,7 +2639,7 @@ defparam \B[3]~I .output_sync_reset = "none";
 
 // Location: PIN_58,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \B[4]~I (
-	.datain(gnd),
+	.datain(vcc),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -2675,7 +2675,7 @@ defparam \B[4]~I .output_sync_reset = "none";
 
 // Location: PIN_59,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \B[5]~I (
-	.datain(gnd),
+	.datain(vcc),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
@@ -2747,7 +2747,7 @@ defparam \B[6]~I .output_sync_reset = "none";
 
 // Location: PIN_63,	 I/O Standard: 3.3-V LVTTL,	 Current Strength: 24mA
 cycloneii_io \B[7]~I (
-	.datain(vcc),
+	.datain(gnd),
 	.oe(vcc),
 	.outclk(gnd),
 	.outclkena(vcc),
