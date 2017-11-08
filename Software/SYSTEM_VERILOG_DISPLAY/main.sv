@@ -31,7 +31,7 @@ assign VSYNC = 1'b0;
 assign led_1 = 1'b0;
 assign led_2 = 1'b0;
 
-sprite_controller
+sprite_controller sc
 (
     .Clk(Clk),
     .DrawX(DrawX),

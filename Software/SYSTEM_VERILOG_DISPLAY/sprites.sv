@@ -1,6 +1,6 @@
 module background
 (
-    input logic [9:0] DispX, DispY,
+    input logic [9:0] DrawX, DrawY,
     output logic color,
     output logic draw
 );
@@ -284,6 +284,6 @@ end
 
 always_comb begin
     draw = 1;
-    color = bg[DispX][DispY];
+    color = bg[DrawY][DrawX];
 end
 endmodule
