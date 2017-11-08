@@ -22,10 +22,6 @@ logic [9:0] DrawX;
 logic [9:0] DrawY;
 logic disp;
 
-assign R = 8'h00;
-assign G = 8'h00;
-assign B = 8'h30;
-
 assign DEN = disp;
 assign DISP_EN = 1'b1;
 
@@ -34,6 +30,16 @@ assign VSYNC = 1'b0;
 
 assign led_1 = 1'b0;
 assign led_2 = 1'b0;
+
+sprite_controller
+(
+    .Clk(Clk),
+    .DrawX(DrawX),
+    .DrawY(DrawY),
+    .R(R),
+    .G(G),
+    .B(B)
+);
 
 display_controller display
 ( 
