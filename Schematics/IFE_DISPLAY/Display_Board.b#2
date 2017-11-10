@@ -1255,6 +1255,8 @@ IFE 2018</text>
 <rectangle x1="56.5531" y1="18.4531" x2="56.6039" y2="18.4785" layer="112"/>
 <dimension x1="0" y1="83.82" x2="107.95" y2="83.82" x3="53.975" y3="86.36" textsize="2.286" layer="1" unit="inch"/>
 <dimension x1="107.95" y1="83.82" x2="107.95" y2="55.88" x3="111.76" y3="69.85" textsize="2.286" layer="1" unit="inch"/>
+<dimension x1="0" y1="0" x2="0" y2="83.82" x3="-2.54" y3="41.91" textsize="2.286" layer="1" unit="inch"/>
+<dimension x1="107.95" y1="0" x2="107.95" y2="26.67" x3="111.76" y3="13.335" textsize="2.286" layer="1" unit="inch"/>
 </plain>
 <libraries>
 <library name="pinhead">

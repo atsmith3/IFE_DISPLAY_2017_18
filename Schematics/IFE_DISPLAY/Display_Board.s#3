@@ -18611,6 +18611,7 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="JTAG1" gate="A" pin="10"/>
 <wire x1="312.42" y1="25.4" x2="312.42" y2="22.86" width="0.1524" layer="91"/>
 <wire x1="299.72" y1="25.4" x2="312.42" y2="25.4" width="0.1524" layer="91"/>
+<junction x="312.42" y="25.4"/>
 </segment>
 <segment>
 <pinref part="GND40" gate="1" pin="GND"/>

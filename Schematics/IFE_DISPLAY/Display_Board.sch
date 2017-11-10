@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.4.1">
+<eagle version="8.4.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -17460,6 +17460,7 @@ DIN A3, landscape with location and doc. field</description>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="Q3" library="adafruit" deviceset="CRYSTAL" device="CTS406" value="16MHz"/>
+<part name="R1" library="rcl" deviceset="R-US_" device="R0805" value="120"/>
 </parts>
 <sheets>
 <sheet>
@@ -17564,6 +17565,7 @@ DIN A3, landscape with location and doc. field</description>
 <instance part="P+13" gate="1" x="157.48" y="116.84"/>
 <instance part="FRAME2" gate="G$1" x="-27.94" y="-66.04"/>
 <instance part="Q3" gate="G$1" x="172.72" y="15.24" rot="R90"/>
+<instance part="R1" gate="G$1" x="294.64" y="127" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -18083,6 +18085,8 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="R8" gate="G$1" pin="2"/>
 <wire x1="289.56" y1="116.84" x2="289.56" y2="121.92" width="0.1524" layer="91"/>
 <junction x="289.56" y="121.92"/>
+<pinref part="R1" gate="G$1" pin="2"/>
+<wire x1="289.56" y1="121.92" x2="289.56" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="12.7" y1="99.06" x2="15.24" y2="99.06" width="0.1524" layer="91"/>
@@ -18103,6 +18107,8 @@ DIN A3, landscape with location and doc. field</description>
 <pinref part="R9" gate="G$1" pin="2"/>
 <wire x1="299.72" y1="116.84" x2="299.72" y2="119.38" width="0.1524" layer="91"/>
 <junction x="299.72" y="119.38"/>
+<pinref part="R1" gate="G$1" pin="1"/>
+<wire x1="299.72" y1="127" x2="299.72" y2="119.38" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <wire x1="12.7" y1="91.44" x2="15.24" y2="91.44" width="0.1524" layer="91"/>
