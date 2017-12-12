@@ -18,7 +18,7 @@ typedef struct color {
 color_t palate[PALATE_SIZE] = {{17, 32, 51}, {253,97,12}, {255,255,255}};
 
 int main(void) {
-    PNG image("startupscreenlogo.png");
+    PNG image("disp_render_old.png");
     double distance = 0.0;
     double min_distance = 0.0;
     int color = 0;
