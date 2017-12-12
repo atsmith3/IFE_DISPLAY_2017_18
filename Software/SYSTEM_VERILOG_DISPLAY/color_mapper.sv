@@ -1,6 +1,6 @@
 module color_mapper
 (
-    input logic color,
+    input logic [1:0] color,
     output logic [7:0] R, G, B
 );
 
@@ -9,15 +9,23 @@ always_comb begin
     G = 8'h00;
     B = 8'h00;
     case(color)
-        1'b0 : begin
+        2'b00 : begin
             R = 8'h11;
             G = 8'h20;
             B = 8'h33;
         end
-        1'b1 : begin
+        2'b01 : begin
             R = 8'hfd;
             G = 8'h61;
             B = 8'h0c;
+        end
+        2'b10 : begin
+            R = 8'hff;
+            G = 8'hff;
+            B = 8'hff;
+        end
+        default: begin
+
         end
     endcase
 end
@@ -36,9 +44,9 @@ always_comb begin
             B = 8'h00;
         end
         3'b010 : begin
-            R = 8'h00;
-            G = 8'h00;
-            B = 8'h00;
+            R = 8'hFF;
+            G = 8'hFF;
+            B = 8'hFF;
         end
         3'b011 : begin
             R = 8'h00;

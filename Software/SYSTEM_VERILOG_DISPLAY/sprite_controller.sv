@@ -5,7 +5,7 @@ module sprite_controller
     output logic [7:0] R, G, B
 );
 
-logic color;
+logic [1:0] color;
 
 color_mapper cm
 (
@@ -15,7 +15,7 @@ color_mapper cm
     .B(B)
 );
 
-background bg
+disp_main bg
 (
     .DrawX(DrawX),
     .DrawY(DrawY),

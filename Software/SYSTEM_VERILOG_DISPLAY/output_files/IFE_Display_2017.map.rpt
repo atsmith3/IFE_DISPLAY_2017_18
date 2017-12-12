@@ -1,5 +1,5 @@
 Analysis & Synthesis report for IFE_Display_2017
-Mon Dec 11 19:35:11 2017
+Mon Dec 11 20:27:34 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -18,7 +18,7 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
  10. General Register Statistics
  11. Parameter Settings for User Entity Instance: display_controller:display
  12. Port Connectivity Checks: "display_controller:display"
- 13. Port Connectivity Checks: "sprite_controller:sc|background:bg"
+ 13. Port Connectivity Checks: "sprite_controller:sc|disp_main:bg"
  14. Elapsed Time Per Partition
  15. Analysis & Synthesis Messages
 
@@ -46,15 +46,15 @@ applicable agreement for further details.
 +--------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                         ;
 +------------------------------------+-------------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Dec 11 19:35:11 2017           ;
+; Analysis & Synthesis Status        ; Successful - Mon Dec 11 20:27:33 2017           ;
 ; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
 ; Revision Name                      ; IFE_Display_2017                                ;
 ; Top-level Entity Name              ; top                                             ;
 ; Family                             ; Cyclone II                                      ;
-; Total logic elements               ; 997                                             ;
-;     Total combinational functions  ; 993                                             ;
-;     Dedicated logic registers      ; 26                                              ;
-; Total registers                    ; 26                                              ;
+; Total logic elements               ; 1,297                                           ;
+;     Total combinational functions  ; 1,292                                           ;
+;     Dedicated logic registers      ; 27                                              ;
+; Total registers                    ; 27                                              ;
 ; Total pins                         ; 43                                              ;
 ; Total virtual pins                 ; 0                                               ;
 ; Total memory bits                  ; 0                                               ;
@@ -164,10 +164,10 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                      ; Library ;
 +----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
+; disp_render.sv                   ; yes             ; User SystemVerilog HDL File  ; E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/disp_render.sv        ;         ;
 ; sprite_controller.sv             ; yes             ; User SystemVerilog HDL File  ; E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/sprite_controller.sv  ;         ;
 ; color_mapper.sv                  ; yes             ; User SystemVerilog HDL File  ; E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/color_mapper.sv       ;         ;
 ; main.sv                          ; yes             ; User SystemVerilog HDL File  ; E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/main.sv               ;         ;
-; sprites.sv                       ; yes             ; User SystemVerilog HDL File  ; E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/sprites.sv            ;         ;
 ; display_controller.sv            ; yes             ; User SystemVerilog HDL File  ; E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/display_controller.sv ;         ;
 +----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
 
@@ -177,57 +177,59 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +---------------------------------------------+----------------------------------+
 ; Resource                                    ; Usage                            ;
 +---------------------------------------------+----------------------------------+
-; Estimated Total logic elements              ; 997                              ;
+; Estimated Total logic elements              ; 1,297                            ;
 ;                                             ;                                  ;
-; Total combinational functions               ; 993                              ;
+; Total combinational functions               ; 1292                             ;
 ; Logic element usage by number of LUT inputs ;                                  ;
-;     -- 4 input functions                    ; 766                              ;
-;     -- 3 input functions                    ; 165                              ;
-;     -- <=2 input functions                  ; 62                               ;
+;     -- 4 input functions                    ; 1050                             ;
+;     -- 3 input functions                    ; 148                              ;
+;     -- <=2 input functions                  ; 94                               ;
 ;                                             ;                                  ;
 ; Logic elements by mode                      ;                                  ;
-;     -- normal mode                          ; 975                              ;
+;     -- normal mode                          ; 1274                             ;
 ;     -- arithmetic mode                      ; 18                               ;
 ;                                             ;                                  ;
-; Total registers                             ; 26                               ;
-;     -- Dedicated logic registers            ; 26                               ;
+; Total registers                             ; 27                               ;
+;     -- Dedicated logic registers            ; 27                               ;
 ;     -- I/O registers                        ; 0                                ;
 ;                                             ;                                  ;
 ; I/O pins                                    ; 43                               ;
 ; Embedded Multiplier 9-bit elements          ; 0                                ;
-; Maximum fan-out node                        ; display_controller:display|hc[4] ;
-; Maximum fan-out                             ; 300                              ;
-; Total fan-out                               ; 3776                             ;
-; Average fan-out                             ; 3.56                             ;
+; Maximum fan-out node                        ; display_controller:display|hc[5] ;
+; Maximum fan-out                             ; 347                              ;
+; Total fan-out                               ; 4938                             ;
+; Average fan-out                             ; 3.63                             ;
 +---------------------------------------------+----------------------------------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                  ;
-+---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------+--------------+
-; Compilation Hierarchy Node      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                     ; Library Name ;
-+---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------+--------------+
-; |top                            ; 993 (0)           ; 26 (0)       ; 0           ; 0            ; 0       ; 0         ; 43   ; 0            ; |top                                    ; work         ;
-;    |display_controller:display| ; 45 (45)           ; 26 (26)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|display_controller:display         ; work         ;
-;    |sprite_controller:sc|       ; 948 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|sprite_controller:sc               ; work         ;
-;       |background:bg|           ; 948 (948)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|sprite_controller:sc|background:bg ; work         ;
-+---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-----------------------------------------+--------------+
++--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                    ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
+; Compilation Hierarchy Node      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                       ; Library Name ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
+; |top                            ; 1292 (0)          ; 27 (0)       ; 0           ; 0            ; 0       ; 0         ; 43   ; 0            ; |top                                      ; work         ;
+;    |display_controller:display| ; 47 (47)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|display_controller:display           ; work         ;
+;    |sprite_controller:sc|       ; 1245 (0)          ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|sprite_controller:sc                 ; work         ;
+;       |color_mapper:cm|         ; 3 (3)             ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|sprite_controller:sc|color_mapper:cm ; work         ;
+;       |disp_main:bg|            ; 1242 (1242)       ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|sprite_controller:sc|disp_main:bg    ; work         ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+-------------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
 Encoding Type:  One-Hot
-+---------------------------------------------------------------------------------------------------------------+
-; State Machine - |top|display_controller:display|state_clk                                                     ;
-+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
-; Name          ; state_clk.s_5 ; state_clk.s_4 ; state_clk.s_3 ; state_clk.s_2 ; state_clk.s_1 ; state_clk.s_0 ;
-+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
-; state_clk.s_0 ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ;
-; state_clk.s_1 ; 0             ; 0             ; 0             ; 0             ; 1             ; 1             ;
-; state_clk.s_2 ; 0             ; 0             ; 0             ; 1             ; 0             ; 1             ;
-; state_clk.s_3 ; 0             ; 0             ; 1             ; 0             ; 0             ; 1             ;
-; state_clk.s_4 ; 0             ; 1             ; 0             ; 0             ; 0             ; 1             ;
-; state_clk.s_5 ; 1             ; 0             ; 0             ; 0             ; 0             ; 1             ;
-+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
++-------------------------------------------------------------------------------------------------------------------------------+
+; State Machine - |top|display_controller:display|state_clk                                                                     ;
++---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+; Name          ; state_clk.s_6 ; state_clk.s_5 ; state_clk.s_4 ; state_clk.s_3 ; state_clk.s_2 ; state_clk.s_1 ; state_clk.s_0 ;
++---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
+; state_clk.s_0 ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ; 0             ;
+; state_clk.s_1 ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ; 1             ;
+; state_clk.s_2 ; 0             ; 0             ; 0             ; 0             ; 1             ; 0             ; 1             ;
+; state_clk.s_3 ; 0             ; 0             ; 0             ; 1             ; 0             ; 0             ; 1             ;
+; state_clk.s_4 ; 0             ; 0             ; 1             ; 0             ; 0             ; 0             ; 1             ;
+; state_clk.s_5 ; 0             ; 1             ; 0             ; 0             ; 0             ; 0             ; 1             ;
+; state_clk.s_6 ; 1             ; 0             ; 0             ; 0             ; 0             ; 0             ; 1             ;
++---------------+---------------+---------------+---------------+---------------+---------------+---------------+---------------+
 
 
 +--------------------------------------------------------------+
@@ -276,7 +278,7 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 26    ;
+; Total registers                              ; 27    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
 ; Number of registers using Synchronous Load   ; 0     ;
 ; Number of registers using Asynchronous Clear ; 20    ;
@@ -308,13 +310,13 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+-----------------------------+
 
 
-+----------------------------------------------------------------+
-; Port Connectivity Checks: "sprite_controller:sc|background:bg" ;
-+------+--------+----------+-------------------------------------+
-; Port ; Type   ; Severity ; Details                             ;
-+------+--------+----------+-------------------------------------+
-; draw ; Output ; Info     ; Explicitly unconnected              ;
-+------+--------+----------+-------------------------------------+
++---------------------------------------------------------------+
+; Port Connectivity Checks: "sprite_controller:sc|disp_main:bg" ;
++------+--------+----------+------------------------------------+
+; Port ; Type   ; Severity ; Details                            ;
++------+--------+----------+------------------------------------+
+; draw ; Output ; Info     ; Explicitly unconnected             ;
++------+--------+----------+------------------------------------+
 
 
 +-------------------------------+
@@ -332,9 +334,11 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit Analysis & Synthesis
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Dec 11 19:34:56 2017
+    Info: Processing started: Mon Dec 11 20:27:15 2017
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off IFE_Display_2017 -c IFE_Display_2017
 Warning (20028): Parallel compilation is not licensed and has been disabled
+Info (12021): Found 1 design units, including 1 entities, in source file disp_render.sv
+    Info (12023): Found entity 1: disp_main
 Info (12021): Found 1 design units, including 1 entities, in source file sprite_controller.sv
     Info (12023): Found entity 1: sprite_controller
 Info (12021): Found 1 design units, including 1 entities, in source file color_mapper.sv
@@ -353,22 +357,12 @@ Info (12021): Found 1 design units, including 1 entities, in source file test_be
 Info (12127): Elaborating entity "top" for the top level hierarchy
 Info (12128): Elaborating entity "sprite_controller" for hierarchy "sprite_controller:sc"
 Info (12128): Elaborating entity "color_mapper" for hierarchy "sprite_controller:sc|color_mapper:cm"
-Info (12128): Elaborating entity "background" for hierarchy "sprite_controller:sc|background:bg"
+Info (12128): Elaborating entity "disp_main" for hierarchy "sprite_controller:sc|disp_main:bg"
+Info (10008): Verilog HDL or VHDL information: EDA Netlist Writer cannot regroup multidimensional array "bg" into its bus
 Info (12128): Elaborating entity "display_controller" for hierarchy "display_controller:display"
 Warning (13024): Output pins are stuck at VCC or GND
     Warning (13410): Pin "led_1" is stuck at GND
     Warning (13410): Pin "led_2" is stuck at GND
-    Warning (13410): Pin "R[0]" is stuck at VCC
-    Warning (13410): Pin "R[1]" is stuck at GND
-    Warning (13410): Pin "R[4]" is stuck at VCC
-    Warning (13410): Pin "G[1]" is stuck at GND
-    Warning (13410): Pin "G[2]" is stuck at GND
-    Warning (13410): Pin "G[3]" is stuck at GND
-    Warning (13410): Pin "G[4]" is stuck at GND
-    Warning (13410): Pin "G[5]" is stuck at VCC
-    Warning (13410): Pin "G[7]" is stuck at GND
-    Warning (13410): Pin "B[6]" is stuck at GND
-    Warning (13410): Pin "B[7]" is stuck at GND
     Warning (13410): Pin "VSYNC" is stuck at GND
     Warning (13410): Pin "HSYNC" is stuck at GND
     Warning (13410): Pin "DISP_EN" is stuck at VCC
@@ -386,14 +380,14 @@ Warning (21074): Design contains 10 input pin(s) that do not drive logic
     Warning (15610): No output dependent on input pin "fpga_port_in[7]"
     Warning (15610): No output dependent on input pin "fpga_rsel"
     Warning (15610): No output dependent on input pin "fpga_write"
-Info (21057): Implemented 1040 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 1340 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 31 output pins
-    Info (21061): Implemented 997 logic cells
-Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 30 warnings
-    Info: Peak virtual memory: 567 megabytes
-    Info: Processing ended: Mon Dec 11 19:35:11 2017
-    Info: Elapsed time: 00:00:15
-    Info: Total CPU time (on all processors): 00:00:14
+    Info (21061): Implemented 1297 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 19 warnings
+    Info: Peak virtual memory: 697 megabytes
+    Info: Processing ended: Mon Dec 11 20:27:34 2017
+    Info: Elapsed time: 00:00:19
+    Info: Total CPU time (on all processors): 00:00:18
 
 

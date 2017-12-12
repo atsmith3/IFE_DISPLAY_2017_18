@@ -3,8 +3,8 @@ JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
 
-	P ActionCode(Ign)
-		Device PartName(EP2C5) MfrSpec(OpMask(0));
+	P ActionCode(Cfg)
+		Device PartName(EP2C5T144) Path("E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/output_files/") File("IFE_Display_2017.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

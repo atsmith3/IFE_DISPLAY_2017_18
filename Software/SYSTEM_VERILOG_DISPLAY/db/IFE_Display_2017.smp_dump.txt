@@ -1,9 +1,10 @@
 
 State Machine - |top|display_controller:display|state_clk
-Name state_clk.s_5 state_clk.s_4 state_clk.s_3 state_clk.s_2 state_clk.s_1 state_clk.s_0 
-state_clk.s_0 0 0 0 0 0 0 
-state_clk.s_1 0 0 0 0 1 1 
-state_clk.s_2 0 0 0 1 0 1 
-state_clk.s_3 0 0 1 0 0 1 
-state_clk.s_4 0 1 0 0 0 1 
-state_clk.s_5 1 0 0 0 0 1 
+Name state_clk.s_6 state_clk.s_5 state_clk.s_4 state_clk.s_3 state_clk.s_2 state_clk.s_1 state_clk.s_0 
+state_clk.s_0 0 0 0 0 0 0 0 
+state_clk.s_1 0 0 0 0 0 1 1 
+state_clk.s_2 0 0 0 0 1 0 1 
+state_clk.s_3 0 0 0 1 0 0 1 
+state_clk.s_4 0 0 1 0 0 0 1 
+state_clk.s_5 0 1 0 0 0 0 1 
+state_clk.s_6 1 0 0 0 0 0 1 
