@@ -1,5 +1,5 @@
 TimeQuest Timing Analyzer report for IFE_Display_2017
-Wed Nov 08 00:29:07 2017
+Mon Dec 11 19:35:21 2017
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -92,7 +92,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +--------------------------+--------+--------------------------+
 ; SDC File Path            ; Status ; Read at                  ;
 +--------------------------+--------+--------------------------+
-; IFE_Display_2017.out.sdc ; OK     ; Wed Nov 08 00:29:06 2017 ;
+; IFE_Display_2017.out.sdc ; OK     ; Mon Dec 11 19:35:21 2017 ;
 +--------------------------+--------+--------------------------+
 
 
@@ -110,7 +110,7 @@ Parallel compilation was disabled, but you have multiple processors available. E
 +------------+-----------------+------------+---------------------------------------------------------------+
 ; Fmax       ; Restricted Fmax ; Clock Name ; Note                                                          ;
 +------------+-----------------+------------+---------------------------------------------------------------+
-; 700.77 MHz ; 340.02 MHz      ; Clk        ; limit due to minimum period restriction (max I/O toggle rate) ;
+; 700.28 MHz ; 340.02 MHz      ; Clk        ; limit due to minimum period restriction (max I/O toggle rate) ;
 +------------+-----------------+------------+---------------------------------------------------------------+
 This panel reports FMAX for every clock in the design, regardless of the user-specified clock periods.  FMAX is only computed for paths where the source and destination registers or ports are driven by the same clock.  Paths of different clocks, including generated clocks, are ignored.  For paths between a clock and its inversion, FMAX is computed as if the rising and falling edges are scaled along with FMAX, such that the duty cycle (in terms of a percentage) is maintained. Altera recommends that you always use clock constraints and other slack reports for sign-off analysis.
 
@@ -120,7 +120,7 @@ This panel reports FMAX for every clock in the design, regardless of the user-sp
 +-------+--------+---------------+
 ; Clock ; Slack  ; End Point TNS ;
 +-------+--------+---------------+
-; Clk   ; 18.573 ; 0.000         ;
+; Clk   ; 18.572 ; 0.000         ;
 +-------+--------+---------------+
 
 
@@ -159,7 +159,7 @@ No paths to report.
 +--------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                                ; To Node                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
-; 18.573 ; display_controller:display|state_clk.s_5 ; display_controller:display|state_clk.s_0 ; Clk          ; Clk         ; 20.000       ; -0.433     ; 1.034      ;
+; 18.572 ; display_controller:display|state_clk.s_5 ; display_controller:display|state_clk.s_0 ; Clk          ; Clk         ; 20.000       ; -0.433     ; 1.035      ;
 ; 18.809 ; display_controller:display|state_clk.s_0 ; display_controller:display|state_clk.s_1 ; Clk          ; Clk         ; 20.000       ; 0.000      ; 1.231      ;
 ; 18.832 ; display_controller:display|state_clk.s_4 ; display_controller:display|state_clk.s_5 ; Clk          ; Clk         ; 20.000       ; 0.000      ; 1.208      ;
 ; 18.974 ; display_controller:display|state_clk.s_1 ; display_controller:display|state_clk.s_2 ; Clk          ; Clk         ; 20.000       ; 0.000      ; 1.066      ;
@@ -178,7 +178,7 @@ No paths to report.
 ; 0.760 ; display_controller:display|state_clk.s_1 ; display_controller:display|state_clk.s_2 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.066      ;
 ; 0.902 ; display_controller:display|state_clk.s_4 ; display_controller:display|state_clk.s_5 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.208      ;
 ; 0.925 ; display_controller:display|state_clk.s_0 ; display_controller:display|state_clk.s_1 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 1.231      ;
-; 1.161 ; display_controller:display|state_clk.s_5 ; display_controller:display|state_clk.s_0 ; Clk          ; Clk         ; 0.000        ; -0.433     ; 1.034      ;
+; 1.162 ; display_controller:display|state_clk.s_5 ; display_controller:display|state_clk.s_0 ; Clk          ; Clk         ; 0.000        ; -0.433     ; 1.035      ;
 +-------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -244,7 +244,7 @@ No paths to report.
 +-------+--------+---------------+
 ; Clock ; Slack  ; End Point TNS ;
 +-------+--------+---------------+
-; Clk   ; 19.255 ; 0.000         ;
+; Clk   ; 19.254 ; 0.000         ;
 +-------+--------+---------------+
 
 
@@ -283,11 +283,11 @@ No paths to report.
 +--------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
 ; Slack  ; From Node                                ; To Node                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
-; 19.255 ; display_controller:display|state_clk.s_5 ; display_controller:display|state_clk.s_0 ; Clk          ; Clk         ; 20.000       ; -0.369     ; 0.408      ;
+; 19.254 ; display_controller:display|state_clk.s_5 ; display_controller:display|state_clk.s_0 ; Clk          ; Clk         ; 20.000       ; -0.369     ; 0.409      ;
 ; 19.553 ; display_controller:display|state_clk.s_4 ; display_controller:display|state_clk.s_5 ; Clk          ; Clk         ; 20.000       ; 0.000      ; 0.479      ;
-; 19.586 ; display_controller:display|state_clk.s_0 ; display_controller:display|state_clk.s_1 ; Clk          ; Clk         ; 20.000       ; 0.000      ; 0.446      ;
+; 19.585 ; display_controller:display|state_clk.s_0 ; display_controller:display|state_clk.s_1 ; Clk          ; Clk         ; 20.000       ; 0.000      ; 0.447      ;
 ; 19.632 ; display_controller:display|state_clk.s_1 ; display_controller:display|state_clk.s_2 ; Clk          ; Clk         ; 20.000       ; 0.000      ; 0.400      ;
-; 19.633 ; display_controller:display|state_clk.s_3 ; display_controller:display|state_clk.s_4 ; Clk          ; Clk         ; 20.000       ; 0.000      ; 0.399      ;
+; 19.634 ; display_controller:display|state_clk.s_3 ; display_controller:display|state_clk.s_4 ; Clk          ; Clk         ; 20.000       ; 0.000      ; 0.398      ;
 ; 20.001 ; display_controller:display|state_clk.s_2 ; display_controller:display|state_clk.s_3 ; Clk          ; Clk         ; 20.000       ; 0.369      ; 0.400      ;
 +--------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
 
@@ -298,11 +298,11 @@ No paths to report.
 ; Slack  ; From Node                                ; To Node                                  ; Launch Clock ; Latch Clock ; Relationship ; Clock Skew ; Data Delay ;
 +--------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
 ; -0.121 ; display_controller:display|state_clk.s_2 ; display_controller:display|state_clk.s_3 ; Clk          ; Clk         ; 0.000        ; 0.369      ; 0.400      ;
-; 0.247  ; display_controller:display|state_clk.s_3 ; display_controller:display|state_clk.s_4 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.399      ;
+; 0.246  ; display_controller:display|state_clk.s_3 ; display_controller:display|state_clk.s_4 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.398      ;
 ; 0.248  ; display_controller:display|state_clk.s_1 ; display_controller:display|state_clk.s_2 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.400      ;
-; 0.294  ; display_controller:display|state_clk.s_0 ; display_controller:display|state_clk.s_1 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.446      ;
+; 0.295  ; display_controller:display|state_clk.s_0 ; display_controller:display|state_clk.s_1 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.447      ;
 ; 0.327  ; display_controller:display|state_clk.s_4 ; display_controller:display|state_clk.s_5 ; Clk          ; Clk         ; 0.000        ; 0.000      ; 0.479      ;
-; 0.625  ; display_controller:display|state_clk.s_5 ; display_controller:display|state_clk.s_0 ; Clk          ; Clk         ; 0.000        ; -0.369     ; 0.408      ;
+; 0.626  ; display_controller:display|state_clk.s_5 ; display_controller:display|state_clk.s_0 ; Clk          ; Clk         ; 0.000        ; -0.369     ; 0.409      ;
 +--------+------------------------------------------+------------------------------------------+--------------+-------------+--------------+------------+------------+
 
 
@@ -350,7 +350,7 @@ No paths to report.
 +-----------+------------+-------+-------+------------+-----------------+
 ; Data Port ; Clock Port ; Rise  ; Fall  ; Clock Edge ; Clock Reference ;
 +-----------+------------+-------+-------+------------+-----------------+
-; DISP_CLK  ; Clk        ; 3.505 ; 3.505 ; Rise       ; Clk             ;
+; DISP_CLK  ; Clk        ; 3.506 ; 3.506 ; Rise       ; Clk             ;
 +-----------+------------+-------+-------+------------+-----------------+
 
 
@@ -368,8 +368,8 @@ No paths to report.
 +------------------+--------+--------+----------+---------+---------------------+
 ; Clock            ; Setup  ; Hold   ; Recovery ; Removal ; Minimum Pulse Width ;
 +------------------+--------+--------+----------+---------+---------------------+
-; Worst-case Slack ; 18.573 ; -0.121 ; N/A      ; N/A     ; 8.758               ;
-;  Clk             ; 18.573 ; -0.121 ; N/A      ; N/A     ; 8.758               ;
+; Worst-case Slack ; 18.572 ; -0.121 ; N/A      ; N/A     ; 8.758               ;
+;  Clk             ; 18.572 ; -0.121 ; N/A      ; N/A     ; 8.758               ;
 ; Design-wide TNS  ; 0.0    ; -0.121 ; 0.0      ; 0.0     ; 0.0                 ;
 ;  Clk             ; 0.000  ; -0.121 ; N/A      ; N/A     ; 0.000               ;
 +------------------+--------+--------+----------+---------+---------------------+
@@ -445,7 +445,7 @@ No dedicated SERDES Receiver circuitry present in device or used in design
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit TimeQuest Timing Analyzer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Wed Nov 08 00:29:05 2017
+    Info: Processing started: Mon Dec 11 19:35:20 2017
 Info: Command: quartus_sta IFE_Display_2017 -c IFE_Display_2017
 Info: qsta_default_script.tcl version: #1
 Warning (20028): Parallel compilation is not licensed and has been disabled
@@ -455,10 +455,10 @@ Info (332104): Reading SDC File: 'IFE_Display_2017.out.sdc'
 Warning (332060): Node: display_controller:display|state_clk.s_0 was determined to be a clock but was found without an associated clock assignment.
 Info: Found TIMEQUEST_REPORT_SCRIPT_INCLUDE_DEFAULT_ANALYSIS = ON
 Info: Analyzing Slow Model
-Info (332146): Worst-case setup slack is 18.573
+Info (332146): Worst-case setup slack is 18.572
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    18.573         0.000 Clk 
+    Info (332119):    18.572         0.000 Clk 
 Info (332146): Worst-case hold slack is 0.327
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
@@ -472,10 +472,10 @@ Info (332146): Worst-case minimum pulse width slack is 8.758
 Info (332001): The selected device family is not supported by the report_metastability command.
 Info: Analyzing Fast Model
 Warning (332060): Node: display_controller:display|state_clk.s_0 was determined to be a clock but was found without an associated clock assignment.
-Info (332146): Worst-case setup slack is 19.255
+Info (332146): Worst-case setup slack is 19.254
     Info (332119):     Slack End Point TNS Clock 
     Info (332119): ========= ============= =====================
-    Info (332119):    19.255         0.000 Clk 
+    Info (332119):    19.254         0.000 Clk 
 Critical Warning (332148): Timing requirements not met
 Info (332146): Worst-case hold slack is -0.121
     Info (332119):     Slack End Point TNS Clock 
@@ -491,9 +491,9 @@ Info (332001): The selected device family is not supported by the report_metasta
 Info (332102): Design is not fully constrained for setup requirements
 Info (332102): Design is not fully constrained for hold requirements
 Info: Quartus II 64-Bit TimeQuest Timing Analyzer was successful. 0 errors, 4 warnings
-    Info: Peak virtual memory: 455 megabytes
-    Info: Processing ended: Wed Nov 08 00:29:07 2017
-    Info: Elapsed time: 00:00:02
+    Info: Peak virtual memory: 446 megabytes
+    Info: Processing ended: Mon Dec 11 19:35:21 2017
+    Info: Elapsed time: 00:00:01
     Info: Total CPU time (on all processors): 00:00:01
 
 
