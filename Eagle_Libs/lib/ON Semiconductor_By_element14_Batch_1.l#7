@@ -43437,18 +43437,18 @@ at 30/07/2012 14:34:29</description>
 </deviceset>
 <deviceset name="FDMS9408" uservalue="yes">
 <description>&lt;H3&gt;ON Semiconductor&lt;/H3&gt;
-&lt;H4&gt;FDFMS9408&lt;/H4&gt;
+&lt;H4&gt;FDFMS9408_F0805&lt;/H4&gt;
 &lt;p&gt;Power NMOS rated at 40V 80A in the PQFN8 Package &lt;/p&gt;
 &lt;p&gt;https://www.fairchildsemi.com/datasheets/FD/FDMS9408_F085.pdf&lt;/p&gt;</description>
 <gates>
-<gate name="FDMS9408_F0805" symbol="POWER_NMOS" x="0" y="0"/>
+<gate name="FDMS9408" symbol="POWER_NMOS" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="PQFN8">
 <connects>
-<connect gate="FDMS9408_F0805" pin="D" pad="P$1 P$2 P$3"/>
-<connect gate="FDMS9408_F0805" pin="G" pad="P$4"/>
-<connect gate="FDMS9408_F0805" pin="S" pad="P$5 P$6 P$7 P$8 P$9"/>
+<connect gate="FDMS9408" pin="D" pad="P$1 P$2 P$3"/>
+<connect gate="FDMS9408" pin="G" pad="P$4"/>
+<connect gate="FDMS9408" pin="S" pad="P$5 P$6 P$7 P$8 P$9"/>
 </connects>
 <technologies>
 <technology name=""/>

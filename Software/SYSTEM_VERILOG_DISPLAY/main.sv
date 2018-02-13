@@ -28,8 +28,8 @@ assign DISP_EN = 1'b1;
 assign HSYNC = 1'b0;
 assign VSYNC = 1'b0;
 
-assign led_1 = 1'b0;
-assign led_2 = 1'b0;
+assign led_1 = DrawX[9];
+assign led_2 = DrawY[9];
 
 sprite_controller sc
 (

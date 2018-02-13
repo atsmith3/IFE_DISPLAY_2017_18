@@ -19019,6 +19019,7 @@ at 30/07/2012 14:34:29</description>
 <pin name="G" x="-10.16" y="-2.54" visible="pin" length="short"/>
 <text x="-7.62" y="-6.604" size="1.27" layer="95" font="vector">&gt;NAME</text>
 <text x="2.54" y="-6.604" size="1.27" layer="96" font="vector">&gt;VALUE</text>
+<text x="-7.62" y="5.842" size="1.27" layer="95" font="vector">FDMS9408_F0805</text>
 </symbol>
 </symbols>
 <devicesets>

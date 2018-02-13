@@ -1,5 +1,5 @@
 EDA Netlist Writer report for IFE_Display_2017
-Mon Dec 11 20:26:24 2017
+Tue Feb 13 16:28:02 2018
 Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
@@ -36,7 +36,7 @@ applicable agreement for further details.
 +-------------------------------------------------------------------+
 ; EDA Netlist Writer Summary                                        ;
 +---------------------------+---------------------------------------+
-; EDA Netlist Writer Status ; Successful - Mon Dec 11 20:26:24 2017 ;
+; EDA Netlist Writer Status ; Successful - Tue Feb 13 16:28:02 2018 ;
 ; Revision Name             ; IFE_Display_2017                      ;
 ; Top-level Entity Name     ; top                                   ;
 ; Family                    ; Cyclone II                            ;
@@ -66,16 +66,16 @@ applicable agreement for further details.
 +---------------------------------------------------------------------------------------------------+---------------------------------+
 
 
-+---------------------------------------------------------------------------------------------+
-; Simulation Generated Files                                                                  ;
-+---------------------------------------------------------------------------------------------+
-; Generated Files                                                                             ;
-+---------------------------------------------------------------------------------------------+
-; E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/simulation/modelsim/IFE_Display_2017.svo        ;
-; E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/simulation/modelsim/IFE_Display_2017_fast.svo   ;
-; E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/simulation/modelsim/IFE_Display_2017_v.sdo      ;
-; E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/simulation/modelsim/IFE_Display_2017_v_fast.sdo ;
-+---------------------------------------------------------------------------------------------+
++----------------------------------------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                                                       ;
++----------------------------------------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                                                  ;
++----------------------------------------------------------------------------------------------------------------------------------+
+; C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/simulation/modelsim/IFE_Display_2017.svo        ;
+; C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/simulation/modelsim/IFE_Display_2017_fast.svo   ;
+; C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/simulation/modelsim/IFE_Display_2017_v.sdo      ;
+; C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/simulation/modelsim/IFE_Display_2017_v_fast.sdo ;
++----------------------------------------------------------------------------------------------------------------------------------+
 
 
 +-----------------------------+
@@ -84,15 +84,15 @@ applicable agreement for further details.
 Info: *******************************************************************
 Info: Running Quartus II 64-Bit EDA Netlist Writer
     Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
-    Info: Processing started: Mon Dec 11 20:26:22 2017
+    Info: Processing started: Tue Feb 13 16:28:01 2018
 Info: Command: quartus_eda --read_settings_files=off --write_settings_files=off IFE_Display_2017 -c IFE_Display_2017
 Warning (202000): An incorrect timescale is selected for the Verilog Output (.VO) file of this PLL design. It's required that the timescale should be 1 ps when simulating a PLL design in a third party EDA tool.
 Warning (202000): An incorrect timescale is selected for the Verilog Output (.VO) file of this PLL design. It's required that the timescale should be 1 ps when simulating a PLL design in a third party EDA tool.
-Info (204026): Generated files "IFE_Display_2017.svo", "IFE_Display_2017_fast.svo", "IFE_Display_2017_v.sdo" and "IFE_Display_2017_v_fast.sdo" in directory "E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/simulation/modelsim/" for EDA simulation tool
+Info (204026): Generated files "IFE_Display_2017.svo", "IFE_Display_2017_fast.svo", "IFE_Display_2017_v.sdo" and "IFE_Display_2017_v_fast.sdo" in directory "C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/simulation/modelsim/" for EDA simulation tool
 Info: Quartus II 64-Bit EDA Netlist Writer was successful. 0 errors, 2 warnings
-    Info: Peak virtual memory: 418 megabytes
-    Info: Processing ended: Mon Dec 11 20:26:24 2017
-    Info: Elapsed time: 00:00:02
-    Info: Total CPU time (on all processors): 00:00:01
+    Info: Peak virtual memory: 445 megabytes
+    Info: Processing ended: Tue Feb 13 16:28:02 2018
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:00
 
 

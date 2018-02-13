@@ -7,11 +7,6 @@ module disp_main
 reg disp_0[272][480];
 reg disp_1[272][480];
 
-always_ff begin
-disp_0 = 
-disp_1 = 
-end
-
 always_comb begin
     draw = 1;
     color ={disp_1[DrawY][DrawX], disp_0[DrawY][DrawX]};
