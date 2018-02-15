@@ -523,7 +523,10 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 </package>
 </packages>
 <symbols>
-<symbol name="EP3C25E144">
+<symbol name="10CL006ZE144">
+<description>&lt;p&gt;Altera Cyclone 10 10CL006ZE144I8G&lt;/p&gt;
+
+&lt;p&gt;144 - EQFP Package&lt;/p&gt;</description>
 <wire x1="-63.5" y1="-63.5" x2="60.96" y2="-63.5" width="0.4064" layer="94"/>
 <wire x1="60.96" y1="-63.5" x2="60.96" y2="60.96" width="0.4064" layer="94"/>
 <wire x1="60.96" y1="60.96" x2="-63.5" y2="60.96" width="0.4064" layer="94"/>
@@ -576,32 +579,32 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 <pin name="IO85" x="-27.94" y="-68.58" length="middle" rot="R90"/>
 <pin name="IO86" x="-25.4" y="-68.58" length="middle" rot="R90"/>
 <pin name="IO87" x="-22.86" y="-68.58" length="middle" rot="R90"/>
-<pin name="IO105" x="-20.32" y="-68.58" length="middle" rot="R90"/>
-<pin name="IO106" x="-17.78" y="-68.58" length="middle" rot="R90"/>
-<pin name="IO111" x="-15.24" y="-68.58" length="middle" rot="R90"/>
-<pin name="IO112" x="-12.7" y="-68.58" length="middle" rot="R90"/>
-<pin name="IO113" x="-10.16" y="-68.58" length="middle" rot="R90"/>
-<pin name="IO114" x="-7.62" y="-68.58" length="middle" rot="R90"/>
-<pin name="IO115" x="-5.08" y="-68.58" length="middle" rot="R90"/>
-<pin name="IO119" x="-2.54" y="-68.58" length="middle" rot="R90"/>
-<pin name="IO120" x="0" y="-68.58" length="middle" rot="R90"/>
-<pin name="IO121" x="2.54" y="-68.58" length="middle" rot="R90"/>
-<pin name="IO124" x="5.08" y="-68.58" length="middle" rot="R90"/>
-<pin name="IO125" x="7.62" y="-68.58" length="middle" rot="R90"/>
-<pin name="IO126" x="10.16" y="-68.58" length="middle" rot="R90"/>
-<pin name="IO127" x="12.7" y="-68.58" length="middle" rot="R90"/>
-<pin name="IO128" x="15.24" y="-68.58" length="middle" rot="R90"/>
-<pin name="IO129" x="17.78" y="-68.58" length="middle" rot="R90"/>
-<pin name="IO132" x="20.32" y="-68.58" length="middle" rot="R90"/>
-<pin name="IO133" x="22.86" y="-68.58" length="middle" rot="R90"/>
-<pin name="IO135" x="25.4" y="-68.58" length="middle" rot="R90"/>
-<pin name="IO136" x="27.94" y="-68.58" length="middle" rot="R90"/>
-<pin name="IO137" x="30.48" y="-68.58" length="middle" direction="in" rot="R90"/>
-<pin name="IO138" x="33.02" y="-68.58" length="middle" direction="in" rot="R90"/>
-<pin name="IO141" x="35.56" y="-68.58" length="middle" direction="in" rot="R90"/>
-<pin name="IO142" x="38.1" y="-68.58" length="middle" direction="in" rot="R90"/>
-<pin name="IO143" x="40.64" y="-68.58" length="middle" direction="in" rot="R90"/>
-<pin name="IO144" x="43.18" y="-68.58" length="middle" direction="in" rot="R90"/>
+<pin name="IO105" x="-17.78" y="-68.58" length="middle" rot="R90"/>
+<pin name="IO106" x="-15.24" y="-68.58" length="middle" rot="R90"/>
+<pin name="IO111" x="-12.7" y="-68.58" length="middle" rot="R90"/>
+<pin name="IO112" x="-10.16" y="-68.58" length="middle" rot="R90"/>
+<pin name="IO113" x="-7.62" y="-68.58" length="middle" rot="R90"/>
+<pin name="IO114" x="-5.08" y="-68.58" length="middle" rot="R90"/>
+<pin name="IO115" x="-2.54" y="-68.58" length="middle" rot="R90"/>
+<pin name="IO119" x="0" y="-68.58" length="middle" rot="R90"/>
+<pin name="IO120" x="2.54" y="-68.58" length="middle" rot="R90"/>
+<pin name="IO121" x="5.08" y="-68.58" length="middle" rot="R90"/>
+<pin name="IO124" x="7.62" y="-68.58" length="middle" rot="R90"/>
+<pin name="IO125" x="10.16" y="-68.58" length="middle" rot="R90"/>
+<pin name="IO126" x="12.7" y="-68.58" length="middle" rot="R90"/>
+<pin name="IO127" x="15.24" y="-68.58" length="middle" rot="R90"/>
+<pin name="IO128" x="17.78" y="-68.58" length="middle" rot="R90"/>
+<pin name="IO129" x="20.32" y="-68.58" length="middle" rot="R90"/>
+<pin name="IO132" x="22.86" y="-68.58" length="middle" rot="R90"/>
+<pin name="IO133" x="25.4" y="-68.58" length="middle" rot="R90"/>
+<pin name="IO135" x="27.94" y="-68.58" length="middle" rot="R90"/>
+<pin name="IO136" x="30.48" y="-68.58" length="middle" rot="R90"/>
+<pin name="IO137" x="33.02" y="-68.58" length="middle" direction="in" rot="R90"/>
+<pin name="IO138" x="35.56" y="-68.58" length="middle" direction="in" rot="R90"/>
+<pin name="IO141" x="38.1" y="-68.58" length="middle" direction="in" rot="R90"/>
+<pin name="IO142" x="40.64" y="-68.58" length="middle" direction="in" rot="R90"/>
+<pin name="IO143" x="43.18" y="-68.58" length="middle" direction="in" rot="R90"/>
+<pin name="IO144" x="45.72" y="-68.58" length="middle" direction="in" rot="R90"/>
 <pin name="CRC_ERROR" x="66.04" y="-45.72" length="middle" direction="in" rot="R180"/>
 <pin name="INIT_DONE" x="66.04" y="-43.18" length="middle" direction="in" rot="R180"/>
 <pin name="CLK2" x="66.04" y="-40.64" length="middle" direction="in" rot="R180"/>
@@ -632,28 +635,28 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 <pin name="VINT@116" x="66.04" y="22.86" length="middle" direction="pwr" rot="R180"/>
 <pin name="VINT@102" x="66.04" y="25.4" length="middle" direction="pwr" rot="R180"/>
 <pin name="VINT@78" x="66.04" y="27.94" length="middle" direction="pwr" rot="R180"/>
-<pin name="VCC@9" x="66.04" y="30.48" length="middle" direction="pwr" rot="R180"/>
-<pin name="VCC@10" x="66.04" y="33.02" length="middle" direction="pwr" rot="R180"/>
-<pin name="VCC@11" x="66.04" y="35.56" length="middle" direction="pwr" rot="R180"/>
-<pin name="VCC@12" x="66.04" y="38.1" length="middle" direction="pwr" rot="R180"/>
-<pin name="VCC@13" x="66.04" y="40.64" length="middle" direction="pwr" rot="R180"/>
-<pin name="VCC@14" x="66.04" y="43.18" length="middle" direction="pwr" rot="R180"/>
-<pin name="VCC@15" x="43.18" y="66.04" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@16" x="40.64" y="66.04" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@17" x="38.1" y="66.04" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@18" x="35.56" y="66.04" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@19" x="33.02" y="66.04" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@20" x="30.48" y="66.04" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@21" x="27.94" y="66.04" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@22" x="25.4" y="66.04" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@23" x="22.86" y="66.04" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@24" x="20.32" y="66.04" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@25" x="17.78" y="66.04" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@26" x="15.24" y="66.04" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@27" x="12.7" y="66.04" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@28" x="10.16" y="66.04" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@29" x="7.62" y="66.04" length="middle" direction="pwr" rot="R270"/>
-<pin name="VCC@30" x="5.08" y="66.04" length="middle" direction="pwr" rot="R270"/>
+<pin name="VINT@61" x="66.04" y="30.48" length="middle" direction="pwr" rot="R180"/>
+<pin name="VINT@45" x="66.04" y="33.02" length="middle" direction="pwr" rot="R180"/>
+<pin name="VINT@29" x="66.04" y="35.56" length="middle" direction="pwr" rot="R180"/>
+<pin name="VINT@5" x="66.04" y="38.1" length="middle" direction="pwr" rot="R180"/>
+<pin name="VCCA2@107" x="66.04" y="40.64" length="middle" direction="pwr" rot="R180"/>
+<pin name="VCCA1@35" x="66.04" y="43.18" length="middle" direction="pwr" rot="R180"/>
+<pin name="VCC_PLL1@37" x="38.1" y="66.04" length="middle" direction="pwr" rot="R270"/>
+<pin name="VCC_PLL2@109" x="35.56" y="66.04" length="middle" direction="pwr" rot="R270"/>
+<pin name="DATA0" x="66.04" y="-48.26" length="middle" direction="pwr" rot="R180"/>
+<pin name="IO100" x="-20.32" y="-68.58" length="middle" direction="pwr" rot="R90"/>
+<pin name="VCC@139" x="33.02" y="66.04" length="middle" direction="pwr" rot="R270"/>
+<pin name="VCC@130" x="30.48" y="66.04" length="middle" direction="pwr" rot="R270"/>
+<pin name="VCC@122" x="27.94" y="66.04" length="middle" direction="pwr" rot="R270"/>
+<pin name="VCC@117" x="25.4" y="66.04" length="middle" direction="pwr" rot="R270"/>
+<pin name="VCC@93" x="22.86" y="66.04" length="middle" direction="pwr" rot="R270"/>
+<pin name="VCC@81" x="20.32" y="66.04" length="middle" direction="pwr" rot="R270"/>
+<pin name="VCC@62" x="17.78" y="66.04" length="middle" direction="pwr" rot="R270"/>
+<pin name="VCC@56" x="15.24" y="66.04" length="middle" direction="pwr" rot="R270"/>
+<pin name="VCC@47" x="12.7" y="66.04" length="middle" direction="pwr" rot="R270"/>
+<pin name="VCC@40" x="10.16" y="66.04" length="middle" direction="pwr" rot="R270"/>
+<pin name="VCC@26" x="7.62" y="66.04" length="middle" direction="pwr" rot="R270"/>
+<pin name="VCC@17" x="5.08" y="66.04" length="middle" direction="pwr" rot="R270"/>
 <pin name="GND@108" x="2.54" y="66.04" length="middle" direction="pwr" rot="R270"/>
 <pin name="GND@36" x="0" y="66.04" length="middle" direction="pwr" rot="R270"/>
 <pin name="GND@110" x="-2.54" y="66.04" length="middle" direction="pwr" rot="R270"/>
