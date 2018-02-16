@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.0">
+<eagle version="8.6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -18300,6 +18300,36 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 <text x="-4.3942" y="3.6576" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-5.2832" y="-5.3848" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
+<package name="DPACK">
+<description>&lt;b&gt;DPAK&lt;/b&gt;&lt;p&gt;
+(Motorola)</description>
+<wire x1="3.2766" y1="3.8354" x2="3.277" y2="-2.159" width="0.2032" layer="21"/>
+<wire x1="3.277" y1="-2.159" x2="-3.277" y2="-2.159" width="0.2032" layer="21"/>
+<wire x1="-3.277" y1="-2.159" x2="-3.2766" y2="3.8354" width="0.2032" layer="21"/>
+<wire x1="-3.277" y1="3.835" x2="3.2774" y2="3.8346" width="0.2032" layer="51"/>
+<wire x1="-2.5654" y1="3.937" x2="-2.5654" y2="4.6482" width="0.2032" layer="51"/>
+<wire x1="-2.5654" y1="4.6482" x2="-2.1082" y2="5.1054" width="0.2032" layer="51"/>
+<wire x1="-2.1082" y1="5.1054" x2="2.1082" y2="5.1054" width="0.2032" layer="51"/>
+<wire x1="2.1082" y1="5.1054" x2="2.5654" y2="4.6482" width="0.2032" layer="51"/>
+<wire x1="2.5654" y1="4.6482" x2="2.5654" y2="3.937" width="0.2032" layer="51"/>
+<wire x1="2.5654" y1="3.937" x2="-2.5654" y2="3.937" width="0.2032" layer="51"/>
+<smd name="2" x="0" y="2.5" dx="5.4" dy="6.2" layer="1"/>
+<smd name="1" x="-2.28" y="-4.8" dx="1" dy="1.6" layer="1"/>
+<smd name="3" x="2.28" y="-4.8" dx="1" dy="1.6" layer="1"/>
+<text x="-3.81" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
+<text x="5.08" y="-2.54" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-2.7178" y1="-5.1562" x2="-1.8542" y2="-2.2606" layer="51"/>
+<rectangle x1="1.8542" y1="-5.1562" x2="2.7178" y2="-2.2606" layer="51"/>
+<rectangle x1="-0.4318" y1="-3.0226" x2="0.4318" y2="-2.2606" layer="21"/>
+<polygon width="0.1998" layer="51">
+<vertex x="-2.5654" y="3.937"/>
+<vertex x="-2.5654" y="4.6482"/>
+<vertex x="-2.1082" y="5.1054"/>
+<vertex x="2.1082" y="5.1054"/>
+<vertex x="2.5654" y="4.6482"/>
+<vertex x="2.5654" y="3.937"/>
+</polygon>
+</package>
 </packages>
 <symbols>
 <symbol name="10CL006ZE144">
@@ -18471,6 +18501,18 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 <text x="-5.207" y="12.5984" size="2.0828" layer="95" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-5.2832" y="-11.6078" size="2.0828" layer="96" ratio="10" rot="SR0">&gt;VALUE</text>
 <pin name="DCLK" x="-17.78" y="2.54" length="middle" direction="in"/>
+</symbol>
+<symbol name="LIN_VOLTAGE_REG">
+<description>3 Terminal Linear Regulator Symbol</description>
+<wire x1="-10.16" y1="5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>
+<wire x1="10.16" y1="5.08" x2="-10.16" y2="5.08" width="0.254" layer="94"/>
+<pin name="GND" x="0" y="-7.62" length="short" rot="R90"/>
+<pin name="VIN" x="-12.7" y="2.54" length="short"/>
+<pin name="VOUT" x="12.7" y="2.54" length="short" rot="R180"/>
+<text x="-10.16" y="8.89" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="6.35" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -18648,6 +18690,44 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 <connect gate="G$1" pin="GND" pad="4"/>
 <connect gate="G$1" pin="NCS" pad="1"/>
 <connect gate="G$1" pin="VCC" pad="3 7 8"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LF33ABDT-TR">
+<description>&lt;p&gt;ST - LFxx&lt;/p&gt;
+&lt;p&gt;LF33ABDT-TR 3.3V 500mA linear regulator&lt;/p&gt;</description>
+<gates>
+<gate name="LF33ABDT" symbol="LIN_VOLTAGE_REG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DPACK">
+<connects>
+<connect gate="LF33ABDT" pin="GND" pad="2"/>
+<connect gate="LF33ABDT" pin="VIN" pad="1"/>
+<connect gate="LF33ABDT" pin="VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="L7805CDT-TR">
+<description>&lt;p&gt;ST - L78&lt;/p&gt;
+&lt;p&gt;L7805CDT-TR   5V 1.5A Linear Regulator&lt;/p&gt;</description>
+<gates>
+<gate name="L7805" symbol="LIN_VOLTAGE_REG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DPACK">
+<connects>
+<connect gate="L7805" pin="GND" pad="2"/>
+<connect gate="L7805" pin="VIN" pad="1"/>
+<connect gate="L7805" pin="VOUT" pad="3"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -18870,6 +18950,8 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 <part name="R16" library="resistor" deviceset="R-US_" device="R0805" value="10K"/>
 <part name="GND22" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="ANDREWSMITH" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
+<part name="U$8" library="Display_Custom" deviceset="LF33ABDT-TR" device=""/>
+<part name="U$9" library="Display_Custom" deviceset="L7805CDT-TR" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20664,6 +20746,8 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 <instance part="U$12" gate="G$1" x="88.9" y="144.78"/>
 <instance part="R3" gate="G$1" x="99.06" y="157.48" rot="R90"/>
 <instance part="P+1" gate="1" x="88.9" y="177.8"/>
+<instance part="U$8" gate="LF33ABDT" x="45.72" y="114.3"/>
+<instance part="U$9" gate="L7805" x="132.08" y="114.3"/>
 </instances>
 <busses>
 </busses>
@@ -20689,12 +20773,14 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 <pinref part="GND13" gate="1" pin="GND"/>
 </segment>
 <segment>
-<wire x1="114.3" y1="104.14" x2="109.22" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="109.22" y1="104.14" x2="109.22" y2="101.6" width="0.1524" layer="91"/>
 <pinref part="GND14" gate="1" pin="GND"/>
 <pinref part="C10" gate="G$1" pin="2"/>
 <wire x1="109.22" y1="106.68" x2="109.22" y2="104.14" width="0.1524" layer="91"/>
 <junction x="109.22" y="104.14"/>
+<wire x1="132.08" y1="106.68" x2="132.08" y2="104.14" width="0.1524" layer="91"/>
+<wire x1="132.08" y1="104.14" x2="109.22" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="U$9" gate="L7805" pin="GND"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
@@ -20705,9 +20791,11 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 <pinref part="C11" gate="G$1" pin="2"/>
 <wire x1="22.86" y1="106.68" x2="22.86" y2="104.14" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="104.14" x2="22.86" y2="101.6" width="0.1524" layer="91"/>
-<wire x1="27.94" y1="104.14" x2="22.86" y2="104.14" width="0.1524" layer="91"/>
 <junction x="22.86" y="104.14"/>
 <pinref part="GND20" gate="1" pin="GND"/>
+<wire x1="22.86" y1="104.14" x2="45.72" y2="104.14" width="0.1524" layer="91"/>
+<pinref part="U$8" gate="LF33ABDT" pin="GND"/>
+<wire x1="45.72" y1="104.14" x2="45.72" y2="106.68" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C12" gate="G$1" pin="2"/>
@@ -20722,12 +20810,13 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 </net>
 <net name="+3V3" class="0">
 <segment>
-<wire x1="63.5" y1="116.84" x2="68.58" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="C12" gate="G$1" pin="1"/>
 <wire x1="68.58" y1="116.84" x2="68.58" y2="114.3" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="116.84" x2="68.58" y2="119.38" width="0.1524" layer="91"/>
 <junction x="68.58" y="116.84"/>
 <pinref part="+3V3" gate="G$1" pin="+3V3"/>
+<pinref part="U$8" gate="LF33ABDT" pin="VOUT"/>
+<wire x1="68.58" y1="116.84" x2="58.42" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="VCC" class="0">
@@ -20744,11 +20833,12 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 <net name="+5V" class="0">
 <segment>
 <pinref part="P+4" gate="1" pin="+5V"/>
-<wire x1="149.86" y1="116.84" x2="154.94" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="154.94" y1="116.84" x2="154.94" y2="119.38" width="0.1524" layer="91"/>
 <pinref part="C5" gate="G$1" pin="1"/>
 <wire x1="154.94" y1="116.84" x2="154.94" y2="114.3" width="0.1524" layer="91"/>
 <junction x="154.94" y="116.84"/>
+<wire x1="144.78" y1="116.84" x2="154.94" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="U$9" gate="L7805" pin="VOUT"/>
 </segment>
 <segment>
 <wire x1="88.9" y1="165.1" x2="88.9" y2="160.02" width="0.1524" layer="91"/>
@@ -20777,22 +20867,24 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 <wire x1="55.88" y1="154.94" x2="55.88" y2="149.86" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="27.94" y1="116.84" x2="22.86" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="C11" gate="G$1" pin="1"/>
 <wire x1="22.86" y1="116.84" x2="17.78" y2="116.84" width="0.1524" layer="91"/>
 <wire x1="22.86" y1="116.84" x2="22.86" y2="114.3" width="0.1524" layer="91"/>
 <junction x="22.86" y="116.84"/>
 <pinref part="SUPPLY2" gate="+12V" pin="+12V"/>
 <wire x1="17.78" y1="119.38" x2="17.78" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="U$8" gate="LF33ABDT" pin="VIN"/>
+<wire x1="33.02" y1="116.84" x2="22.86" y2="116.84" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<wire x1="114.3" y1="116.84" x2="109.22" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="C10" gate="G$1" pin="1"/>
 <wire x1="109.22" y1="116.84" x2="109.22" y2="114.3" width="0.1524" layer="91"/>
 <junction x="109.22" y="116.84"/>
 <wire x1="109.22" y1="116.84" x2="104.14" y2="116.84" width="0.1524" layer="91"/>
 <pinref part="SUPPLY1" gate="+12V" pin="+12V"/>
 <wire x1="104.14" y1="119.38" x2="104.14" y2="116.84" width="0.1524" layer="91"/>
+<wire x1="109.22" y1="116.84" x2="119.38" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="U$9" gate="L7805" pin="VIN"/>
 </segment>
 <segment>
 <pinref part="C2" gate="G$1" pin="1"/>

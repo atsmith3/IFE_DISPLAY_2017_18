@@ -753,6 +753,7 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 <pin name="DCLK" x="-17.78" y="2.54" length="middle" direction="in"/>
 </symbol>
 <symbol name="LIN_VOLTAGE_REG">
+<description>3 Terminal Linear Regulator Symbol</description>
 <wire x1="-10.16" y1="5.08" x2="-10.16" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-5.08" x2="10.16" y2="-5.08" width="0.254" layer="94"/>
 <wire x1="10.16" y1="-5.08" x2="10.16" y2="5.08" width="0.254" layer="94"/>

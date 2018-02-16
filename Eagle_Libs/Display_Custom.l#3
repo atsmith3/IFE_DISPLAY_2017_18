@@ -977,12 +977,19 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="LR8K4-G">
+<deviceset name="L7805CDT-TR">
+<description>&lt;p&gt;ST - L78&lt;/p&gt;
+&lt;p&gt;L7805CDT-TR   5V 1.5A Linear Regulator&lt;/p&gt;</description>
 <gates>
-<gate name="G$1" symbol="LIN_VOLTAGE_REG" x="0" y="0"/>
+<gate name="L7805" symbol="LIN_VOLTAGE_REG" x="0" y="0"/>
 </gates>
 <devices>
 <device name="" package="DPACK">
+<connects>
+<connect gate="L7805" pin="GND" pad="2"/>
+<connect gate="L7805" pin="VIN" pad="1"/>
+<connect gate="L7805" pin="VOUT" pad="3"/>
+</connects>
 <technologies>
 <technology name=""/>
 </technologies>

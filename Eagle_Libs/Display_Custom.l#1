@@ -996,6 +996,25 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="LF33ABDT-TR">
+<description>&lt;p&gt;ST - LFxx&lt;/p&gt;
+&lt;p&gt;LF33ABDT-TR 3.3V 500mA linear regulator&lt;/p&gt;</description>
+<gates>
+<gate name="LF33ABDT" symbol="LIN_VOLTAGE_REG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="DPACK">
+<connects>
+<connect gate="LF33ABDT" pin="GND" pad="2"/>
+<connect gate="LF33ABDT" pin="VIN" pad="1"/>
+<connect gate="LF33ABDT" pin="VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>

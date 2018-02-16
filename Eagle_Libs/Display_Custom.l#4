@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.0">
+<eagle version="8.6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -979,9 +979,10 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 </deviceset>
 <deviceset name="LR8K4-G">
 <gates>
+<gate name="G$1" symbol="LIN_VOLTAGE_REG" x="0" y="0"/>
 </gates>
 <devices>
-<device name="">
+<device name="" package="DPACK">
 <technologies>
 <technology name=""/>
 </technologies>

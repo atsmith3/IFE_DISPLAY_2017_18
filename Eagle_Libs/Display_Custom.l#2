@@ -977,7 +977,7 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 </device>
 </devices>
 </deviceset>
-<deviceset name="L7805CDT-TR">
+<deviceset name="L7805CDT-TR" uservalue="yes">
 <description>&lt;p&gt;ST - L78&lt;/p&gt;
 &lt;p&gt;L7805CDT-TR   5V 1.5A Linear Regulator&lt;/p&gt;</description>
 <gates>
