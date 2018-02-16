@@ -610,6 +610,38 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 <vertex x="2.5654" y="3.937"/>
 </polygon>
 </package>
+<package name="SOT23-5L">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; SOT23-5L&lt;p&gt;</description>
+<wire x1="1.422" y1="0.81" x2="1.422" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="1.422" y1="-0.81" x2="-1.422" y2="-0.81" width="0.1524" layer="51"/>
+<wire x1="-1.422" y1="-0.81" x2="-1.422" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-1.422" y1="0.81" x2="1.422" y2="0.81" width="0.1524" layer="51"/>
+<wire x1="-0.522" y1="0.81" x2="0.522" y2="0.81" width="0.1524" layer="21"/>
+<wire x1="-0.428" y1="-0.81" x2="-0.522" y2="-0.81" width="0.1524" layer="21"/>
+<wire x1="0.522" y1="-0.81" x2="0.428" y2="-0.81" width="0.1524" layer="21"/>
+<smd name="1" x="-0.95" y="-1.15" dx="0.6" dy="1.2" layer="1" stop="no" cream="no"/>
+<smd name="2" x="0" y="-1.15" dx="0.6" dy="1.2" layer="1" stop="no" cream="no"/>
+<smd name="3" x="0.95" y="-1.15" dx="0.6" dy="1.2" layer="1" stop="no" cream="no"/>
+<smd name="4" x="0.95" y="1.15" dx="0.6" dy="1.2" layer="1" stop="no" cream="no"/>
+<smd name="5" x="-0.95" y="1.15" dx="0.6" dy="1.2" layer="1" stop="no" cream="no"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.429" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.2" y1="-1.4" x2="-0.7" y2="-0.85" layer="51"/>
+<rectangle x1="-0.25" y1="-1.4" x2="0.25" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="-1.4" x2="1.2" y2="-0.85" layer="51"/>
+<rectangle x1="0.7" y1="0.85" x2="1.2" y2="1.4" layer="51"/>
+<rectangle x1="-1.2" y1="0.85" x2="-0.7" y2="1.4" layer="51"/>
+<rectangle x1="-1.2875" y1="-1.8125" x2="-0.6125" y2="-0.5" layer="29"/>
+<rectangle x1="-1.2125" y1="-1.7125" x2="-0.6875" y2="-0.5875" layer="31"/>
+<rectangle x1="-0.3375" y1="-1.8125" x2="0.3375" y2="-0.5" layer="29"/>
+<rectangle x1="-0.2625" y1="-1.7125" x2="0.2625" y2="-0.5875" layer="31"/>
+<rectangle x1="0.6125" y1="-1.8125" x2="1.2875" y2="-0.5" layer="29"/>
+<rectangle x1="0.6875" y1="-1.7125" x2="1.2125" y2="-0.5875" layer="31"/>
+<rectangle x1="0.6125" y1="0.5" x2="1.2875" y2="1.8125" layer="29" rot="R180"/>
+<rectangle x1="0.6875" y1="0.5875" x2="1.2125" y2="1.7125" layer="31" rot="R180"/>
+<rectangle x1="-1.2875" y1="0.5" x2="-0.6125" y2="1.8125" layer="29" rot="R180"/>
+<rectangle x1="-1.2125" y1="0.5875" x2="-0.6875" y2="1.7125" layer="31" rot="R180"/>
+</package>
 </packages>
 <symbols>
 <symbol name="10CL006ZE144">
@@ -793,6 +825,20 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 <pin name="VOUT" x="12.7" y="2.54" length="short" rot="R180"/>
 <text x="-10.16" y="8.89" size="1.778" layer="95">&gt;NAME</text>
 <text x="-10.16" y="6.35" size="1.778" layer="95">&gt;VALUE</text>
+</symbol>
+<symbol name="SOT23_LIN_VOLTAGE_REG">
+<description>Symbol for SOT23 Linear Regulator</description>
+<wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="-7.62" x2="10.16" y2="7.62" width="0.254" layer="94"/>
+<wire x1="10.16" y1="7.62" x2="-10.16" y2="7.62" width="0.254" layer="94"/>
+<pin name="VIN" x="-12.7" y="5.08" length="short"/>
+<pin name="GND" x="-12.7" y="0" length="short"/>
+<pin name="ENABLE" x="-12.7" y="-5.08" length="short"/>
+<pin name="VOUT" x="12.7" y="5.08" length="short" rot="R180"/>
+<pin name="N/C" x="12.7" y="-5.08" length="short" rot="R180"/>
+<text x="-10.16" y="11.176" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="8.636" size="1.778" layer="95">&gt;VALUE</text>
 </symbol>
 </symbols>
 <devicesets>
@@ -1008,6 +1054,28 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 <connect gate="LF33ABDT" pin="GND" pad="2"/>
 <connect gate="LF33ABDT" pin="VIN" pad="1"/>
 <connect gate="LF33ABDT" pin="VOUT" pad="3"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="TPS72101DBVT">
+<description>&lt;h3&gt;TPS72101DBVT&lt;/h3&gt;
+&lt;p&gt;2.5V 150mA SOT23-5 Linear Regulator from TI&lt;/p&gt;
+&lt;p&gt;http://www.ti.com/lit/ds/symlink/tps721.pdf&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SOT23_LIN_VOLTAGE_REG" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5L">
+<connects>
+<connect gate="G$1" pin="ENABLE" pad="3"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="N/C" pad="4"/>
+<connect gate="G$1" pin="VIN" pad="1"/>
+<connect gate="G$1" pin="VOUT" pad="5"/>
 </connects>
 <technologies>
 <technology name=""/>
