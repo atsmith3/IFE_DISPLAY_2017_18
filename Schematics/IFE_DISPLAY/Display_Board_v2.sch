@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.0">
+<eagle version="8.6.3">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -30927,7 +30927,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="GND1" library="supply1" deviceset="GND" device=""/>
 <part name="L5" library="Inductors" deviceset="MSS7348" device="" value="20uH"/>
 <part name="SUPPLY6" library="Symbols" deviceset="+12V" device=""/>
-<part name="FUSE3" library="Fuse" deviceset="MINI297-3568" device=""/>
+<part name="FUSE" library="Fuse" deviceset="MINI297-3568" device=""/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="FRAME3" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="A3L-LOC" device=""/>
 <part name="Q3" library="adafruit" deviceset="CRYSTAL" device="CTS406" value="16MHz"/>
@@ -31559,9 +31559,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="106.68" y="91.44" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="1A"/>
-<wire x1="147.32" y1="7.62" x2="144.78" y2="7.62" width="0.1524" layer="91"/>
-<label x="144.78" y="7.62" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="4A"/>
+<wire x1="147.32" y1="0" x2="144.78" y2="0" width="0.1524" layer="91"/>
+<label x="144.78" y="0" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="FPGA_REG1" class="0">
@@ -31571,9 +31571,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="106.68" y="88.9" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="2A"/>
-<wire x1="147.32" y1="5.08" x2="144.78" y2="5.08" width="0.1524" layer="91"/>
-<label x="144.78" y="5.08" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="3A"/>
+<wire x1="147.32" y1="2.54" x2="144.78" y2="2.54" width="0.1524" layer="91"/>
+<label x="144.78" y="2.54" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="FPGA_REG2" class="0">
@@ -31583,9 +31583,9 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="106.68" y="86.36" size="1.27" layer="95" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U5" gate="G$1" pin="3A"/>
-<wire x1="147.32" y1="2.54" x2="144.78" y2="2.54" width="0.1524" layer="91"/>
-<label x="144.78" y="2.54" size="1.27" layer="95" rot="R180" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="2A"/>
+<wire x1="147.32" y1="5.08" x2="144.78" y2="5.08" width="0.1524" layer="91"/>
+<label x="144.78" y="5.08" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="2515_OSC1" class="0">
@@ -31962,42 +31962,28 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </net>
 <net name="FPGA_REG3" class="0">
 <segment>
-<pinref part="U5" gate="G$1" pin="4A"/>
-<wire x1="147.32" y1="0" x2="144.78" y2="0" width="0.1524" layer="91"/>
-<label x="144.78" y="0" size="1.27" layer="95" rot="R180" xref="yes"/>
-</segment>
-<segment>
 <pinref part="ATMEGA328P" gate="A" pin="PD7"/>
 <wire x1="104.14" y1="83.82" x2="106.68" y2="83.82" width="0.1524" layer="91"/>
 <label x="106.68" y="83.82" size="1.27" layer="95" xref="yes"/>
 </segment>
-</net>
-<net name="FPGA_R0_3_3" class="0">
 <segment>
-<pinref part="U5" gate="G$1" pin="1Y"/>
-<wire x1="167.64" y1="7.62" x2="170.18" y2="7.62" width="0.1524" layer="91"/>
-<label x="170.18" y="7.62" size="1.27" layer="95" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="1A"/>
+<wire x1="147.32" y1="7.62" x2="144.78" y2="7.62" width="0.1524" layer="91"/>
+<label x="144.78" y="7.62" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="FPGA_R1_3_3" class="0">
+<net name="FPGA_R2_3_3" class="0">
 <segment>
 <pinref part="U5" gate="G$1" pin="2Y"/>
 <wire x1="167.64" y1="5.08" x2="170.18" y2="5.08" width="0.1524" layer="91"/>
 <label x="170.18" y="5.08" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
-<net name="FPGA_R2_3_3" class="0">
-<segment>
-<pinref part="U5" gate="G$1" pin="3Y"/>
-<wire x1="167.64" y1="2.54" x2="170.18" y2="2.54" width="0.1524" layer="91"/>
-<label x="170.18" y="2.54" size="1.27" layer="95" xref="yes"/>
-</segment>
-</net>
 <net name="FPGA_R3_3_3" class="0">
 <segment>
-<pinref part="U5" gate="G$1" pin="4Y"/>
-<wire x1="167.64" y1="0" x2="170.18" y2="0" width="0.1524" layer="91"/>
-<label x="170.18" y="0" size="1.27" layer="95" xref="yes"/>
+<pinref part="U5" gate="G$1" pin="1Y"/>
+<wire x1="167.64" y1="7.62" x2="170.18" y2="7.62" width="0.1524" layer="91"/>
+<label x="170.18" y="7.62" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
 <net name="GREEN_3" class="0">
@@ -32112,6 +32098,20 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="20.32" y="55.88" size="1.27" layer="95" xref="yes"/>
 </segment>
 </net>
+<net name="FPGA_R0_3_3" class="0">
+<segment>
+<pinref part="U5" gate="G$1" pin="4Y"/>
+<wire x1="167.64" y1="0" x2="170.18" y2="0" width="0.1524" layer="91"/>
+<label x="170.18" y="0" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
+<net name="FPGA_R1_3_3" class="0">
+<segment>
+<pinref part="U5" gate="G$1" pin="3Y"/>
+<wire x1="167.64" y1="2.54" x2="170.18" y2="2.54" width="0.1524" layer="91"/>
+<label x="170.18" y="2.54" size="1.27" layer="95" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 <sheet>
@@ -32127,7 +32127,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="GND1" gate="1" x="40.64" y="114.3"/>
 <instance part="L5" gate="G$1" x="30.48" y="129.54" rot="R90"/>
 <instance part="SUPPLY6" gate="+12V" x="40.64" y="137.16"/>
-<instance part="FUSE3" gate="G$1" x="15.24" y="129.54" smashed="yes" rot="R180">
+<instance part="FUSE" gate="G$1" x="15.24" y="129.54" smashed="yes" rot="R180">
 <attribute name="NAME" x="19.05" y="128.143" size="1.778" layer="95" rot="R180"/>
 <attribute name="VALUE" x="24.13" y="132.461" size="1.778" layer="96" rot="R180"/>
 </instance>
@@ -32464,14 +32464,14 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 </net>
 <net name="N$1" class="0">
 <segment>
-<pinref part="FUSE3" gate="G$1" pin="1"/>
+<pinref part="FUSE" gate="G$1" pin="1"/>
 <pinref part="L5" gate="G$1" pin="1"/>
 <wire x1="20.32" y1="129.54" x2="22.86" y2="129.54" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="PWR_IN_12" class="0">
 <segment>
-<pinref part="FUSE3" gate="G$1" pin="2"/>
+<pinref part="FUSE" gate="G$1" pin="2"/>
 <wire x1="10.16" y1="129.54" x2="5.08" y2="129.54" width="0.1524" layer="91"/>
 <label x="5.08" y="129.54" size="1.27" layer="95" rot="R180" xref="yes"/>
 </segment>
@@ -32580,7 +32580,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="GND10" gate="1" x="220.98" y="71.12"/>
 <instance part="+3V9" gate="G$1" x="220.98" y="99.06"/>
 <instance part="P+2" gate="VCC" x="162.56" y="124.46" rot="R270"/>
-<instance part="P+5" gate="VCC" x="121.92" y="165.1"/>
+<instance part="P+5" gate="VCC" x="121.92" y="167.64"/>
 <instance part="50MHZ" gate="G$1" x="241.3" y="129.54" smashed="yes">
 <attribute name="NAME" x="233.68" y="135.128" size="1.778" layer="95"/>
 <attribute name="VALUE" x="233.68" y="122.174" size="1.778" layer="96"/>
@@ -32595,7 +32595,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <instance part="+3V15" gate="G$1" x="182.88" y="76.2" rot="R270"/>
 <instance part="GND22" gate="1" x="185.42" y="63.5"/>
 <instance part="ANDREWSMITH" gate="G$1" x="-33.02" y="-40.64"/>
-<instance part="P+8" gate="1" x="160.02" y="134.62"/>
+<instance part="P+8" gate="1" x="160.02" y="137.16"/>
 <instance part="P+10" gate="1" x="160.02" y="73.66" rot="R270"/>
 <instance part="P+11" gate="1" x="160.02" y="68.58" rot="R270"/>
 <instance part="R16" gate="G$1" x="172.72" y="78.74"/>
@@ -33028,16 +33028,15 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="152.4" y1="116.84" x2="157.48" y2="116.84" width="0.1524" layer="91"/>
 <junction x="157.48" y="116.84"/>
 </segment>
-</net>
-<net name="N$11" class="0">
 <segment>
 <pinref part="U$6" gate="G$1" pin="VCC_PLL2@109"/>
 <wire x1="121.92" y1="152.4" x2="121.92" y2="157.48" width="0.1524" layer="91"/>
 <pinref part="U$6" gate="G$1" pin="VCC_PLL1@37"/>
 <wire x1="121.92" y1="157.48" x2="124.46" y2="157.48" width="0.1524" layer="91"/>
 <wire x1="124.46" y1="157.48" x2="124.46" y2="152.4" width="0.1524" layer="91"/>
-<wire x1="121.92" y1="157.48" x2="121.92" y2="162.56" width="0.1524" layer="91"/>
+<wire x1="121.92" y1="157.48" x2="121.92" y2="165.1" width="0.1524" layer="91"/>
 <junction x="121.92" y="157.48"/>
+<pinref part="P+5" gate="VCC" pin="VCC"/>
 </segment>
 </net>
 <net name="50_MHZ" class="0">
@@ -33059,22 +33058,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <wire x1="152.4" y1="83.82" x2="167.64" y2="83.82" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$9" class="0">
-<segment>
-<pinref part="U$6" gate="G$1" pin="VCCA2@107"/>
-<wire x1="152.4" y1="127" x2="157.48" y2="127" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="127" x2="157.48" y2="129.54" width="0.1524" layer="91"/>
-<pinref part="U$6" gate="G$1" pin="VCCA1@35"/>
-<wire x1="157.48" y1="129.54" x2="152.4" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="157.48" y1="129.54" x2="160.02" y2="129.54" width="0.1524" layer="91"/>
-<junction x="157.48" y="129.54"/>
-</segment>
-</net>
 <net name="V+" class="0">
-<segment>
-<wire x1="160.02" y1="129.54" x2="160.02" y2="132.08" width="0.1524" layer="91"/>
-<pinref part="P+8" gate="1" pin="V+"/>
-</segment>
 <segment>
 <pinref part="U$6" gate="G$1" pin="MSEL2"/>
 <wire x1="152.4" y1="73.66" x2="157.48" y2="73.66" width="0.1524" layer="91"/>
@@ -33084,6 +33068,17 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <pinref part="U$6" gate="G$1" pin="MSEL0"/>
 <wire x1="152.4" y1="68.58" x2="157.48" y2="68.58" width="0.1524" layer="91"/>
 <pinref part="P+11" gate="1" pin="V+"/>
+</segment>
+<segment>
+<pinref part="U$6" gate="G$1" pin="VCCA2@107"/>
+<wire x1="152.4" y1="127" x2="157.48" y2="127" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="127" x2="157.48" y2="129.54" width="0.1524" layer="91"/>
+<pinref part="U$6" gate="G$1" pin="VCCA1@35"/>
+<wire x1="157.48" y1="129.54" x2="152.4" y2="129.54" width="0.1524" layer="91"/>
+<wire x1="157.48" y1="129.54" x2="160.02" y2="129.54" width="0.1524" layer="91"/>
+<junction x="157.48" y="129.54"/>
+<pinref part="P+8" gate="1" pin="V+"/>
+<wire x1="160.02" y1="129.54" x2="160.02" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="LED1" class="0">
@@ -33324,19 +33319,79 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <label x="45.72" y="15.24" size="1.27" layer="95" rot="R270" xref="yes"/>
 </segment>
 </net>
+<net name="FPGA_W_3_3" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="IO106"/>
+<wire x1="71.12" y1="17.78" x2="71.12" y2="15.24" width="0.1524" layer="91"/>
+<label x="71.12" y="15.24" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="FPGA_RSEL_3_3" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="IO105"/>
+<wire x1="68.58" y1="17.78" x2="68.58" y2="15.24" width="0.1524" layer="91"/>
+<label x="68.58" y="15.24" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="FPGA_D3_3_3" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="IO100"/>
+<wire x1="66.04" y1="17.78" x2="66.04" y2="15.24" width="0.1524" layer="91"/>
+<label x="66.04" y="15.24" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="FPGA_D0_3_3" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="IO87"/>
+<wire x1="63.5" y1="17.78" x2="63.5" y2="15.24" width="0.1524" layer="91"/>
+<label x="63.5" y="15.24" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="FPGA_D1_3_3" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="IO86"/>
+<wire x1="60.96" y1="17.78" x2="60.96" y2="15.24" width="0.1524" layer="91"/>
+<label x="60.96" y="15.24" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="FPGA_D2_3_3" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="IO85"/>
+<wire x1="58.42" y1="17.78" x2="58.42" y2="15.24" width="0.1524" layer="91"/>
+<label x="58.42" y="15.24" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="FPGA_R3_3_3" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="IO84"/>
+<wire x1="55.88" y1="17.78" x2="55.88" y2="15.24" width="0.1524" layer="91"/>
+<label x="55.88" y="15.24" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="FPGA_R2_3_3" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="IO83"/>
+<wire x1="53.34" y1="17.78" x2="53.34" y2="15.24" width="0.1524" layer="91"/>
+<label x="53.34" y="15.24" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="FPGA_R1_3_3" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="IO80"/>
+<wire x1="50.8" y1="17.78" x2="50.8" y2="15.24" width="0.1524" layer="91"/>
+<label x="50.8" y="15.24" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
+<net name="FPGA_R0_3_3" class="0">
+<segment>
+<pinref part="U$6" gate="G$1" pin="IO77"/>
+<wire x1="48.26" y1="17.78" x2="48.26" y2="15.24" width="0.1524" layer="91"/>
+<label x="48.26" y="15.24" size="1.27" layer="95" rot="R270" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
-<errors>
-<approved hash="202,1,160.02,101.6,U3,ADC6,,,,"/>
-<approved hash="202,1,160.02,99.06,U3,ADC7,,,,"/>
-<approved hash="202,1,160.02,93.98,U3,AREF,,,,"/>
-<approved hash="202,1,236.22,58.42,U$2,~TX0RTS,,,,"/>
-<approved hash="202,1,236.22,55.88,U$2,~TX1RTS,,,,"/>
-<approved hash="202,1,236.22,53.34,U$2,~TX2RTS,,,,"/>
-<approved hash="208,2,157.48,154.94,VCC,out,,,,"/>
-<approved hash="208,2,160.02,160.02,VCC,sup,,,,"/>
-</errors>
 </schematic>
 </drawing>
 <compatibility>
