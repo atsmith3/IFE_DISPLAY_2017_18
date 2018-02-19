@@ -6187,7 +6187,10 @@ design rules under a new name.</description>
 <attribute name="TP_SIGNAL_NAME" value="" x="72.39" y="80.01" size="1.778" layer="27" display="off"/>
 </element>
 <element name="5V" library="led" package="CHIP-LED0805" value="" x="105.41" y="73.66"/>
-<element name="AS" library="pinhead" package="2X05" value="" x="17.78" y="67.31"/>
+<element name="AS" library="pinhead" package="2X05" value="" x="17.78" y="67.31" smashed="yes">
+<attribute name="NAME" x="10.9474" y="67.8688" size="1.27" layer="25" ratio="10" rot="R90"/>
+<attribute name="VALUE" x="11.43" y="62.865" size="1.27" layer="27"/>
+</element>
 <element name="ATMEGA328P" library="Atmel_By_element14_Batch_1-00" package="QFP80P900X900X120-32N" value="" x="85.09" y="16.51" rot="R90">
 <attribute name="MPN" value="ATMEGA328P-AU" x="85.09" y="16.51" size="1.778" layer="27" rot="R90" display="off"/>
 <attribute name="OC_FARNELL" value="1715486" x="85.09" y="16.51" size="1.778" layer="27" rot="R90" display="off"/>
@@ -6231,18 +6234,33 @@ design rules under a new name.</description>
 <attribute name="TP_SIGNAL_NAME" value="" x="67.31" y="80.01" size="1.778" layer="27" display="off"/>
 </element>
 <element name="ICP" library="pinhead" package="2X03" value="" x="97.79" y="11.43" rot="R270"/>
-<element name="JTAG" library="pinhead" package="2X05" value="" x="17.78" y="76.2"/>
+<element name="JTAG" library="pinhead" package="2X05" value="" x="17.78" y="76.2" smashed="yes">
+<attribute name="NAME" x="11.43" y="79.1718" size="1.27" layer="25" ratio="10"/>
+<attribute name="VALUE" x="11.43" y="71.755" size="1.27" layer="27"/>
+</element>
 <element name="L1" library="microbuilder" package="INDUCTOR_5X5MM_NR5040_NOTHERMALS" value="6.8uH" x="55.88" y="74.93" rot="R270"/>
 <element name="L5" library="Inductors" package="MSS7348" value="20uH" x="83.82" y="64.77" rot="R180"/>
 <element name="MICRO" library="led" package="CHIP-LED0805" value="" x="102.87" y="12.7" rot="R180"/>
 <element name="R1" library="rcl" package="R0805" value="120" x="90.17" y="44.45" rot="R270"/>
 <element name="R10" library="rcl" package="R0805" value="4.7k" x="80.01" y="50.8" rot="R270"/>
-<element name="R11" library="resistor" package="R0805" value="1K" x="28.4226" y="76.2" rot="R270"/>
-<element name="R12" library="resistor" package="R0805" value="1K" x="25.9588" y="76.2" rot="R90"/>
-<element name="R13" library="resistor" package="R0805" value="10K" x="22.86" y="46.99" rot="R180"/>
-<element name="R14" library="resistor" package="R0805" value="10K" x="17.78" y="62.23" rot="R270"/>
-<element name="R15" library="resistor" package="R0805" value="10K" x="15.24" y="62.23" rot="R270"/>
-<element name="R16" library="resistor" package="R0805" value="10K" x="13.97" y="71.8566" rot="R180"/>
+<element name="R11" library="resistor" package="R0805" value="1K" x="28.4226" y="76.2" smashed="yes" rot="R270">
+<attribute name="NAME" x="27.4574" y="80.2386" size="0.8128" layer="25" rot="R270"/>
+</element>
+<element name="R12" library="resistor" package="R0805" value="1K" x="25.9588" y="76.2" smashed="yes" rot="R90">
+<attribute name="NAME" x="25.7556" y="78.359" size="0.8128" layer="25" rot="R90"/>
+</element>
+<element name="R13" library="resistor" package="R0805" value="10K" x="22.86" y="46.99" smashed="yes" rot="R180">
+<attribute name="NAME" x="22.8346" y="48.9712" size="0.8128" layer="25" rot="R180"/>
+</element>
+<element name="R14" library="resistor" package="R0805" value="10K" x="17.78" y="62.23" smashed="yes" rot="R270">
+<attribute name="NAME" x="19.05" y="62.1538" size="0.8128" layer="25" rot="R270"/>
+</element>
+<element name="R15" library="resistor" package="R0805" value="10K" x="15.24" y="62.23" smashed="yes" rot="R270">
+<attribute name="NAME" x="13.2588" y="62.2046" size="0.8128" layer="25" rot="R270"/>
+</element>
+<element name="R16" library="resistor" package="R0805" value="10K" x="13.97" y="71.8566" smashed="yes" rot="R180">
+<attribute name="NAME" x="18.0086" y="72.8218" size="0.8128" layer="25" rot="R180"/>
+</element>
 <element name="R17" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="127k" x="58.42" y="41.91" rot="R90">
 <attribute name="SPICEPREFIX" value="R" x="58.42" y="41.91" size="1.778" layer="27" rot="R90" display="off"/>
 </element>
@@ -6252,7 +6270,9 @@ design rules under a new name.</description>
 <element name="R19" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="25" x="44.45" y="76.2" rot="R180">
 <attribute name="SPICEPREFIX" value="R" x="44.45" y="76.2" size="1.778" layer="27" rot="R180" display="off"/>
 </element>
-<element name="R2" library="resistor" package="R0805" value="1K" x="9.525" y="76.1746" rot="R270"/>
+<element name="R2" library="resistor" package="R0805" value="1K" x="9.525" y="76.1746" smashed="yes" rot="R270">
+<attribute name="NAME" x="7.5438" y="75.438" size="0.8128" layer="25" rot="R270"/>
+</element>
 <element name="R20" library="resistor" package="R0805" value="330" x="101.6" y="73.66" rot="R90"/>
 <element name="R3" library="rcl" library_urn="urn:adsk.eagle:library:334" package="R0805" package3d_urn="urn:adsk.eagle:package:23553/2" value="10k" x="44.45" y="72.39">
 <attribute name="SPICEPREFIX" value="R" x="44.45" y="72.39" size="1.778" layer="27" display="off"/>
@@ -6291,7 +6311,9 @@ design rules under a new name.</description>
 <attribute name="SUPPLIER" value="Microchip" x="48.26" y="50.8" size="1.778" layer="27" display="off"/>
 </element>
 <element name="U$6" library="Display_Custom" package="EQFP144" value="10CL006ZE144" x="41.91" y="34.29"/>
-<element name="U$7" library="Display_Custom" package="SOIC127P600X175-8N" value="EPCQ16A" x="22.86" y="40.64"/>
+<element name="U$7" library="Display_Custom" package="SOIC127P600X175-8N" value="EPCQ16A" x="22.86" y="40.64" smashed="yes">
+<attribute name="NAME" x="20.9042" y="43.4848" size="0.8128" layer="25" ratio="10" rot="SR0"/>
+</element>
 <element name="U$8" library="Display_Custom" package="DPACK" value="LF33ABDT-TR" x="71.12" y="57.15" rot="R180"/>
 <element name="U$9" library="Display_Custom" package="DPACK" value="L7805CDT-TR" x="71.12" y="71.12" rot="R180"/>
 <element name="U4" library="SparkFun-DigitalIC" package="SO016" value="HEX_CONVERTER" x="60.96" y="27.94" rot="R270">
@@ -6300,7 +6322,9 @@ design rules under a new name.</description>
 <element name="U5" library="SparkFun-DigitalIC" package="SO016" value="HEX_CONVERTER" x="60.96" y="15.24" rot="R270">
 <attribute name="PROD_ID" value="IC-09604" x="60.96" y="15.24" size="1.778" layer="27" rot="R270" display="off"/>
 </element>
-<element name="U$1" library="Display_Custom" package="SM77H" value="SM77H" x="22.86" y="33.02" rot="R270"/>
+<element name="U$1" library="Display_Custom" package="SM77H" value="SM77H" x="22.86" y="33.02" smashed="yes" rot="R270">
+<attribute name="NAME" x="20.32" y="36.83" size="0.8128" layer="25"/>
+</element>
 <element name="U$4" library="Display_Custom" package="CTS406" value="16MHz" x="86.36" y="6.35" rot="R180"/>
 <element name="U$15" library="Display_Custom" package="CTS406" value="406CYRYSTAL" x="69.85" y="29.21" rot="R270"/>
 </elements>
