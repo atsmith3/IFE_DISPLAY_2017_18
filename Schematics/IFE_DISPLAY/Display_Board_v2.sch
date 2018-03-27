@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.0">
+<eagle version="8.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -29862,7 +29862,7 @@ new: Attribute TP_SIGNAL_NAME&lt;br&gt;
 <part name="SUPPLY1" library="Symbols" deviceset="+12V" device=""/>
 <part name="SUPPLY2" library="Symbols" deviceset="+12V" device=""/>
 <part name="SUPPLY3" library="Symbols" deviceset="+12V" device=""/>
-<part name="L1" library="microbuilder" deviceset="INDUCTOR" device="NR5040" value="6.8uH"/>
+<part name="L1" library="microbuilder" deviceset="INDUCTOR" device="NR5040" value="10uH"/>
 <part name="U$12" library="microbuilder" deviceset="GND" device=""/>
 <part name="P+1" library="supply1" deviceset="+5V" device=""/>
 <part name="U$6" library="Display_Custom" deviceset="10CL006ZE144" device=""/>

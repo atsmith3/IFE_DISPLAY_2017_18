@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.6.0">
+<eagle version="8.7.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -6388,7 +6388,7 @@ design rules under a new name.</description>
 <attribute name="NAME" x="5.08" y="79.1718" size="1.27" layer="25" ratio="10"/>
 <attribute name="VALUE" x="5.08" y="71.755" size="1.27" layer="27"/>
 </element>
-<element name="L1" library="microbuilder" package="INDUCTOR_5X5MM_NR5040_NOTHERMALS" value="6.8uH" x="44.45" y="74.93" smashed="yes" rot="R270">
+<element name="L1" library="microbuilder" package="INDUCTOR_5X5MM_NR5040_NOTHERMALS" value="10uH" x="44.45" y="74.93" smashed="yes" rot="R270">
 <attribute name="NAME" x="42.9002" y="79.0182" size="0.8128" layer="25" font="vector" rot="R180"/>
 </element>
 <element name="L5" library="Inductors" package="MSS7348" value="20uH" x="72.39" y="64.77" smashed="yes" rot="R180">
