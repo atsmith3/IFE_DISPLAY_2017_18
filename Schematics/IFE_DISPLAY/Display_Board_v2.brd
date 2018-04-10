@@ -30,7 +30,7 @@
 <layer number="20" name="Dimension" color="24" fill="1" visible="yes" active="yes"/>
 <layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="yes"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="yes"/>
 <layer number="25" name="tNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
@@ -1325,6 +1325,8 @@ DISPLAY</text>
 <rectangle x1="44.577" y1="59.055" x2="49.911" y2="59.309" layer="25"/>
 <rectangle x1="44.577" y1="59.309" x2="49.911" y2="59.563" layer="25"/>
 <rectangle x1="44.577" y1="59.563" x2="49.911" y2="59.817" layer="25"/>
+<dimension x1="0" y1="0" x2="15.24" y2="0" x3="7.62" y3="-1.27" textsize="0.8128" layer="47" visible="yes"/>
+<dimension x1="0" y1="0" x2="15.24" y2="0" x3="7.62" y3="-3.0988" textsize="0.8128" layer="47" unit="inch" visible="yes"/>
 </plain>
 <libraries>
 <library name="testpad" urn="urn:adsk.eagle:library:385">

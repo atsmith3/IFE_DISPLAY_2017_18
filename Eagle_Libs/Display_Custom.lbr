@@ -63,6 +63,9 @@
 <layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
 <layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
 <layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
+<layer number="57" name="tCAD" color="7" fill="1" visible="no" active="no"/>
+<layer number="59" name="tCarbon" color="7" fill="1" visible="no" active="no"/>
+<layer number="60" name="bCarbon" color="7" fill="1" visible="no" active="no"/>
 <layer number="88" name="SimResults" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="89" name="SimProbes" color="9" fill="1" visible="yes" active="yes"/>
 <layer number="90" name="Modules" color="5" fill="1" visible="yes" active="yes"/>
@@ -74,7 +77,7 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
-<layer number="99" name="SpiceOrder" color="5" fill="1" visible="yes" active="yes"/>
+<layer number="99" name="SpiceOrder" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
 <layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
 <layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
@@ -85,12 +88,30 @@
 <layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="108" name="tplace-old" color="10" fill="1" visible="yes" active="yes"/>
 <layer number="109" name="ref-old" color="11" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="fp0" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="LPC17xx" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="113" name="IDFDebug" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="118" name="Rect_Pads" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="123" name="tTestmark" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="124" name="bTestmark" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="129" name="Mask" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="131" name="tAdjust" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="132" name="bAdjust" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="150" name="Notes" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="153" name="FabDoc1" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="154" name="FabDoc2" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="155" name="FabDoc3" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="199" name="Contour" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="200" name="200bmp" color="1" fill="10" visible="yes" active="yes"/>
 <layer number="201" name="201bmp" color="2" fill="10" visible="yes" active="yes"/>
@@ -117,9 +138,21 @@
 <layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
 <layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
 <layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="225" name="225bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="226" name="226bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="227" name="227bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="228" name="228bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="229" name="229bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="230" name="230bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="231" name="231bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="232" name="Eagle3D_PG2" color="7" fill="1" visible="no" active="no"/>
+<layer number="233" name="Eagle3D_PG3" color="7" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
 <layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
 <layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="255" name="routoute" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <library>
 <packages>
@@ -571,6 +604,7 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 <rectangle x1="-8.8125" y1="10.5625" x2="-7.6875" y2="10.9625" layer="29" rot="R270"/>
 <rectangle x1="-9.3125" y1="10.5625" x2="-8.1875" y2="10.9625" layer="29" rot="R270"/>
 </package>
+
 <package name="SOIC127P600X175-8N">
 <description>SOIC8</description>
 <smd name="1" x="-2.6416" y="1.905" dx="1.6002" dy="0.5588" layer="1"/>
@@ -630,6 +664,7 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 <text x="-4.3942" y="3.6576" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-5.2832" y="-5.3848" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
+
 <package name="DPACK">
 <description>&lt;b&gt;DPAK&lt;/b&gt;&lt;p&gt;
 (Motorola)</description>
@@ -660,6 +695,7 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 <vertex x="2.5654" y="3.937"/>
 </polygon>
 </package>
+
 <package name="SOT23-5L">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; SOT23-5L&lt;p&gt;</description>
 <wire x1="1.422" y1="0.81" x2="1.422" y2="-0.81" width="0.1524" layer="21"/>
@@ -692,6 +728,7 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 <rectangle x1="-1.2875" y1="0.5" x2="-0.6125" y2="1.8125" layer="29" rot="R180"/>
 <rectangle x1="-1.2125" y1="0.5875" x2="-0.6875" y2="1.7125" layer="31" rot="R180"/>
 </package>
+
 <package name="SMA_DIODE">
 <description>SMA_DIODE</description>
 <smd name="C" x="-2" y="0" dx="2.5" dy="1.7" layer="1"/>
@@ -704,6 +741,7 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 <text x="-3" y="2" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3" y="-3.3" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+
 <package name="SOD323">
 <description>&lt;b&gt;Small Outline Diode&lt;/b&gt;</description>
 <wire x1="-0.8" y1="0.575" x2="0.8" y2="0.575" width="0.2032" layer="51"/>
@@ -718,6 +756,7 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 <rectangle x1="0.9" y1="-0.2" x2="1.35" y2="0.2" layer="51"/>
 <rectangle x1="-0.75" y1="-0.575" x2="-0.375" y2="0.575" layer="51"/>
 </package>
+
 <package name="SM77H">
 <description>&lt;b&gt;3.3V CMOS Clock Oscillator&lt;/b&gt;&lt;p&gt;
 Source: www.pletronics.com .. sm77h%203.3v.pdf</description>
@@ -737,6 +776,7 @@ Source: www.pletronics.com .. sm77h%203.3v.pdf</description>
 <text x="-3.81" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="-2.286" y="-0.508" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+
 <package name="CTS406">
 <description>&lt;b&gt;Model 406 6.0x3.5mm Low Cost Surface Mount Crystal&lt;/b&gt;&lt;p&gt;
 Source: 008-0260-0_E.pdf</description>
@@ -764,6 +804,7 @@ Source: 008-0260-0_E.pdf</description>
 <text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
 </package>
+
 <package name="QFN65P600X600X100-29N">
 <rectangle x1="-1.17498125" y1="-1.17498125" x2="1.170040625" y2="1.170040625" layer="31"/>
 <text x="-3.98835" y="-5.167590625" size="1.68355" layer="27" align="top-left">&gt;VALUE</text>
@@ -816,6 +857,7 @@ Source: 008-0260-0_E.pdf</description>
 <smd name="21" x="2.835" y="1.95" dx="1.04" dy="0.33" layer="1" roundness="25"/>
 <smd name="29" x="0" y="0" dx="3.7" dy="3.7" layer="1" cream="no"/>
 </package>
+
 <package name="DPDT_2C">
 <description>DPDT Relay 2 Form C</description>
 <smd name="12" x="-5.08" y="4.025" dx="1" dy="2.85" layer="1"/>
@@ -834,6 +876,7 @@ Source: 008-0260-0_E.pdf</description>
 <text x="-7.62" y="-3.429" size="0.8128" layer="21" rot="R90">&gt;NAME</text>
 <text x="8.509" y="-3.429" size="0.8128" layer="21" rot="R90">&gt;VALUE</text>
 </package>
+
 <package name="QFP50P2200X2200X120-144" urn="urn:adsk.eagle:footprint:2248224/1">
 <description>144-QFP, 0.5 mm pitch, 22 mm span, 20 X 20 X 1.2 mm body
 &lt;p&gt;144-pin QFP package with 0.5 mm pitch, 22 mm lead span1 X 22 mm lead span2 with body size 20 X 20 X 1.2 mm&lt;/p&gt;</description>
@@ -997,6 +1040,7 @@ Source: 008-0260-0_E.pdf</description>
 <text x="0" y="12.0409" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-12.0409" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
+
 <package name="SOT23-6L">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; SOT23-6L&lt;p&gt;</description>
 <wire x1="1.422" y1="0.81" x2="1.422" y2="-0.81" width="0.1524" layer="21"/>
@@ -1033,6 +1077,7 @@ Source: 008-0260-0_E.pdf</description>
 <circle x="-1.7018" y="-0.762" radius="0.05679375" width="0.127" layer="21"/>
 <smd name="5" x="0" y="1.15" dx="1.2" dy="0.6" layer="1" rot="R90"/>
 </package>
+
 <package name="SOT223" urn="urn:adsk.eagle:footprint:43189/1" locally_modified="yes">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;
 &lt;p&gt;SOT-223&lt;/p&gt;</description>
@@ -1055,9 +1100,9 @@ Source: 008-0260-0_E.pdf</description>
 <rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
 <rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
 </package>
+
 <package name="MINIFIT_JR_5569-02A2">
 <description>MOLEX Minifit JR Connector 5569-02A2
-
 &lt;p&gt;https://www.molex.com/pdm_docs/sd/039301022_sd.pdf&lt;/p&gt;</description>
 <hole x="0" y="0" drill="3.1"/>
 <pad name="1" x="0" y="7.3" drill="1.9"/>
@@ -1083,6 +1128,7 @@ Source: 008-0260-0_E.pdf</description>
 <pad name="2" x="-2.1" y="7.3" drill="1.9"/>
 <pad name="3" x="2.1" y="12.8" drill="1.9"/>
 </package>
+
 <package name="0805">
 <description>0805 Diode</description>
 <wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
@@ -1094,6 +1140,39 @@ Source: 008-0260-0_E.pdf</description>
 <text x="-1.27" y="0.8382" size="0.8128" layer="25">&gt;NAME</text>
 <text x="-1.27" y="-1.6256" size="0.8128" layer="27">&gt;VALUE</text>
 </package>
+
+<package name="SOD-123">
+<description>SOD-123</description>
+<wire x1="-1.3" y1="0.775" x2="-0.5" y2="0.775" width="0.2032" layer="21"/>
+<wire x1="-0.5" y1="0.775" x2="1.3" y2="0.775" width="0.2032" layer="21"/>
+<wire x1="-1.3" y1="-0.775" x2="-0.5" y2="-0.775" width="0.2032" layer="21"/>
+<wire x1="-0.5" y1="-0.775" x2="1.3" y2="-0.775" width="0.2032" layer="21"/>
+<wire x1="-0.5" y1="0.775" x2="-0.5" y2="-0.775" width="0.2032" layer="21"/>
+<smd name="C" x="-1.575" y="0" dx="0.9" dy="0.95" layer="1"/>
+<smd name="A" x="1.575" y="0" dx="0.9" dy="0.95" layer="1"/>
+<text x="-1.397" y="1.016" size="0.8128" layer="25">&gt;NAME</text>
+<text x="-1.27" y="-1.778" size="0.8128" layer="27">&gt;VALUE</text>
+<wire x1="-1.35" y1="0.775" x2="1.35" y2="0.775" width="0.127" layer="51"/>
+<wire x1="1.35" y1="0.775" x2="1.35" y2="-0.775" width="0.127" layer="51"/>
+<wire x1="1.35" y1="-0.775" x2="-1.35" y2="-0.775" width="0.127" layer="51"/>
+<wire x1="-1.35" y1="-0.775" x2="-1.35" y2="0.775" width="0.127" layer="51"/>
+</package>
+
+<package name="SOT23">
+<description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
+<wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="1.4224" y1="-0.6604" x2="-1.4224" y2="-0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="-0.6604" x2="-1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<wire x1="-1.4224" y1="0.6604" x2="1.4224" y2="0.6604" width="0.1524" layer="51"/>
+<smd name="3" x="0" y="1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="2" x="0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<smd name="1" x="-0.95" y="-1.1" dx="1" dy="1.4" layer="1"/>
+<text x="-1.905" y="1.905" size="1.27" layer="25">&gt;NAME</text>
+<text x="-1.905" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-0.2286" y1="0.7112" x2="0.2286" y2="1.2954" layer="51"/>
+<rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
+<rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="QFP50P2200X2200X120-144" urn="urn:adsk.eagle:package:2247426/1" type="model">
@@ -1104,6 +1183,7 @@ Source: 008-0260-0_E.pdf</description>
 </packageinstances>
 </package3d>
 </packages3d>
+
 <symbols>
 <symbol name="10CL006ZE144">
 <description>&lt;p&gt;Altera Cyclone 10 10CL006ZE144I8G&lt;/p&gt;
@@ -1508,7 +1588,6 @@ Source: 008-0260-0_E.pdf</description>
 </symbol>
 <symbol name="LTC6995-1">
 <description>&lt;p&gt;LTC 6995-1 Long Timer Low Frequency Oscillator&lt;/p&gt;
-
 &lt;p&gt;http://cds.linear.com/docs/en/datasheet/699512fa.pdf&lt;/P&gt;</description>
 <wire x1="-10.16" y1="7.62" x2="-10.16" y2="-7.62" width="0.254" layer="94"/>
 <wire x1="-10.16" y1="-7.62" x2="10.16" y2="-7.62" width="0.254" layer="94"/>
@@ -1601,6 +1680,25 @@ Source: 008-0260-0_E.pdf</description>
 <pin name="GND" x="0" y="-7.62" visible="pad" length="short" rot="R90"/>
 <text x="0.762" y="5.588" size="1.778" layer="94">+</text>
 <text x="0.762" y="-6.35" size="0.8128" layer="94" ratio="11">GND</text>
+</symbol>
+<symbol name="NPN">
+<description>NPN BJT</description>
+<wire x1="2.54" y1="2.54" x2="0.508" y2="1.524" width="0.1524" layer="94"/>
+<wire x1="1.778" y1="-1.524" x2="2.54" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="2.54" y1="-2.54" x2="1.27" y2="-2.54" width="0.1524" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.778" y2="-1.524" width="0.1524" layer="94"/>
+<wire x1="1.54" y1="-2.04" x2="0.308" y2="-1.424" width="0.1524" layer="94"/>
+<wire x1="1.524" y1="-2.413" x2="2.286" y2="-2.413" width="0.254" layer="94"/>
+<wire x1="2.286" y1="-2.413" x2="1.778" y2="-1.778" width="0.254" layer="94"/>
+<wire x1="1.778" y1="-1.778" x2="1.524" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.524" y1="-2.286" x2="1.905" y2="-2.286" width="0.254" layer="94"/>
+<wire x1="1.905" y1="-2.286" x2="1.778" y2="-2.032" width="0.254" layer="94"/>
+<text x="-10.16" y="7.62" size="1.778" layer="95">&gt;NAME</text>
+<text x="-10.16" y="5.08" size="1.778" layer="96">&gt;VALUE</text>
+<rectangle x1="-0.254" y1="-2.54" x2="0.508" y2="2.54" layer="94"/>
+<pin name="B" x="-2.54" y="0" visible="off" length="short" direction="pas" swaplevel="1"/>
+<pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
+<pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -2171,7 +2269,6 @@ Source: 008-0260-0_E.pdf</description>
 </deviceset>
 <deviceset name="SD0805">
 <description>&lt;p&gt; AVX 0805 Schottky Barrier Rectifier Diode&lt;/p&gt;
-
 &lt;p&gt;http://datasheets.avx.com/schottky.pdf&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
@@ -2191,6 +2288,31 @@ Source: 008-0260-0_E.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="B0520LW">
+<description>&lt;h3&gt;Schottkey Barrier Rectifier Diode&lt;/h3&gt;
+&lt;h4&gt;Diodes Inc B0520LW&lt;/h4&gt;
+&lt;p&gt;Vf = 385mV; Vr = 20V; If = 500mA&lt;/p&gt;
+&lt;p&gt;https://www.diodes.com/assets/Datasheets/ds30051.pdf&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOD-123">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="IF" value="500mA"/>
+<attribute name="VF" value="385mV"/>
+<attribute name="VR" value="20V"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+
 <deviceset name="MC74VHC1G32DTT1G">
 <description>&lt;H3&gt;Single OR Gate&lt;/H3&gt;
 &lt;H4&gt;ON Semiconductor&lt;/H4&gt;
@@ -2206,6 +2328,29 @@ Source: 008-0260-0_E.pdf</description>
 <connect gate="G$1" pin="GND" pad="3"/>
 <connect gate="G$1" pin="V" pad="5"/>
 <connect gate="G$1" pin="Y" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+
+<deviceset name="BC817">
+<description>&lt;h3&gt;General Purpose Transistor&lt;/h3&gt;
+&lt;h4&gt;BC817-16L NPN ON Semiconductor&lt;/h4&gt;
+&lt;p&gt; -16L Variant&lt;/p&gt;
+&lt;p&gt; DC Gain of 100 - 250 @ 100mA, 1.0V&lt;/p&gt;
+&lt;p&gt;http://www.onsemi.com/pub/Collateral/BC817-16LT1-D.PDF&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="NPN" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23">
+<connects>
+<connect gate="G$1" pin="B" pad="1"/>
+<connect gate="G$1" pin="C" pad="3"/>
+<connect gate="G$1" pin="E" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
