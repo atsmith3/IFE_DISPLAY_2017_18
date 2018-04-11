@@ -2,52 +2,94 @@
 // Sprite Generator
 // Converts a PNG to a text file
 
-#include "png.h"
+#include "EasyBMP.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
+#include <vector>
+#include <iostream>
 
-#define PALATE_SIZE 3
+using namespace std;
 
-typedef struct color {
-    int red;
-    int green;
-    int blue;
-} color_t;
+int main(int argc, char** argv) {
+    if(argc <= 1) {
+        printf("./sprite_gen sprite.bmp colors.txt output.txt\n");
+        return -1;
+    }    
 
-color_t palate[PALATE_SIZE] = {{17, 32, 51}, {253,97,12}, {255,255,255}};
+    BMP Image;
+    if(!Image.ReadFromFile(argv[1])){
+        printf("Could not open image\n");
+        return -1;
+    }
 
-int main(void) {
-    PNG image("disp_render_old.png");
+    /* Read Palate */
+    vector<RGBApixel> palate;
+    RGBApixel color;
+    int red, green, blue;
+    FILE* p = fopen((const char*)argv[2], "r");
+    if(p == NULL) {
+        printf("Could not open file\n");
+        return -1;
+    }
+
+    while(!feof(p)) {
+        fscanf(p, "%i %i %i\n", &red, &green, &blue);
+        color.Red = 0xFF & red;
+        color.Green = 0xFF & green;
+        color.Blue = 0xFF & blue;
+        palate.push_back(color);
+    }
+    
+    for(int i = 0; i < palate.size(); i++) {
+        printf("%3i %3i %3i\n", palate[i].Red, palate[i].Green, palate[i].Blue);
+    }
+    printf("Palate Size: %3zu\n", palate.size());
+    fclose(p);
+
+    /* Create A Sprite File */
+    p = fopen((const char*)argv[3], "wb"); 
+    if(p == NULL) {
+        printf("Could not open file\n");
+        return -1;
+    }
+    
     double distance = 0.0;
     double min_distance = 0.0;
-    int color = 0;
+    int palate_color = 0;
 
-    printf("'{");
-    for(size_t i = 0; i < image.height(); i++) {
-        printf("'{");
-        for(size_t j = 0; j < image.width(); j++) {
+    fprintf(p,"'{");
+    for(size_t i = 0; i < Image.TellHeight(); i++) {
+        if(i == 0) {
+            fprintf(p,"'{");
+        }
+        else {
+            fprintf(p,"  '{");
+        }
+        for(size_t j = 0; j < Image.TellWidth(); j++) {
             min_distance = sqrt(3*pow(255, 2));
-            color = 0;
-            for(int k = 0; k < PALATE_SIZE; k++) {
+            palate_color = 0;
+            for(int k = 0; k < palate.size(); k++) {
                 /* Determine the closest approximate color */
-                distance = pow((image(j,i)->blue - palate[k].blue), 2.0) +
-                           pow((image(j,i)->green - palate[k].green), 2.0) +
-                           pow((image(j,i)->red - palate[k].red), 2.0);
+                distance = pow((Image(j,i)->Blue  - palate[k].Blue), 2.0) +
+                           pow((Image(j,i)->Green - palate[k].Green), 2.0) +
+                           pow((Image(j,i)->Red   - palate[k].Red), 2.0);
                 distance = sqrt(distance);
                 if(distance < min_distance) {
                     /* Update distance and color */
-                    color = k;
+                    palate_color = k;
                     min_distance = distance;
                 }
             }
-            printf("%2d", color);
-            if(j != image.width() - 1) printf(",");
+            fprintf(p,"%3d", palate_color);
+            if(j != Image.TellWidth() - 1) fprintf(p,",");
         }
-        printf("}");
-        if(i != image.height() - 1) printf(",\n");
+        fprintf(p,"}");
+        if(i != Image.TellHeight() - 1) fprintf(p,",\n");
     }
-    printf("};");
+    fprintf(p,"};\n");
+    fprintf(p,"Width: %5i  Height: %5i\n", Image.TellWidth(), Image.TellHeight()); 
+    fclose(p);
 
     return 0;
 }
