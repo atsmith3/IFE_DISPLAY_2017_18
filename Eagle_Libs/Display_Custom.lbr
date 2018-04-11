@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="50" unitdist="mil" unit="mil" style="lines" multiple="1" display="yes" altdistance="5" altunitdist="mil" altunit="mil"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -604,7 +604,6 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 <rectangle x1="-8.8125" y1="10.5625" x2="-7.6875" y2="10.9625" layer="29" rot="R270"/>
 <rectangle x1="-9.3125" y1="10.5625" x2="-8.1875" y2="10.9625" layer="29" rot="R270"/>
 </package>
-
 <package name="SOIC127P600X175-8N">
 <description>SOIC8</description>
 <smd name="1" x="-2.6416" y="1.905" dx="1.6002" dy="0.5588" layer="1"/>
@@ -664,7 +663,6 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 <text x="-4.3942" y="3.6576" size="2.0828" layer="25" ratio="10" rot="SR0">&gt;NAME</text>
 <text x="-5.2832" y="-5.3848" size="2.0828" layer="27" ratio="10" rot="SR0">&gt;VALUE</text>
 </package>
-
 <package name="DPACK">
 <description>&lt;b&gt;DPAK&lt;/b&gt;&lt;p&gt;
 (Motorola)</description>
@@ -695,7 +693,6 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 <vertex x="2.5654" y="3.937"/>
 </polygon>
 </package>
-
 <package name="SOT23-5L">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; SOT23-5L&lt;p&gt;</description>
 <wire x1="1.422" y1="0.81" x2="1.422" y2="-0.81" width="0.1524" layer="21"/>
@@ -728,7 +725,6 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 <rectangle x1="-1.2875" y1="0.5" x2="-0.6125" y2="1.8125" layer="29" rot="R180"/>
 <rectangle x1="-1.2125" y1="0.5875" x2="-0.6875" y2="1.7125" layer="31" rot="R180"/>
 </package>
-
 <package name="SMA_DIODE">
 <description>SMA_DIODE</description>
 <smd name="C" x="-2" y="0" dx="2.5" dy="1.7" layer="1"/>
@@ -741,22 +737,20 @@ Source: http://www.altera.com/literature/ds/144-EQFP.pdf</description>
 <text x="-3" y="2" size="1.27" layer="25">&gt;NAME</text>
 <text x="-3" y="-3.3" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-
 <package name="SOD323">
 <description>&lt;b&gt;Small Outline Diode&lt;/b&gt;</description>
 <wire x1="-0.8" y1="0.575" x2="0.8" y2="0.575" width="0.2032" layer="51"/>
 <wire x1="0.8" y1="0.575" x2="0.8" y2="-0.575" width="0.2032" layer="51"/>
 <wire x1="0.8" y1="-0.575" x2="-0.8" y2="-0.575" width="0.2032" layer="51"/>
 <wire x1="-0.8" y1="-0.575" x2="-0.8" y2="0.575" width="0.2032" layer="51"/>
-<smd name="1" x="-1.1" y="0" dx="1" dy="0.6" layer="1"/>
-<smd name="2" x="1.1" y="0" dx="1" dy="0.6" layer="1"/>
-<text x="-0.9" y="0.78" size="1.016" layer="25">&gt;NAME</text>
-<text x="-0.9" y="-1.805" size="1.016" layer="27">&gt;VALUE</text>
+<smd name="C" x="-1.1" y="0" dx="1" dy="0.6" layer="1"/>
+<smd name="A" x="1.1" y="0" dx="1" dy="0.6" layer="1"/>
+<text x="-0.9" y="0.78" size="0.8128" layer="25">&gt;NAME</text>
+<text x="-0.9" y="-1.805" size="0.8128" layer="27">&gt;VALUE</text>
 <rectangle x1="-1.35" y1="-0.2" x2="-0.9" y2="0.2" layer="51"/>
 <rectangle x1="0.9" y1="-0.2" x2="1.35" y2="0.2" layer="51"/>
 <rectangle x1="-0.75" y1="-0.575" x2="-0.375" y2="0.575" layer="51"/>
 </package>
-
 <package name="SM77H">
 <description>&lt;b&gt;3.3V CMOS Clock Oscillator&lt;/b&gt;&lt;p&gt;
 Source: www.pletronics.com .. sm77h%203.3v.pdf</description>
@@ -776,7 +770,6 @@ Source: www.pletronics.com .. sm77h%203.3v.pdf</description>
 <text x="-3.81" y="-2.54" size="1.27" layer="25" rot="R90">&gt;NAME</text>
 <text x="-2.286" y="-0.508" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-
 <package name="CTS406">
 <description>&lt;b&gt;Model 406 6.0x3.5mm Low Cost Surface Mount Crystal&lt;/b&gt;&lt;p&gt;
 Source: 008-0260-0_E.pdf</description>
@@ -804,7 +797,6 @@ Source: 008-0260-0_E.pdf</description>
 <text x="-2.54" y="2.54" size="1.27" layer="25">&gt;NAME</text>
 <text x="-2.54" y="-3.81" size="1.27" layer="27">&gt;VALUE</text>
 </package>
-
 <package name="QFN65P600X600X100-29N">
 <rectangle x1="-1.17498125" y1="-1.17498125" x2="1.170040625" y2="1.170040625" layer="31"/>
 <text x="-3.98835" y="-5.167590625" size="1.68355" layer="27" align="top-left">&gt;VALUE</text>
@@ -857,7 +849,6 @@ Source: 008-0260-0_E.pdf</description>
 <smd name="21" x="2.835" y="1.95" dx="1.04" dy="0.33" layer="1" roundness="25"/>
 <smd name="29" x="0" y="0" dx="3.7" dy="3.7" layer="1" cream="no"/>
 </package>
-
 <package name="DPDT_2C">
 <description>DPDT Relay 2 Form C</description>
 <smd name="12" x="-5.08" y="4.025" dx="1" dy="2.85" layer="1"/>
@@ -876,7 +867,6 @@ Source: 008-0260-0_E.pdf</description>
 <text x="-7.62" y="-3.429" size="0.8128" layer="21" rot="R90">&gt;NAME</text>
 <text x="8.509" y="-3.429" size="0.8128" layer="21" rot="R90">&gt;VALUE</text>
 </package>
-
 <package name="QFP50P2200X2200X120-144" urn="urn:adsk.eagle:footprint:2248224/1">
 <description>144-QFP, 0.5 mm pitch, 22 mm span, 20 X 20 X 1.2 mm body
 &lt;p&gt;144-pin QFP package with 0.5 mm pitch, 22 mm lead span1 X 22 mm lead span2 with body size 20 X 20 X 1.2 mm&lt;/p&gt;</description>
@@ -1040,7 +1030,6 @@ Source: 008-0260-0_E.pdf</description>
 <text x="0" y="12.0409" size="1.27" layer="25" align="bottom-center">&gt;NAME</text>
 <text x="0" y="-12.0409" size="1.27" layer="27" align="top-center">&gt;VALUE</text>
 </package>
-
 <package name="SOT23-6L">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt; SOT23-6L&lt;p&gt;</description>
 <wire x1="1.422" y1="0.81" x2="1.422" y2="-0.81" width="0.1524" layer="21"/>
@@ -1077,7 +1066,6 @@ Source: 008-0260-0_E.pdf</description>
 <circle x="-1.7018" y="-0.762" radius="0.05679375" width="0.127" layer="21"/>
 <smd name="5" x="0" y="1.15" dx="1.2" dy="0.6" layer="1" rot="R90"/>
 </package>
-
 <package name="SOT223" urn="urn:adsk.eagle:footprint:43189/1" locally_modified="yes">
 <description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;
 &lt;p&gt;SOT-223&lt;/p&gt;</description>
@@ -1100,7 +1088,6 @@ Source: 008-0260-0_E.pdf</description>
 <rectangle x1="-2.7432" y1="-3.6576" x2="-1.8796" y2="-1.8034" layer="51"/>
 <rectangle x1="1.8796" y1="-3.6576" x2="2.7432" y2="-1.8034" layer="51"/>
 </package>
-
 <package name="MINIFIT_JR_5569-02A2">
 <description>MOLEX Minifit JR Connector 5569-02A2
 &lt;p&gt;https://www.molex.com/pdm_docs/sd/039301022_sd.pdf&lt;/p&gt;</description>
@@ -1128,7 +1115,6 @@ Source: 008-0260-0_E.pdf</description>
 <pad name="2" x="-2.1" y="7.3" drill="1.9"/>
 <pad name="3" x="2.1" y="12.8" drill="1.9"/>
 </package>
-
 <package name="0805">
 <description>0805 Diode</description>
 <wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
@@ -1140,7 +1126,6 @@ Source: 008-0260-0_E.pdf</description>
 <text x="-1.27" y="0.8382" size="0.8128" layer="25">&gt;NAME</text>
 <text x="-1.27" y="-1.6256" size="0.8128" layer="27">&gt;VALUE</text>
 </package>
-
 <package name="SOD-123">
 <description>SOD-123</description>
 <wire x1="-1.3" y1="0.775" x2="-0.5" y2="0.775" width="0.2032" layer="21"/>
@@ -1157,7 +1142,6 @@ Source: 008-0260-0_E.pdf</description>
 <wire x1="1.35" y1="-0.775" x2="-1.35" y2="-0.775" width="0.127" layer="51"/>
 <wire x1="-1.35" y1="-0.775" x2="-1.35" y2="0.775" width="0.127" layer="51"/>
 </package>
-
 <package name="SOT23">
 <description>&lt;b&gt;SOT-23&lt;/b&gt;</description>
 <wire x1="1.4224" y1="0.6604" x2="1.4224" y2="-0.6604" width="0.1524" layer="51"/>
@@ -1173,6 +1157,93 @@ Source: 008-0260-0_E.pdf</description>
 <rectangle x1="0.7112" y1="-1.2954" x2="1.1684" y2="-0.7112" layer="51"/>
 <rectangle x1="-1.1684" y1="-1.2954" x2="-0.7112" y2="-0.7112" layer="51"/>
 </package>
+<package name="SSOP28" urn="urn:adsk.eagle:footprint:14004/1" locally_modified="yes">
+<description>&lt;b&gt;Shrink Small Outline Package&lt;/b&gt; SSOP-28&lt;p&gt;</description>
+<wire x1="-5.1" y1="-2.6" x2="5.1" y2="-2.6" width="0.2032" layer="21"/>
+<wire x1="5.1" y1="-2.6" x2="5.1" y2="2.6" width="0.2032" layer="21"/>
+<wire x1="5.1" y1="2.6" x2="-5.1" y2="2.6" width="0.2032" layer="21"/>
+<wire x1="-5.1" y1="2.6" x2="-5.1" y2="-2.6" width="0.2032" layer="21"/>
+<circle x="-4.2" y="-1.625" radius="0.4422" width="0" layer="21"/>
+<smd name="1" x="-4.225" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="2" x="-3.575" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="3" x="-2.925" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="4" x="-2.275" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="5" x="-1.625" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="6" x="-0.975" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="7" x="-0.325" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="8" x="0.325" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="9" x="0.975" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="10" x="1.625" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="11" x="2.275" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="12" x="2.925" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="13" x="3.575" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="14" x="4.225" y="-3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="15" x="4.225" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="16" x="3.575" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="17" x="2.925" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="18" x="2.275" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="19" x="1.625" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="20" x="0.975" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="21" x="0.325" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="22" x="-0.325" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="23" x="-0.975" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="24" x="-1.625" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="25" x="-2.275" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="26" x="-2.925" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="27" x="-3.575" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<smd name="28" x="-4.225" y="3.625" dx="0.4" dy="1.5" layer="1"/>
+<text x="-5.476" y="-2.6299" size="0.8128" layer="25" rot="R90">&gt;NAME</text>
+<rectangle x1="-4.4028" y1="-3.937" x2="-4.0472" y2="-2.6416" layer="51"/>
+<rectangle x1="-3.7529" y1="-3.937" x2="-3.3973" y2="-2.6416" layer="51"/>
+<rectangle x1="-3.1029" y1="-3.937" x2="-2.7473" y2="-2.6416" layer="51"/>
+<rectangle x1="-2.4529" y1="-3.937" x2="-2.0973" y2="-2.6416" layer="51"/>
+<rectangle x1="-1.8029" y1="-3.937" x2="-1.4473" y2="-2.6416" layer="51"/>
+<rectangle x1="-1.1529" y1="-3.937" x2="-0.7973" y2="-2.6416" layer="51"/>
+<rectangle x1="-0.5029" y1="-3.937" x2="-0.1473" y2="-2.6416" layer="51"/>
+<rectangle x1="0.1473" y1="-3.937" x2="0.5029" y2="-2.6416" layer="51"/>
+<rectangle x1="0.7973" y1="-3.937" x2="1.1529" y2="-2.6416" layer="51"/>
+<rectangle x1="1.4473" y1="-3.937" x2="1.8029" y2="-2.6416" layer="51"/>
+<rectangle x1="2.0973" y1="-3.937" x2="2.4529" y2="-2.6416" layer="51"/>
+<rectangle x1="2.7473" y1="-3.937" x2="3.1029" y2="-2.6416" layer="51"/>
+<rectangle x1="3.3973" y1="-3.937" x2="3.7529" y2="-2.6416" layer="51"/>
+<rectangle x1="4.0472" y1="-3.937" x2="4.4028" y2="-2.6416" layer="51"/>
+<rectangle x1="4.0472" y1="2.6416" x2="4.4028" y2="3.937" layer="51"/>
+<rectangle x1="3.3973" y1="2.6416" x2="3.7529" y2="3.937" layer="51"/>
+<rectangle x1="2.7473" y1="2.6416" x2="3.1029" y2="3.937" layer="51"/>
+<rectangle x1="2.0973" y1="2.6416" x2="2.4529" y2="3.937" layer="51"/>
+<rectangle x1="1.4473" y1="2.6416" x2="1.8029" y2="3.937" layer="51"/>
+<rectangle x1="0.7973" y1="2.6416" x2="1.1529" y2="3.937" layer="51"/>
+<rectangle x1="0.1473" y1="2.6416" x2="0.5029" y2="3.937" layer="51"/>
+<rectangle x1="-0.5029" y1="2.6416" x2="-0.1473" y2="3.937" layer="51"/>
+<rectangle x1="-1.1529" y1="2.6416" x2="-0.7973" y2="3.937" layer="51"/>
+<rectangle x1="-1.8029" y1="2.6416" x2="-1.4473" y2="3.937" layer="51"/>
+<rectangle x1="-2.4529" y1="2.6416" x2="-2.0973" y2="3.937" layer="51"/>
+<rectangle x1="-3.1029" y1="2.6416" x2="-2.7473" y2="3.937" layer="51"/>
+<rectangle x1="-3.7529" y1="2.6416" x2="-3.3973" y2="3.937" layer="51"/>
+<rectangle x1="-4.4028" y1="2.6416" x2="-4.0472" y2="3.937" layer="51"/>
+</package>
+<package name="LGA-12">
+<description>LGA 12 MEMS Package</description>
+<smd name="8" x="1.125" y="-0.25" dx="1" dy="0.25" layer="1"/>
+<smd name="9" x="1.125" y="0.25" dx="1" dy="0.25" layer="1"/>
+<smd name="10" x="1.125" y="0.75" dx="1" dy="0.25" layer="1"/>
+<smd name="7" x="1.125" y="-0.75" dx="1" dy="0.25" layer="1"/>
+<smd name="3" x="-1.125" y="-0.25" dx="1" dy="0.25" layer="1"/>
+<smd name="2" x="-1.125" y="0.25" dx="1" dy="0.25" layer="1"/>
+<smd name="1" x="-1.125" y="0.75" dx="1" dy="0.25" layer="1"/>
+<smd name="4" x="-1.125" y="-0.75" dx="1" dy="0.25" layer="1"/>
+<smd name="12" x="-0.25" y="1.125" dx="1" dy="0.25" layer="1" rot="R90"/>
+<smd name="11" x="0.25" y="1.125" dx="1" dy="0.25" layer="1" rot="R90"/>
+<smd name="5" x="-0.25" y="-1.125" dx="1" dy="0.25" layer="1" rot="R90"/>
+<smd name="6" x="0.25" y="-1.125" dx="1" dy="0.25" layer="1" rot="R90"/>
+<wire x1="-1" y1="1" x2="1" y2="1" width="0.127" layer="21"/>
+<wire x1="1" y1="1" x2="1" y2="-1" width="0.127" layer="21"/>
+<wire x1="1" y1="-1" x2="-1" y2="-1" width="0.127" layer="21"/>
+<wire x1="-1" y1="-1" x2="-1" y2="1" width="0.127" layer="21"/>
+<text x="-1.778" y="1.905" size="0.8128" layer="25">&gt;NAME</text>
+<text x="-1.778" y="-2.667" size="0.8128" layer="27">&gt;VALUE</text>
+<circle x="-1.27" y="1.27" radius="0.05679375" width="0.127" layer="21"/>
+</package>
 </packages>
 <packages3d>
 <package3d name="QFP50P2200X2200X120-144" urn="urn:adsk.eagle:package:2247426/1" type="model">
@@ -1183,7 +1254,6 @@ Source: 008-0260-0_E.pdf</description>
 </packageinstances>
 </package3d>
 </packages3d>
-
 <symbols>
 <symbol name="10CL006ZE144">
 <description>&lt;p&gt;Altera Cyclone 10 10CL006ZE144I8G&lt;/p&gt;
@@ -1700,6 +1770,25 @@ Source: 008-0260-0_E.pdf</description>
 <pin name="E" x="2.54" y="-5.08" visible="off" length="short" direction="pas" swaplevel="3" rot="R90"/>
 <pin name="C" x="2.54" y="5.08" visible="off" length="short" direction="pas" swaplevel="2" rot="R270"/>
 </symbol>
+<symbol name="LIS2HH12">
+<description>LIS2HH12</description>
+<wire x1="-12.7" y1="7.62" x2="-12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="-12.7" y1="-10.16" x2="12.7" y2="-10.16" width="0.254" layer="94"/>
+<wire x1="12.7" y1="-10.16" x2="12.7" y2="7.62" width="0.254" layer="94"/>
+<wire x1="12.7" y1="7.62" x2="-12.7" y2="7.62" width="0.254" layer="94"/>
+<pin name="SCL/SCK" x="15.24" y="5.08" visible="pin" length="short" rot="R180"/>
+<pin name="!CS" x="15.24" y="2.54" visible="pin" length="short" rot="R180"/>
+<pin name="SDO/SA0" x="15.24" y="0" visible="pin" length="short" rot="R180"/>
+<pin name="SDA/SDI/SDO" x="15.24" y="-2.54" visible="pin" length="short" rot="R180"/>
+<pin name="INT1" x="15.24" y="-7.62" visible="pin" length="short" rot="R180"/>
+<pin name="INT2" x="15.24" y="-5.08" visible="pin" length="short" rot="R180"/>
+<pin name="VDD_IO" x="-15.24" y="5.08" visible="pin" length="short"/>
+<pin name="VDD" x="-15.24" y="2.54" visible="pin" length="short"/>
+<pin name="GND" x="-15.24" y="-7.62" visible="pin" length="short"/>
+<pin name="RES" x="-15.24" y="-2.54" visible="pin" length="short"/>
+<text x="-12.7" y="10.16" size="1.27" layer="95">&gt;NAME</text>
+<text x="-12.7" y="8.382" size="1.27" layer="95">&gt;VALUE</text>
+</symbol>
 </symbols>
 <devicesets>
 <deviceset name="10CL006ZE144">
@@ -1996,8 +2085,8 @@ Source: 008-0260-0_E.pdf</description>
 <devices>
 <device name="" package="SOD323">
 <connects>
-<connect gate="G$1" pin="A" pad="2"/>
-<connect gate="G$1" pin="C" pad="1"/>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
 </connects>
 <technologies>
 <technology name=""/>
@@ -2088,6 +2177,40 @@ Source: 008-0260-0_E.pdf</description>
 <attribute name="PACKAGE" value="QFN-28 Microchip"/>
 <attribute name="PRICE" value="2.19 USD"/>
 </technology>
+</technologies>
+</device>
+<device name="SSOP" package="SSOP28">
+<connects>
+<connect gate="G$1" pin="!CS" pad="17"/>
+<connect gate="G$1" pin="!INT" pad="13"/>
+<connect gate="G$1" pin="!RESET" pad="18"/>
+<connect gate="G$1" pin="!RX0BF" pad="12"/>
+<connect gate="G$1" pin="!RX1BF" pad="11"/>
+<connect gate="G$1" pin="!TX0RTS" pad="23"/>
+<connect gate="G$1" pin="!TX1RTS" pad="6"/>
+<connect gate="G$1" pin="!TX2RTS" pad="7"/>
+<connect gate="G$1" pin="CANH" pad="4"/>
+<connect gate="G$1" pin="CANL" pad="3"/>
+<connect gate="G$1" pin="CLKOUT" pad="22"/>
+<connect gate="G$1" pin="EP" pad="2 25"/>
+<connect gate="G$1" pin="GND" pad="10"/>
+<connect gate="G$1" pin="OSC1" pad="9"/>
+<connect gate="G$1" pin="OSC2" pad="8"/>
+<connect gate="G$1" pin="RXCAN" pad="21"/>
+<connect gate="G$1" pin="RXD" pad="28"/>
+<connect gate="G$1" pin="SCK" pad="14"/>
+<connect gate="G$1" pin="SI" pad="15"/>
+<connect gate="G$1" pin="SO" pad="16"/>
+<connect gate="G$1" pin="STBY" pad="5"/>
+<connect gate="G$1" pin="TXCAN" pad="20"/>
+<connect gate="G$1" pin="TXD" pad="24"/>
+<connect gate="G$1" pin="VDD" pad="19"/>
+<connect gate="G$1" pin="VDDA" pad="27"/>
+<connect gate="G$1" pin="VIO" pad="1"/>
+<connect gate="G$1" pin="VSS" pad="26"/>
+</connects>
+<technologies>
+<technology name=""/>
 </technologies>
 </device>
 </devices>
@@ -2312,7 +2435,6 @@ Source: 008-0260-0_E.pdf</description>
 </device>
 </devices>
 </deviceset>
-
 <deviceset name="MC74VHC1G32DTT1G">
 <description>&lt;H3&gt;Single OR Gate&lt;/H3&gt;
 &lt;H4&gt;ON Semiconductor&lt;/H4&gt;
@@ -2335,7 +2457,6 @@ Source: 008-0260-0_E.pdf</description>
 </device>
 </devices>
 </deviceset>
-
 <deviceset name="BC817">
 <description>&lt;h3&gt;General Purpose Transistor&lt;/h3&gt;
 &lt;h4&gt;BC817-16L NPN ON Semiconductor&lt;/h4&gt;
@@ -2351,6 +2472,53 @@ Source: 008-0260-0_E.pdf</description>
 <connect gate="G$1" pin="B" pad="1"/>
 <connect gate="G$1" pin="C" pad="3"/>
 <connect gate="G$1" pin="E" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="DDZ3V3BSF">
+<description>&lt;H3&gt; 3.43V Zener Diode &lt;/H3&gt;
+&lt;H4&gt; Diodes Incorporated DDZ3V3BSF-7&lt;/H4&gt;
+&lt;P&gt; https://www.diodes.com/assets/Datasheets/ds31987.pdf&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="ZD" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOD323">
+<connects>
+<connect gate="G$1" pin="A" pad="A"/>
+<connect gate="G$1" pin="C" pad="C"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LIS2HH12">
+<description>&lt;H3&gt; MEMS digital output motion sensor &lt;/H3&gt;
+&lt;H4&gt; LIS2HH12 ST Semiconductor &lt;/H4&gt;
+&lt;p&gt; I2C SPI +- 8g max 800Hz sample rate&lt;p&gt;
+&lt;p&gt;http://www.st.com/content/ccc/resource/technical/document/datasheet/c9/16/f2/79/ca/31/47/89/DM00096789.pdf/files/DM00096789.pdf/jcr:content/translations/en.DM00096789.pdf&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="LIS2HH12" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="LGA-12">
+<connects>
+<connect gate="G$1" pin="!CS" pad="2"/>
+<connect gate="G$1" pin="GND" pad="6 7 8"/>
+<connect gate="G$1" pin="INT1" pad="12"/>
+<connect gate="G$1" pin="INT2" pad="11"/>
+<connect gate="G$1" pin="RES" pad="5"/>
+<connect gate="G$1" pin="SCL/SCK" pad="1"/>
+<connect gate="G$1" pin="SDA/SDI/SDO" pad="4"/>
+<connect gate="G$1" pin="SDO/SA0" pad="3"/>
+<connect gate="G$1" pin="VDD" pad="9"/>
+<connect gate="G$1" pin="VDD_IO" pad="10"/>
 </connects>
 <technologies>
 <technology name=""/>
