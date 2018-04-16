@@ -12,7 +12,7 @@ module registers(	input logic [2:0]addr,
 	reg [1:0]	gps_status_reg;
 	reg [7:0]   err_code_reg;
 	
-	always_ff @ (posedge (clk & ~write))
+	always_ff @ (posedge (clk)
 	begin
 		case (addr)
 			3'b000: speed_reg <= data_in;

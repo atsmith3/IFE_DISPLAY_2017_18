@@ -1,6 +1,6 @@
 Flow report for IFE_Display_2017
-Tue Feb 13 16:28:02 2018
-Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+Mon Apr 16 00:11:40 2018
+Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
 
 
 ---------------------
@@ -21,42 +21,42 @@ Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edit
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 1991-2013 Altera Corporation
-Your use of Altera Corporation's design tools, logic functions 
+Copyright (C) 2017  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Altera Program License 
-Subscription Agreement, Altera MegaCore Function License 
-Agreement, or other applicable license agreement, including, 
-without limitation, that your use is for the sole purpose of 
-programming logic devices manufactured by Altera and sold by 
-Altera or its authorized distributors.  Please refer to the 
-applicable agreement for further details.
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details.
 
 
 
-+--------------------------------------------------------------------------------------+
-; Flow Summary                                                                         ;
-+------------------------------------+-------------------------------------------------+
-; Flow Status                        ; Successful - Tue Feb 13 16:28:02 2018           ;
-; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
-; Revision Name                      ; IFE_Display_2017                                ;
-; Top-level Entity Name              ; top                                             ;
-; Family                             ; Cyclone II                                      ;
-; Device                             ; EP2C5T144C8                                     ;
-; Timing Models                      ; Final                                           ;
-; Total logic elements               ; 49 / 4,608 ( 1 % )                              ;
-;     Total combinational functions  ; 45 / 4,608 ( < 1 % )                            ;
-;     Dedicated logic registers      ; 27 / 4,608 ( < 1 % )                            ;
-; Total registers                    ; 27                                              ;
-; Total pins                         ; 43 / 89 ( 48 % )                                ;
-; Total virtual pins                 ; 0                                               ;
-; Total memory bits                  ; 0 / 119,808 ( 0 % )                             ;
-; Embedded Multiplier 9-bit elements ; 0 / 26 ( 0 % )                                  ;
-; Total PLLs                         ; 0 / 2 ( 0 % )                                   ;
-+------------------------------------+-------------------------------------------------+
++----------------------------------------------------------------------------------+
+; Flow Summary                                                                     ;
++------------------------------------+---------------------------------------------+
+; Flow Status                        ; Successful - Mon Apr 16 00:11:40 2018       ;
+; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
+; Revision Name                      ; IFE_Display_2017                            ;
+; Top-level Entity Name              ; top                                         ;
+; Family                             ; Cyclone 10 LP                               ;
+; Device                             ; 10CL006ZE144I8G                             ;
+; Timing Models                      ; Final                                       ;
+; Total logic elements               ; 50 / 6,272 ( < 1 % )                        ;
+;     Total combinational functions  ; 44 / 6,272 ( < 1 % )                        ;
+;     Dedicated logic registers      ; 27 / 6,272 ( < 1 % )                        ;
+; Total registers                    ; 27                                          ;
+; Total pins                         ; 43 / 89 ( 48 % )                            ;
+; Total virtual pins                 ; 0                                           ;
+; Total memory bits                  ; 0 / 276,480 ( 0 % )                         ;
+; Embedded Multiplier 9-bit elements ; 0 / 30 ( 0 % )                              ;
+; Total PLLs                         ; 0 / 2 ( 0 % )                               ;
++------------------------------------+---------------------------------------------+
 
 
 +-----------------------------------------+
@@ -64,40 +64,40 @@ applicable agreement for further details.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 02/13/2018 16:27:52 ;
+; Start date & time ; 04/16/2018 00:11:03 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; IFE_Display_2017    ;
 +-------------------+---------------------+
 
 
-+-------------------------------------------------------------------------------------------------------------------------------------------+
-; Flow Non-Default Global Settings                                                                                                          ;
-+-------------------------------------------------+---------------------------------------+------------------+-------------+----------------+
-; Assignment Name                                 ; Value                                 ; Default Value    ; Entity Name ; Section Id     ;
-+-------------------------------------------------+---------------------------------------+------------------+-------------+----------------+
-; COMPILER_SIGNATURE_ID                           ; 172309002062704.151856087108548       ; --               ; --          ; --             ;
-; EDA_DESIGN_INSTANCE_NAME                        ; NA                                    ; --               ; --          ; display_tb     ;
-; EDA_NATIVELINK_SIMULATION_TEST_BENCH            ; display_tb                            ; --               ; --          ; eda_simulation ;
-; EDA_OUTPUT_DATA_FORMAT                          ; Systemverilog Hdl                     ; --               ; --          ; eda_simulation ;
-; EDA_SIMULATION_TOOL                             ; ModelSim-Altera (SystemVerilog)       ; <None>           ; --          ; --             ;
-; EDA_TEST_BENCH_ENABLE_STATUS                    ; TEST_BENCH_MODE                       ; --               ; --          ; eda_simulation ;
-; EDA_TEST_BENCH_FILE                             ; test_bench.sv                         ; --               ; --          ; display_tb     ;
-; EDA_TEST_BENCH_MODULE_NAME                      ; display_tb                            ; --               ; --          ; display_tb     ;
-; EDA_TEST_BENCH_NAME                             ; display_tb                            ; --               ; --          ; eda_simulation ;
-; EDA_TEST_BENCH_RUN_SIM_FOR                      ; 50000 ns                              ; --               ; --          ; display_tb     ;
-; EDA_TIME_SCALE                                  ; 1 ns                                  ; --               ; --          ; eda_simulation ;
-; MAX_CORE_JUNCTION_TEMP                          ; 85                                    ; --               ; --          ; --             ;
-; MIN_CORE_JUNCTION_TEMP                          ; 0                                     ; --               ; --          ; --             ;
-; PARTITION_COLOR                                 ; 16764057                              ; --               ; top         ; Top            ;
-; PARTITION_FITTER_PRESERVATION_LEVEL             ; PLACEMENT_AND_ROUTING                 ; --               ; top         ; Top            ;
-; PARTITION_NETLIST_TYPE                          ; SOURCE                                ; --               ; top         ; Top            ;
-; PHYSICAL_SYNTHESIS_EFFORT                       ; Extra                                 ; Normal           ; --          ; --             ;
-; PHYSICAL_SYNTHESIS_MAP_LOGIC_TO_MEMORY_FOR_AREA ; On                                    ; Off              ; --          ; --             ;
-; POWER_BOARD_THERMAL_MODEL                       ; None (CONSERVATIVE)                   ; --               ; --          ; --             ;
-; POWER_PRESET_COOLING_SOLUTION                   ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW ; --               ; --          ; --             ;
-; PROJECT_OUTPUT_DIRECTORY                        ; output_files                          ; --               ; --          ; --             ;
-; TOP_LEVEL_ENTITY                                ; top                                   ; IFE_Display_2017 ; --          ; --             ;
-+-------------------------------------------------+---------------------------------------+------------------+-------------+----------------+
++--------------------------------------------------------------------------------------------------------------------------------------------+
+; Flow Non-Default Global Settings                                                                                                           ;
++-------------------------------------------------+----------------------------------------+------------------+-------------+----------------+
+; Assignment Name                                 ; Value                                  ; Default Value    ; Entity Name ; Section Id     ;
++-------------------------------------------------+----------------------------------------+------------------+-------------+----------------+
+; COMPILER_SIGNATURE_ID                           ; 174508025318255.152385546306824        ; --               ; --          ; --             ;
+; EDA_DESIGN_INSTANCE_NAME                        ; NA                                     ; --               ; --          ; display_tb     ;
+; EDA_NATIVELINK_SIMULATION_TEST_BENCH            ; display_tb                             ; --               ; --          ; eda_simulation ;
+; EDA_OUTPUT_DATA_FORMAT                          ; Systemverilog Hdl                      ; --               ; --          ; eda_simulation ;
+; EDA_SIMULATION_TOOL                             ; ModelSim-Altera (SystemVerilog)        ; <None>           ; --          ; --             ;
+; EDA_TEST_BENCH_ENABLE_STATUS                    ; TEST_BENCH_MODE                        ; --               ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_FILE                             ; test_bench.sv                          ; --               ; --          ; display_tb     ;
+; EDA_TEST_BENCH_MODULE_NAME                      ; display_tb                             ; --               ; --          ; display_tb     ;
+; EDA_TEST_BENCH_NAME                             ; display_tb                             ; --               ; --          ; eda_simulation ;
+; EDA_TEST_BENCH_RUN_SIM_FOR                      ; 50000 ns                               ; --               ; --          ; display_tb     ;
+; EDA_TIME_SCALE                                  ; 1 ns                                   ; --               ; --          ; eda_simulation ;
+; MAX_CORE_JUNCTION_TEMP                          ; 100                                    ; --               ; --          ; --             ;
+; MIN_CORE_JUNCTION_TEMP                          ; -40                                    ; --               ; --          ; --             ;
+; PARTITION_COLOR                                 ; -- (Not supported for targeted family) ; --               ; top         ; Top            ;
+; PARTITION_FITTER_PRESERVATION_LEVEL             ; -- (Not supported for targeted family) ; --               ; top         ; Top            ;
+; PARTITION_NETLIST_TYPE                          ; -- (Not supported for targeted family) ; --               ; top         ; Top            ;
+; PHYSICAL_SYNTHESIS_EFFORT                       ; Extra                                  ; Normal           ; --          ; --             ;
+; PHYSICAL_SYNTHESIS_MAP_LOGIC_TO_MEMORY_FOR_AREA ; On                                     ; Off              ; --          ; --             ;
+; POWER_BOARD_THERMAL_MODEL                       ; None (CONSERVATIVE)                    ; --               ; --          ; --             ;
+; POWER_PRESET_COOLING_SOLUTION                   ; 23 MM HEAT SINK WITH 200 LFPM AIRFLOW  ; --               ; --          ; --             ;
+; PROJECT_OUTPUT_DIRECTORY                        ; output_files                           ; --               ; --          ; --             ;
+; TOP_LEVEL_ENTITY                                ; top                                    ; IFE_Display_2017 ; --          ; --             ;
++-------------------------------------------------+----------------------------------------+------------------+-------------+----------------+
 
 
 +-------------------------------------------------------------------------------------------------------------------------------+
@@ -105,26 +105,26 @@ applicable agreement for further details.
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name               ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis      ; 00:00:01     ; 1.0                     ; 519 MB              ; 00:00:01                           ;
-; Fitter                    ; 00:00:02     ; 1.0                     ; 728 MB              ; 00:00:02                           ;
-; Assembler                 ; 00:00:01     ; 1.0                     ; 463 MB              ; 00:00:01                           ;
-; TimeQuest Timing Analyzer ; 00:00:01     ; 1.0                     ; 456 MB              ; 00:00:01                           ;
-; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 434 MB              ; 00:00:00                           ;
-; Total                     ; 00:00:06     ; --                      ; --                  ; 00:00:05                           ;
+; Analysis & Synthesis      ; 00:00:16     ; 1.0                     ; 695 MB              ; 00:00:31                           ;
+; Fitter                    ; 00:00:07     ; 1.0                     ; 1107 MB             ; 00:00:06                           ;
+; Assembler                 ; 00:00:03     ; 1.0                     ; 594 MB              ; 00:00:03                           ;
+; TimeQuest Timing Analyzer ; 00:00:03     ; 1.0                     ; 636 MB              ; 00:00:03                           ;
+; EDA Netlist Writer        ; 00:00:01     ; 1.0                     ; 561 MB              ; 00:00:02                           ;
+; Total                     ; 00:00:30     ; --                      ; --                  ; 00:00:45                           ;
 +---------------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
-+----------------------------------------------------------------------------------------+
-; Flow OS Summary                                                                        ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Module Name               ; Machine Hostname ; OS Name   ; OS Version ; Processor type ;
-+---------------------------+------------------+-----------+------------+----------------+
-; Analysis & Synthesis      ; LAPTOP-QDOQH21E  ; Windows 7 ; 6.2        ; x86_64         ;
-; Fitter                    ; LAPTOP-QDOQH21E  ; Windows 7 ; 6.2        ; x86_64         ;
-; Assembler                 ; LAPTOP-QDOQH21E  ; Windows 7 ; 6.2        ; x86_64         ;
-; TimeQuest Timing Analyzer ; LAPTOP-QDOQH21E  ; Windows 7 ; 6.2        ; x86_64         ;
-; EDA Netlist Writer        ; LAPTOP-QDOQH21E  ; Windows 7 ; 6.2        ; x86_64         ;
-+---------------------------+------------------+-----------+------------+----------------+
++-----------------------------------------------------------------------------------------+
+; Flow OS Summary                                                                         ;
++---------------------------+------------------+------------+------------+----------------+
+; Module Name               ; Machine Hostname ; OS Name    ; OS Version ; Processor type ;
++---------------------------+------------------+------------+------------+----------------+
+; Analysis & Synthesis      ; LAPTOP-QDOQH21E  ; Windows 10 ; 10.0       ; x86_64         ;
+; Fitter                    ; LAPTOP-QDOQH21E  ; Windows 10 ; 10.0       ; x86_64         ;
+; Assembler                 ; LAPTOP-QDOQH21E  ; Windows 10 ; 10.0       ; x86_64         ;
+; TimeQuest Timing Analyzer ; LAPTOP-QDOQH21E  ; Windows 10 ; 10.0       ; x86_64         ;
+; EDA Netlist Writer        ; LAPTOP-QDOQH21E  ; Windows 10 ; 10.0       ; x86_64         ;
++---------------------------+------------------+------------+------------+----------------+
 
 
 ------------
