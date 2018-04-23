@@ -1,10 +1,10 @@
-/* Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition */
+/* Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition */
 JedecChain;
 	FileRevision(JESD32A);
 	DefaultMfr(6E);
 
 	P ActionCode(Cfg)
-		Device PartName(10CL006ZE144) Path("C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/output_files/") File("IFE_Display_2017.sof") MfrSpec(OpMask(1));
+		Device PartName(EP2C5T144) Path("E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/output_files/") File("IFE_Display_2017.sof") MfrSpec(OpMask(1));
 
 ChainEnd;
 

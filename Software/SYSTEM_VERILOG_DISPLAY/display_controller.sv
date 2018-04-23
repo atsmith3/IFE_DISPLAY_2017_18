@@ -29,7 +29,8 @@ enum int unsigned {
     s_3,
     s_4,
     s_5,
-    s_6
+    s_6,
+	 s_7
 } state_clk, next_state_clk;
    
 // signal indicates if ok to display color for a pixel
@@ -57,6 +58,7 @@ always_comb begin
         s_4 : next_state_clk = s_5;
         s_5 : next_state_clk = s_6;
         s_6 : next_state_clk = s_0;
+//		  s_7 : next_state_clk = s_0;
     endcase
 end
    
