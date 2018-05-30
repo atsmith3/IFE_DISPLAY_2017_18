@@ -1,10 +1,10 @@
-Analysis & Synthesis Status : Successful - Mon Apr 16 00:11:19 2018
-Quartus Prime Version : 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Analysis & Synthesis Status : Successful - Mon Apr 23 15:27:05 2018
+Quartus II 64-Bit Version : 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition
 Revision Name : IFE_Display_2017
 Top-level Entity Name : top
-Family : Cyclone 10 LP
-Total logic elements : 49
-    Total combinational functions : 44
+Family : Cyclone II
+Total logic elements : 975
+    Total combinational functions : 970
     Dedicated logic registers : 27
 Total registers : 27
 Total pins : 43

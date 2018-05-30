@@ -1,6 +1,5 @@
 set tool_name "ModelSim-Altera (SystemVerilog)"
 set corner_file_list {
-    {{"Slow -8L 1.0V 100 Model"} {IFE_Display_2017_8l_1000mv_100c_slow.svo IFE_Display_2017_8l_1000mv_100c_v_slow.sdo}}
-    {{"Slow -8L 1.0V -40 Model"} {IFE_Display_2017_8l_1000mv_-40c_slow.svo IFE_Display_2017_8l_1000mv_-40c_v_slow.sdo}}
-    {{"Fast -M 1.0V -40 Model"} {IFE_Display_2017_min_1000mv_-40c_fast.svo IFE_Display_2017_min_1000mv_-40c_v_fast.sdo}}
+	{{"Slow Model"} {IFE_Display_2017.svo IFE_Display_2017_v.sdo}}
+	{{"Fast Model"} {IFE_Display_2017_fast.svo IFE_Display_2017_v_fast.sdo}}
 }

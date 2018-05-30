@@ -1,6 +1,6 @@
 Analysis & Synthesis report for IFE_Display_2017
-Mon Apr 16 00:11:19 2018
-Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
+Mon Apr 23 15:27:05 2018
+Quartus II 64-Bit Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
 
 
 ---------------------
@@ -19,49 +19,48 @@ Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
  11. Parameter Settings for User Entity Instance: display_controller:display
  12. Port Connectivity Checks: "display_controller:display"
  13. Port Connectivity Checks: "sprite_controller:sc|disp_main:bg"
- 14. Post-Synthesis Netlist Statistics for Top Partition
- 15. Elapsed Time Per Partition
- 16. Analysis & Synthesis Messages
+ 14. Elapsed Time Per Partition
+ 15. Analysis & Synthesis Messages
 
 
 
 ----------------
 ; Legal Notice ;
 ----------------
-Copyright (C) 2017  Intel Corporation. All rights reserved.
-Your use of Intel Corporation's design tools, logic functions 
+Copyright (C) 1991-2013 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
 and other software and tools, and its AMPP partner logic 
 functions, and any output files from any of the foregoing 
 (including device programming or simulation files), and any 
 associated documentation or information are expressly subject 
-to the terms and conditions of the Intel Program License 
-Subscription Agreement, the Intel Quartus Prime License Agreement,
-the Intel FPGA IP License Agreement, or other applicable license
-agreement, including, without limitation, that your use is for
-the sole purpose of programming logic devices manufactured by
-Intel and sold by Intel or its authorized distributors.  Please
-refer to the applicable agreement for further details.
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
 
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Summary                                                     ;
-+------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Mon Apr 16 00:11:19 2018       ;
-; Quartus Prime Version              ; 17.1.0 Build 590 10/25/2017 SJ Lite Edition ;
-; Revision Name                      ; IFE_Display_2017                            ;
-; Top-level Entity Name              ; top                                         ;
-; Family                             ; Cyclone 10 LP                               ;
-; Total logic elements               ; 49                                          ;
-;     Total combinational functions  ; 44                                          ;
-;     Dedicated logic registers      ; 27                                          ;
-; Total registers                    ; 27                                          ;
-; Total pins                         ; 43                                          ;
-; Total virtual pins                 ; 0                                           ;
-; Total memory bits                  ; 0                                           ;
-; Embedded Multiplier 9-bit elements ; 0                                           ;
-; Total PLLs                         ; 0                                           ;
-+------------------------------------+---------------------------------------------+
++--------------------------------------------------------------------------------------+
+; Analysis & Synthesis Summary                                                         ;
++------------------------------------+-------------------------------------------------+
+; Analysis & Synthesis Status        ; Successful - Mon Apr 23 15:27:05 2018           ;
+; Quartus II 64-Bit Version          ; 13.0.1 Build 232 06/12/2013 SP 1 SJ Web Edition ;
+; Revision Name                      ; IFE_Display_2017                                ;
+; Top-level Entity Name              ; top                                             ;
+; Family                             ; Cyclone II                                      ;
+; Total logic elements               ; 975                                             ;
+;     Total combinational functions  ; 970                                             ;
+;     Dedicated logic registers      ; 27                                              ;
+; Total registers                    ; 27                                              ;
+; Total pins                         ; 43                                              ;
+; Total virtual pins                 ; 0                                               ;
+; Total memory bits                  ; 0                                               ;
+; Embedded Multiplier 9-bit elements ; 0                                               ;
+; Total PLLs                         ; 0                                               ;
++------------------------------------+-------------------------------------------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------+
@@ -69,16 +68,16 @@ refer to the applicable agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 ; Option                                                                     ; Setting            ; Default Value      ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
-; Device                                                                     ; 10CL006ZE144I8G    ;                    ;
+; Device                                                                     ; EP2C5T144C8        ;                    ;
 ; Top-level entity name                                                      ; top                ; IFE_Display_2017   ;
-; Family name                                                                ; Cyclone 10 LP      ; Cyclone V          ;
+; Family name                                                                ; Cyclone II         ; Cyclone V          ;
 ; Use smart compilation                                                      ; Off                ; Off                ;
 ; Enable parallel Assembler and TimeQuest Timing Analyzer during compilation ; On                 ; On                 ;
 ; Enable compact report table                                                ; Off                ; Off                ;
 ; Restructure Multiplexers                                                   ; Auto               ; Auto               ;
 ; Create Debugging Nodes for IP Cores                                        ; Off                ; Off                ;
 ; Preserve fewer node names                                                  ; On                 ; On                 ;
-; Intel FPGA IP Evaluation Mode                                              ; Enable             ; Enable             ;
+; Disable OpenCore Plus hardware evaluation                                  ; Off                ; Off                ;
 ; Verilog Version                                                            ; Verilog_2001       ; Verilog_2001       ;
 ; VHDL Version                                                               ; VHDL_1993          ; VHDL_1993          ;
 ; State Machine Processing                                                   ; Auto               ; Auto               ;
@@ -110,14 +109,12 @@ refer to the applicable agreement for further details.
 ; Perform WYSIWYG Primitive Resynthesis                                      ; Off                ; Off                ;
 ; Auto ROM Replacement                                                       ; On                 ; On                 ;
 ; Auto RAM Replacement                                                       ; On                 ; On                 ;
-; Auto DSP Block Replacement                                                 ; On                 ; On                 ;
 ; Auto Shift Register Replacement                                            ; Auto               ; Auto               ;
 ; Allow Shift Register Merging across Hierarchies                            ; Auto               ; Auto               ;
 ; Auto Clock Enable Replacement                                              ; On                 ; On                 ;
 ; Strict RAM Replacement                                                     ; Off                ; Off                ;
 ; Allow Synchronous Control Signals                                          ; On                 ; On                 ;
 ; Force Use of Synchronous Clear Signals                                     ; Off                ; Off                ;
-; Auto RAM Block Balancing                                                   ; On                 ; On                 ;
 ; Auto RAM to Logic Cell Conversion                                          ; Off                ; Off                ;
 ; Auto Resource Sharing                                                      ; Off                ; Off                ;
 ; Allow Any RAM Size For Recognition                                         ; Off                ; Off                ;
@@ -125,13 +122,13 @@ refer to the applicable agreement for further details.
 ; Allow Any Shift Register Size For Recognition                              ; Off                ; Off                ;
 ; Use LogicLock Constraints during Resource Balancing                        ; On                 ; On                 ;
 ; Ignore translate_off and synthesis_off directives                          ; Off                ; Off                ;
-; Timing-Driven Synthesis                                                    ; On                 ; On                 ;
+; Timing-Driven Synthesis                                                    ; Off                ; Off                ;
 ; Report Parameter Settings                                                  ; On                 ; On                 ;
 ; Report Source Assignments                                                  ; On                 ; On                 ;
 ; Report Connectivity Checks                                                 ; On                 ; On                 ;
 ; Ignore Maximum Fan-Out Assignments                                         ; Off                ; Off                ;
 ; Synchronization Register Chain Length                                      ; 2                  ; 2                  ;
-; Power Optimization During Synthesis                                        ; Normal compilation ; Normal compilation ;
+; PowerPlay Power Optimization                                               ; Normal compilation ; Normal compilation ;
 ; HDL message level                                                          ; Level2             ; Level2             ;
 ; Suppress Register Optimization Related Messages                            ; Off                ; Off                ;
 ; Number of Removed Registers Reported in Synthesis Report                   ; 5000               ; 5000               ;
@@ -147,79 +144,74 @@ refer to the applicable agreement for further details.
 ; Analysis & Synthesis Message Level                                         ; Medium             ; Medium             ;
 ; Disable Register Merging Across Hierarchies                                ; Auto               ; Auto               ;
 ; Resource Aware Inference For Block RAM                                     ; On                 ; On                 ;
+; Synthesis Seed                                                             ; 1                  ; 1                  ;
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 2           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-;     Processor 2            ;   0.0%      ;
-+----------------------------+-------------+
+Parallel compilation was disabled, but you have multiple processors available. Enable parallel compilation to reduce compilation time.
++-------------------------------------+
+; Parallel Compilation                ;
++----------------------------+--------+
+; Processors                 ; Number ;
++----------------------------+--------+
+; Number detected on machine ; 8      ;
+; Maximum allowed            ; 1      ;
++----------------------------+--------+
 
 
-+------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                                                                               ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                                                           ; Library ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------+---------+
-; disp_render.sv                   ; yes             ; User SystemVerilog HDL File  ; C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/disp_render.sv        ;         ;
-; sprite_controller.sv             ; yes             ; User SystemVerilog HDL File  ; C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/sprite_controller.sv  ;         ;
-; color_mapper.sv                  ; yes             ; User SystemVerilog HDL File  ; C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/color_mapper.sv       ;         ;
-; main.sv                          ; yes             ; User SystemVerilog HDL File  ; C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv               ;         ;
-; display_controller.sv            ; yes             ; User SystemVerilog HDL File  ; C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/display_controller.sv ;         ;
-+----------------------------------+-----------------+------------------------------+--------------------------------------------------------------------------------------------------------+---------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                          ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path                                      ; Library ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
+; disp_render.sv                   ; yes             ; User SystemVerilog HDL File  ; E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/disp_render.sv        ;         ;
+; sprite_controller.sv             ; yes             ; User SystemVerilog HDL File  ; E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/sprite_controller.sv  ;         ;
+; color_mapper.sv                  ; yes             ; User SystemVerilog HDL File  ; E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/color_mapper.sv       ;         ;
+; main.sv                          ; yes             ; User SystemVerilog HDL File  ; E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/main.sv               ;         ;
+; display_controller.sv            ; yes             ; User SystemVerilog HDL File  ; E:/IFE_2017/Software/SYSTEM_VERILOG_DISPLAY/display_controller.sv ;         ;
++----------------------------------+-----------------+------------------------------+-------------------------------------------------------------------+---------+
 
 
-+------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                        ;
-+---------------------------------------------+--------------------------------------+
-; Resource                                    ; Usage                                ;
-+---------------------------------------------+--------------------------------------+
-; Estimated Total logic elements              ; 49                                   ;
-;                                             ;                                      ;
-; Total combinational functions               ; 44                                   ;
-; Logic element usage by number of LUT inputs ;                                      ;
-;     -- 4 input functions                    ; 9                                    ;
-;     -- 3 input functions                    ; 1                                    ;
-;     -- <=2 input functions                  ; 34                                   ;
-;                                             ;                                      ;
-; Logic elements by mode                      ;                                      ;
-;     -- normal mode                          ; 26                                   ;
-;     -- arithmetic mode                      ; 18                                   ;
-;                                             ;                                      ;
-; Total registers                             ; 27                                   ;
-;     -- Dedicated logic registers            ; 27                                   ;
-;     -- I/O registers                        ; 0                                    ;
-;                                             ;                                      ;
-; I/O pins                                    ; 43                                   ;
-;                                             ;                                      ;
-; Embedded Multiplier 9-bit elements          ; 0                                    ;
-;                                             ;                                      ;
-; Maximum fan-out node                        ; display_controller:display|pixel_clk ;
-; Maximum fan-out                             ; 21                                   ;
-; Total fan-out                               ; 234                                  ;
-; Average fan-out                             ; 1.49                                 ;
-+---------------------------------------------+--------------------------------------+
++--------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                                    ;
++---------------------------------------------+----------------------------------+
+; Resource                                    ; Usage                            ;
++---------------------------------------------+----------------------------------+
+; Estimated Total logic elements              ; 975                              ;
+;                                             ;                                  ;
+; Total combinational functions               ; 970                              ;
+; Logic element usage by number of LUT inputs ;                                  ;
+;     -- 4 input functions                    ; 763                              ;
+;     -- 3 input functions                    ; 140                              ;
+;     -- <=2 input functions                  ; 67                               ;
+;                                             ;                                  ;
+; Logic elements by mode                      ;                                  ;
+;     -- normal mode                          ; 952                              ;
+;     -- arithmetic mode                      ; 18                               ;
+;                                             ;                                  ;
+; Total registers                             ; 27                               ;
+;     -- Dedicated logic registers            ; 27                               ;
+;     -- I/O registers                        ; 0                                ;
+;                                             ;                                  ;
+; I/O pins                                    ; 43                               ;
+; Embedded Multiplier 9-bit elements          ; 0                                ;
+; Maximum fan-out node                        ; display_controller:display|hc[4] ;
+; Maximum fan-out                             ; 264                              ;
+; Total fan-out                               ; 3714                             ;
+; Average fan-out                             ; 3.57                             ;
++---------------------------------------------+----------------------------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                                              ;
-+---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------+--------------------+--------------+
-; Compilation Hierarchy Node      ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name             ; Entity Name        ; Library Name ;
-+---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------+--------------------+--------------+
-; |top                            ; 44 (0)              ; 27 (0)                    ; 0           ; 0            ; 0       ; 0         ; 43   ; 0            ; |top                            ; top                ; work         ;
-;    |display_controller:display| ; 44 (44)             ; 27 (27)                   ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|display_controller:display ; display_controller ; work         ;
-+---------------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------+--------------------+--------------+
++-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Resource Utilization by Entity                                                                                                                                                 ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+
+; Compilation Hierarchy Node      ; LC Combinationals ; LC Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                    ; Library Name ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+
+; |top                            ; 970 (0)           ; 27 (0)       ; 0           ; 0            ; 0       ; 0         ; 43   ; 0            ; |top                                   ; work         ;
+;    |display_controller:display| ; 45 (45)           ; 27 (27)      ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|display_controller:display        ; work         ;
+;    |sprite_controller:sc|       ; 925 (0)           ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|sprite_controller:sc              ; work         ;
+;       |disp_main:bg|            ; 925 (925)         ; 0 (0)        ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |top|sprite_controller:sc|disp_main:bg ; work         ;
++---------------------------------+-------------------+--------------+-------------+--------------+---------+-----------+------+--------------+----------------------------------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
 
@@ -326,37 +318,12 @@ Note: In order to hide this table in the UI and the text report file, please set
 +------+--------+----------+------------------------------------+
 
 
-+-----------------------------------------------------+
-; Post-Synthesis Netlist Statistics for Top Partition ;
-+-----------------------+-----------------------------+
-; Type                  ; Count                       ;
-+-----------------------+-----------------------------+
-; boundary_port         ; 43                          ;
-; cycloneiii_ff         ; 27                          ;
-;     CLR               ; 10                          ;
-;     ENA CLR           ; 10                          ;
-;     plain             ; 7                           ;
-; cycloneiii_lcell_comb ; 47                          ;
-;     arith             ; 18                          ;
-;         2 data inputs ; 18                          ;
-;     normal            ; 29                          ;
-;         0 data inputs ; 2                           ;
-;         1 data inputs ; 5                           ;
-;         2 data inputs ; 12                          ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 9                           ;
-;                       ;                             ;
-; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 2.37                        ;
-+-----------------------+-----------------------------+
-
-
 +-------------------------------+
 ; Elapsed Time Per Partition    ;
 +----------------+--------------+
 ; Partition Name ; Elapsed Time ;
 +----------------+--------------+
-; Top            ; 00:00:00     ;
+; Top            ; 00:00:07     ;
 +----------------+--------------+
 
 
@@ -364,87 +331,58 @@ Note: In order to hide this table in the UI and the text report file, please set
 ; Analysis & Synthesis Messages ;
 +-------------------------------+
 Info: *******************************************************************
-Info: Running Quartus Prime Analysis & Synthesis
-    Info: Version 17.1.0 Build 590 10/25/2017 SJ Lite Edition
-    Info: Processing started: Mon Apr 16 00:11:03 2018
+Info: Running Quartus II 64-Bit Analysis & Synthesis
+    Info: Version 13.0.1 Build 232 06/12/2013 Service Pack 1 SJ Web Edition
+    Info: Processing started: Mon Apr 23 15:26:57 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off IFE_Display_2017 -c IFE_Display_2017
-Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Warning (20028): Parallel compilation is not licensed and has been disabled
 Info (12021): Found 1 design units, including 1 entities, in source file disp_render.sv
-    Info (12023): Found entity 1: disp_main File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/disp_render.sv Line: 1
+    Info (12023): Found entity 1: disp_main
 Info (12021): Found 1 design units, including 1 entities, in source file sprite_controller.sv
-    Info (12023): Found entity 1: sprite_controller File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/sprite_controller.sv Line: 1
+    Info (12023): Found entity 1: sprite_controller
 Info (12021): Found 1 design units, including 1 entities, in source file color_mapper.sv
-    Info (12023): Found entity 1: color_mapper File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/color_mapper.sv Line: 1
+    Info (12023): Found entity 1: color_mapper
 Info (12021): Found 1 design units, including 1 entities, in source file main.sv
-    Info (12023): Found entity 1: top File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 1
-Warning (10261): Verilog HDL Event Control warning at registers.sv(15): Event Control contains a complex event expression File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/registers.sv Line: 15
+    Info (12023): Found entity 1: top
 Info (12021): Found 1 design units, including 1 entities, in source file registers.sv
-    Info (12023): Found entity 1: registers File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/registers.sv Line: 1
+    Info (12023): Found entity 1: registers
 Info (12021): Found 1 design units, including 1 entities, in source file sprites.sv
-    Info (12023): Found entity 1: background File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/sprites.sv Line: 1
+    Info (12023): Found entity 1: background
 Info (12021): Found 1 design units, including 1 entities, in source file display_controller.sv
-    Info (12023): Found entity 1: display_controller File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/display_controller.sv Line: 1
+    Info (12023): Found entity 1: display_controller
 Info (12021): Found 1 design units, including 1 entities, in source file test_bench.sv
-    Info (12023): Found entity 1: display_tb File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/test_bench.sv Line: 1
+    Info (12023): Found entity 1: display_tb
 Info (12127): Elaborating entity "top" for the top level hierarchy
-Info (12128): Elaborating entity "sprite_controller" for hierarchy "sprite_controller:sc" File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 42
-Info (12128): Elaborating entity "color_mapper" for hierarchy "sprite_controller:sc|color_mapper:cm" File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/sprite_controller.sv Line: 16
-Info (12128): Elaborating entity "disp_main" for hierarchy "sprite_controller:sc|disp_main:bg" File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/sprite_controller.sv Line: 24
-Warning (10858): Verilog HDL warning at disp_render.sv(7): object disp_0 used but never assigned File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/disp_render.sv Line: 7
-Warning (10858): Verilog HDL warning at disp_render.sv(8): object disp_1 used but never assigned File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/disp_render.sv Line: 8
-Info (12128): Elaborating entity "display_controller" for hierarchy "display_controller:display" File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 55
+Info (12128): Elaborating entity "sprite_controller" for hierarchy "sprite_controller:sc"
+Info (12128): Elaborating entity "color_mapper" for hierarchy "sprite_controller:sc|color_mapper:cm"
+Info (12128): Elaborating entity "disp_main" for hierarchy "sprite_controller:sc|disp_main:bg"
+Info (12128): Elaborating entity "display_controller" for hierarchy "display_controller:display"
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "R[0]" is stuck at VCC File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 17
-    Warning (13410): Pin "R[1]" is stuck at GND File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 17
-    Warning (13410): Pin "R[2]" is stuck at GND File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 17
-    Warning (13410): Pin "R[3]" is stuck at GND File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 17
-    Warning (13410): Pin "R[4]" is stuck at VCC File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 17
-    Warning (13410): Pin "R[5]" is stuck at GND File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 17
-    Warning (13410): Pin "R[6]" is stuck at GND File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 17
-    Warning (13410): Pin "R[7]" is stuck at GND File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 17
-    Warning (13410): Pin "G[0]" is stuck at GND File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 17
-    Warning (13410): Pin "G[1]" is stuck at GND File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 17
-    Warning (13410): Pin "G[2]" is stuck at GND File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 17
-    Warning (13410): Pin "G[3]" is stuck at GND File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 17
-    Warning (13410): Pin "G[4]" is stuck at GND File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 17
-    Warning (13410): Pin "G[5]" is stuck at VCC File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 17
-    Warning (13410): Pin "G[6]" is stuck at GND File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 17
-    Warning (13410): Pin "G[7]" is stuck at GND File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 17
-    Warning (13410): Pin "B[0]" is stuck at VCC File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 17
-    Warning (13410): Pin "B[1]" is stuck at VCC File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 17
-    Warning (13410): Pin "B[2]" is stuck at GND File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 17
-    Warning (13410): Pin "B[3]" is stuck at GND File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 17
-    Warning (13410): Pin "B[4]" is stuck at VCC File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 17
-    Warning (13410): Pin "B[5]" is stuck at VCC File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 17
-    Warning (13410): Pin "B[6]" is stuck at GND File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 17
-    Warning (13410): Pin "B[7]" is stuck at GND File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 17
-    Warning (13410): Pin "VSYNC" is stuck at GND File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 18
-    Warning (13410): Pin "HSYNC" is stuck at GND File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 18
-    Warning (13410): Pin "DISP_EN" is stuck at VCC File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 19
-Info (286030): Timing-Driven Synthesis is running
+    Warning (13410): Pin "VSYNC" is stuck at GND
+    Warning (13410): Pin "HSYNC" is stuck at GND
+    Warning (13410): Pin "DISP_EN" is stuck at VCC
 Info (17049): 32 registers lost all their fanouts during netlist optimizations.
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 10 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "fpga_port_in[0]" File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 4
-    Warning (15610): No output dependent on input pin "fpga_port_in[1]" File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 4
-    Warning (15610): No output dependent on input pin "fpga_port_in[2]" File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 4
-    Warning (15610): No output dependent on input pin "fpga_port_in[3]" File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 4
-    Warning (15610): No output dependent on input pin "fpga_port_in[4]" File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 4
-    Warning (15610): No output dependent on input pin "fpga_port_in[5]" File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 4
-    Warning (15610): No output dependent on input pin "fpga_port_in[6]" File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 4
-    Warning (15610): No output dependent on input pin "fpga_port_in[7]" File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 4
-    Warning (15610): No output dependent on input pin "fpga_rsel" File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 5
-    Warning (15610): No output dependent on input pin "fpga_write" File: C:/Users/anges/Documents/IFE/IFE_DISPLAY_2017_18/Software/SYSTEM_VERILOG_DISPLAY/main.sv Line: 6
-Info (21057): Implemented 92 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "fpga_port_in[0]"
+    Warning (15610): No output dependent on input pin "fpga_port_in[1]"
+    Warning (15610): No output dependent on input pin "fpga_port_in[2]"
+    Warning (15610): No output dependent on input pin "fpga_port_in[3]"
+    Warning (15610): No output dependent on input pin "fpga_port_in[4]"
+    Warning (15610): No output dependent on input pin "fpga_port_in[5]"
+    Warning (15610): No output dependent on input pin "fpga_port_in[6]"
+    Warning (15610): No output dependent on input pin "fpga_port_in[7]"
+    Warning (15610): No output dependent on input pin "fpga_rsel"
+    Warning (15610): No output dependent on input pin "fpga_write"
+Info (21057): Implemented 1018 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
     Info (21059): Implemented 31 output pins
-    Info (21061): Implemented 49 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 43 warnings
-    Info: Peak virtual memory: 695 megabytes
-    Info: Processing ended: Mon Apr 16 00:11:19 2018
-    Info: Elapsed time: 00:00:16
-    Info: Total CPU time (on all processors): 00:00:31
+    Info (21061): Implemented 975 logic cells
+Info: Quartus II 64-Bit Analysis & Synthesis was successful. 0 errors, 16 warnings
+    Info: Peak virtual memory: 567 megabytes
+    Info: Processing ended: Mon Apr 23 15:27:05 2018
+    Info: Elapsed time: 00:00:08
+    Info: Total CPU time (on all processors): 00:00:08
 
 
