@@ -32217,7 +32217,6 @@ This USB2.0 Full Speed  IC offers a compact bridge to full handshake UART interf
 <sheet>
 <description>&lt;h3&gt;Micro and CAN&lt;/h3&gt;</description>
 <plain>
-<text x="129.54" y="33.02" size="2.54" layer="94" font="vector" ratio="15">FT231XS (USB-to-Serial Converter)</text>
 </plain>
 <instances>
 <instance part="MICRO" gate="G$1" x="20.32" y="106.68"/>
