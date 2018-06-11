@@ -32157,8 +32157,8 @@ This USB2.0 Full Speed  IC offers a compact bridge to full handshake UART interf
 <part name="U$9" library="Display_Custom" deviceset="AS1108" device=""/>
 <part name="U$10" library="Display_Custom" deviceset="LM2576D2T-ADJ" device=""/>
 <part name="U$11" library="Display_Custom" deviceset="INDUCTOR" device="" value="100uH"/>
-<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="UD-6,3X7,7" package3d_urn="urn:adsk.eagle:package:23472/1" value="680u"/>
-<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="UD-6,3X7,7" package3d_urn="urn:adsk.eagle:package:23472/1" value="220u"/>
+<part name="C1" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="UD-6,3X7,7" package3d_urn="urn:adsk.eagle:package:23472/1" value="220u"/>
+<part name="C2" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="CPOL-US" device="UD-6,3X7,7" package3d_urn="urn:adsk.eagle:package:23472/1" value="680u"/>
 <part name="P+1" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="V+" device=""/>
 <part name="P+2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+5V" device=""/>
 <part name="GND2" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
@@ -32199,10 +32199,10 @@ This USB2.0 Full Speed  IC offers a compact bridge to full handshake UART interf
 <part name="C14" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND22" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="LED4" library="SparkFun-LED" deviceset="LED" device="1206" value="Yellow">
+<part name="RX" library="SparkFun-LED" deviceset="LED" device="1206" value="Yellow">
 <attribute name="PROD_ID" value="DIO-09909"/>
 </part>
-<part name="LED3" library="SparkFun-LED" deviceset="LED" device="1206" value="Red">
+<part name="TX" library="SparkFun-LED" deviceset="LED" device="1206" value="Red">
 <attribute name="PROD_ID" value="DIO-09912"/>
 </part>
 <part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCH" device="-2N7002PW" value="2N7002PW"/>
@@ -32212,6 +32212,7 @@ This USB2.0 Full Speed  IC offers a compact bridge to full handshake UART interf
 <part name="P+7" library="supply1" deviceset="+5V" device=""/>
 <part name="P+8" library="supply1" deviceset="+5V" device=""/>
 <part name="P+10" library="supply1" deviceset="+5V" device=""/>
+<part name="C10" library="resistor" deviceset="C-EU" device="C0805K" value="0.1u"/>
 </parts>
 <sheets>
 <sheet>
@@ -32305,10 +32306,10 @@ This USB2.0 Full Speed  IC offers a compact bridge to full handshake UART interf
 </instance>
 <instance part="GND14" gate="1" x="203.2" y="-22.86"/>
 <instance part="GND22" gate="1" x="198.12" y="-22.86"/>
-<instance part="LED4" gate="G$1" x="248.92" y="-10.16" rot="MR90">
+<instance part="RX" gate="G$1" x="248.92" y="-10.16" rot="MR90">
 <attribute name="PROD_ID" x="248.92" y="-10.16" size="1.778" layer="96" rot="MR90" display="off"/>
 </instance>
-<instance part="LED3" gate="G$1" x="256.54" y="-12.7" rot="R270">
+<instance part="TX" gate="G$1" x="256.54" y="-12.7" rot="R270">
 <attribute name="PROD_ID" x="256.54" y="-12.7" size="1.778" layer="96" rot="R270" display="off"/>
 </instance>
 <instance part="Q2" gate="NMOS" x="246.38" y="5.08" smashed="yes" rot="R270">
@@ -32321,6 +32322,7 @@ This USB2.0 Full Speed  IC offers a compact bridge to full handshake UART interf
 <instance part="P+7" gate="1" x="254" y="20.32"/>
 <instance part="P+8" gate="1" x="266.7" y="7.62"/>
 <instance part="P+10" gate="1" x="271.78" y="7.62"/>
+<instance part="C10" gate="G$1" x="68.58" y="48.26" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -32655,11 +32657,15 @@ This USB2.0 Full Speed  IC offers a compact bridge to full handshake UART interf
 <segment>
 <pinref part="ICP" gate="A" pin="5"/>
 <wire x1="93.98" y1="40.64" x2="76.2" y2="40.64" width="0.1524" layer="91"/>
-<label x="71.12" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
+<label x="63.5" y="40.64" size="1.27" layer="95" rot="R180" xref="yes"/>
 <pinref part="R7" gate="G$1" pin="1"/>
-<wire x1="76.2" y1="40.64" x2="71.12" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="40.64" x2="68.58" y2="40.64" width="0.1524" layer="91"/>
+<wire x1="68.58" y1="40.64" x2="63.5" y2="40.64" width="0.1524" layer="91"/>
 <wire x1="76.2" y1="45.72" x2="76.2" y2="40.64" width="0.1524" layer="91"/>
 <junction x="76.2" y="40.64"/>
+<pinref part="C10" gate="G$1" pin="1"/>
+<wire x1="68.58" y1="45.72" x2="68.58" y2="40.64" width="0.1524" layer="91"/>
+<junction x="68.58" y="40.64"/>
 </segment>
 <segment>
 <pinref part="ATMEGA328P" gate="A" pin="PC6"/>
@@ -32888,6 +32894,11 @@ This USB2.0 Full Speed  IC offers a compact bridge to full handshake UART interf
 <junction x="254" y="2.54"/>
 <label x="256.54" y="2.54" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
+<segment>
+<pinref part="C10" gate="G$1" pin="2"/>
+<wire x1="68.58" y1="58.42" x2="68.58" y2="53.34" width="0.1524" layer="91"/>
+<label x="68.58" y="58.42" size="1.27" layer="95" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="D-" class="0">
 <segment>
@@ -32918,7 +32929,7 @@ This USB2.0 Full Speed  IC offers a compact bridge to full handshake UART interf
 <wire x1="231.14" y1="-12.7" x2="251.46" y2="-12.7" width="0.1524" layer="91"/>
 <label x="233.68" y="-12.7" size="1.778" layer="95" font="vector"/>
 <pinref part="U1" gate="U$1" pin="CBUS2"/>
-<pinref part="LED3" gate="G$1" pin="C"/>
+<pinref part="TX" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="RXLED" class="0">
@@ -32926,7 +32937,7 @@ This USB2.0 Full Speed  IC offers a compact bridge to full handshake UART interf
 <pinref part="U1" gate="U$1" pin="CBUS1"/>
 <wire x1="231.14" y1="-10.16" x2="243.84" y2="-10.16" width="0.1524" layer="91"/>
 <label x="233.68" y="-10.16" size="1.778" layer="95" font="vector"/>
-<pinref part="LED4" gate="G$1" pin="C"/>
+<pinref part="RX" gate="G$1" pin="C"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -32934,7 +32945,7 @@ This USB2.0 Full Speed  IC offers a compact bridge to full handshake UART interf
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="271.78" y1="-7.62" x2="271.78" y2="-12.7" width="0.1524" layer="91"/>
 <wire x1="271.78" y1="-12.7" x2="259.08" y2="-12.7" width="0.1524" layer="91"/>
-<pinref part="LED3" gate="G$1" pin="A"/>
+<pinref part="TX" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -32942,7 +32953,7 @@ This USB2.0 Full Speed  IC offers a compact bridge to full handshake UART interf
 <pinref part="R13" gate="G$1" pin="2"/>
 <wire x1="266.7" y1="-7.62" x2="266.7" y2="-10.16" width="0.1524" layer="91"/>
 <wire x1="266.7" y1="-10.16" x2="251.46" y2="-10.16" width="0.1524" layer="91"/>
-<pinref part="LED4" gate="G$1" pin="A"/>
+<pinref part="RX" gate="G$1" pin="A"/>
 </segment>
 </net>
 <net name="TXD1" class="0">
