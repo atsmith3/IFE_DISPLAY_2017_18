@@ -32111,8 +32111,8 @@ This USB2.0 Full Speed  IC offers a compact bridge to full handshake UART interf
 <parts>
 <part name="MICRO" library="led" deviceset="LED" device="CHIP-LED0805"/>
 <part name="R5" library="resistor" deviceset="R-US_" device="R0805" value="330"/>
-<part name="C3" library="resistor" deviceset="C-EU" device="C0805K" value="22p"/>
-<part name="C4" library="resistor" deviceset="C-EU" device="C0805K" value="22p"/>
+<part name="C3" library="resistor" deviceset="C-EU" device="C0805K" value="18p"/>
+<part name="C4" library="resistor" deviceset="C-EU" device="C0805K" value="18p"/>
 <part name="GND8" library="supply1" deviceset="GND" device=""/>
 <part name="ICP" library="pinhead" deviceset="PINHD-2X3" device=""/>
 <part name="P+9" library="supply1" deviceset="+5V" device=""/>
@@ -32121,8 +32121,8 @@ This USB2.0 Full Speed  IC offers a compact bridge to full handshake UART interf
 <part name="ATMEGA328P" library="Atmel_By_element14_Batch_1-00" deviceset="ATMEGA328P-AU" device="" value=""/>
 <part name="GND9" library="supply1" deviceset="GND" device=""/>
 <part name="U$2" library="Microchip_By_element14_Batch_1" deviceset="MCP2515-I/SO" device="" value="MCP2515"/>
-<part name="C6" library="resistor" deviceset="C-EU" device="C0805K" value="22p"/>
-<part name="C7" library="resistor" deviceset="C-EU" device="C0805K" value="22p"/>
+<part name="C6" library="resistor" deviceset="C-EU" device="C0805K" value="18p"/>
+<part name="C7" library="resistor" deviceset="C-EU" device="C0805K" value="18p"/>
 <part name="GND16" library="supply1" deviceset="GND" device=""/>
 <part name="P+19" library="supply1" deviceset="+5V" device=""/>
 <part name="GND17" library="supply1" deviceset="GND" device=""/>
@@ -32149,7 +32149,7 @@ This USB2.0 Full Speed  IC offers a compact bridge to full handshake UART interf
 <part name="P+25" library="supply1" deviceset="+5V" device=""/>
 <part name="GND" library="testpad" library_urn="urn:adsk.eagle:library:385" deviceset="TP" device="TP12SQ" package3d_urn="urn:adsk.eagle:package:27964/1"/>
 <part name="U$4" library="Display_Custom" deviceset="406CYRYSTAL" device="" value="16MHz"/>
-<part name="U$15" library="Display_Custom" deviceset="406CYRYSTAL" device=""/>
+<part name="U$15" library="Display_Custom" deviceset="406CYRYSTAL" device="" value="16MHz"/>
 <part name="FRAME1" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
 <part name="FRAME2" library="frames" library_urn="urn:adsk.eagle:library:229" deviceset="LETTER_L" device=""/>
 <part name="U$7" library="Display_Custom" deviceset="AS1108" device=""/>
@@ -32183,8 +32183,8 @@ This USB2.0 Full Speed  IC offers a compact bridge to full handshake UART interf
 <part name="U$5" library="Display_Custom" deviceset="LDQ-N516RI" device=""/>
 <part name="U$6" library="Display_Custom" deviceset="LDQ-N516RI" device=""/>
 <part name="GND11" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="R12" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="1k"/>
-<part name="R13" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="1k"/>
+<part name="R12" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="330"/>
+<part name="R13" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="330"/>
 <part name="R14" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="1k"/>
 <part name="R15" library="SparkFun-Resistors" deviceset="1KOHM" device="-0603-1/10W-1%" value="1k"/>
 <part name="JP12" library="SparkFun-Connectors" deviceset="USB-MINIB" device="-5PIN"/>
@@ -32199,10 +32199,10 @@ This USB2.0 Full Speed  IC offers a compact bridge to full handshake UART interf
 <part name="C14" library="SparkFun-Capacitors" deviceset="0.1UF" device="-0603-25V-(+80/-20%)" value="0.1uF"/>
 <part name="GND14" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
 <part name="GND22" library="SparkFun-Aesthetics" deviceset="GND" device=""/>
-<part name="RX" library="SparkFun-LED" deviceset="LED" device="1206" value="Yellow">
+<part name="RX" library="SparkFun-LED" deviceset="LED" device="1206" value="RED">
 <attribute name="PROD_ID" value="DIO-09909"/>
 </part>
-<part name="TX" library="SparkFun-LED" deviceset="LED" device="1206" value="Red">
+<part name="TX" library="SparkFun-LED" deviceset="LED" device="1206" value="RED">
 <attribute name="PROD_ID" value="DIO-09912"/>
 </part>
 <part name="Q2" library="SparkFun-DiscreteSemi" deviceset="MOSFET-NCH" device="-2N7002PW" value="2N7002PW"/>
