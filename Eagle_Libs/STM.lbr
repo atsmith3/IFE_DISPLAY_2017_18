@@ -283,6 +283,30 @@ Source: http://focus.ti.com/lit/ds/symlink/tlc27l2.pdf</description>
 </device>
 </devices>
 </deviceset>
+<deviceset name="TS881">
+<description>&lt;h3&gt; STM TS881&lt;/h3&gt;
+
+&lt;p&gt;Single rail to rail comparator with push pull output.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=https://www.st.com/content/ccc/resource/technical/document/datasheet/a2/60/3e/5d/b2/c1/4a/e9/DM00057901.pdf/files/DM00057901.pdf/jcr:content/translations/en.DM00057901.pdf&gt;Datasheet&lt;/a&gt;&lt;/p&gt;</description>
+<gates>
+<gate name="G$1" symbol="OP-AMP" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="+IN" pad="3"/>
+<connect gate="G$1" pin="-IN" pad="4"/>
+<connect gate="G$1" pin="GND" pad="2"/>
+<connect gate="G$1" pin="OUT" pad="1"/>
+<connect gate="G$1" pin="VDD" pad="5"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
 </devicesets>
 </library>
 </drawing>
