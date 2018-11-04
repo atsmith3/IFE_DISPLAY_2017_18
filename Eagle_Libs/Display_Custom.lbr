@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.7.0">
+<eagle version="9.2.2">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -1115,7 +1115,7 @@ Source: 008-0260-0_E.pdf</description>
 <pad name="2" x="-2.1" y="7.3" drill="1.9"/>
 <pad name="3" x="2.1" y="12.8" drill="1.9"/>
 </package>
-<package name="0805">
+<package name="D0805">
 <description>0805 Diode</description>
 <wire x1="-0.3" y1="0.6" x2="0.3" y2="0.6" width="0.1524" layer="21"/>
 <wire x1="-0.3" y1="-0.6" x2="0.3" y2="-0.6" width="0.1524" layer="21"/>
@@ -1739,6 +1739,22 @@ Source: www.cypress.com .. CY7C6301XX.pdf</description>
 <wire x1="10.16" y1="1.1" x2="10.16" y2="-4.1" width="0.127" layer="51"/>
 <wire x1="-10.16" y1="-4.1" x2="10.16" y2="-4.1" width="0.127" layer="51"/>
 <text x="11.1506" y="-4.1402" size="0.8128" layer="25" rot="R90">&gt;NAME</text>
+</package>
+<package name="L0805">
+<description>&lt;b&gt;Chip RESISTOR, 0805 EIA (2012 Metric)&lt;/b&gt;</description>
+<wire x1="-0.41" y1="0.635" x2="0.41" y2="0.635" width="0.1524" layer="51"/>
+<wire x1="-0.41" y1="-0.635" x2="0.41" y2="-0.635" width="0.1524" layer="51"/>
+<wire x1="-1.7" y1="0.95" x2="1.7" y2="0.95" width="0.0508" layer="39"/>
+<wire x1="1.7" y1="0.95" x2="1.7" y2="-0.95" width="0.0508" layer="39"/>
+<wire x1="1.7" y1="-0.95" x2="-1.7" y2="-0.95" width="0.0508" layer="39"/>
+<wire x1="-1.7" y1="-0.95" x2="-1.7" y2="0.95" width="0.0508" layer="39"/>
+<smd name="1" x="-0.94" y="0" dx="1.02" dy="1.4" layer="1"/>
+<smd name="2" x="0.94" y="0" dx="1.02" dy="1.4" layer="1"/>
+<text x="-1.651" y="1.27" size="0.8128" layer="25">&gt;NAME</text>
+<text x="-1.651" y="-2.032" size="0.8128" layer="27">&gt;VALUE</text>
+<rectangle x1="0.4064" y1="-0.6985" x2="1.0564" y2="0.7015" layer="51"/>
+<rectangle x1="-1.0668" y1="-0.6985" x2="-0.4168" y2="0.7015" layer="51"/>
+<rectangle x1="-0.1999" y1="-0.5001" x2="0.1999" y2="0.5001" layer="35"/>
 </package>
 </packages>
 <packages3d>
@@ -3096,7 +3112,7 @@ Source: www.cypress.com .. CY7C6301XX.pdf</description>
 <gate name="G$1" symbol="SCHOTTKY" x="0" y="0"/>
 </gates>
 <devices>
-<device name="" package="0805">
+<device name="" package="D0805">
 <connects>
 <connect gate="G$1" pin="A" pad="A+"/>
 <connect gate="G$1" pin="C" pad="C-"/>
@@ -3646,6 +3662,22 @@ Source: www.cypress.com .. CY7C6301XX.pdf</description>
 <connect gate="G$1" pin="2" pad="2"/>
 <connect gate="G$1" pin="3" pad="3"/>
 <connect gate="G$1" pin="4" pad="4"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="0805_INDUCTOR">
+<gates>
+<gate name="G$1" symbol="INDUCTOR" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="L0805">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
 </connects>
 <technologies>
 <technology name=""/>
